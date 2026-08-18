@@ -1,0 +1,8 @@
+{
+ "repo": "vci-vinf",
+ "line": "vinf-market-kernel",
+ "tag": "业务线影子",
+ "spec": "SHADOW-CI-01",
+ "lane": "provision/vci",
+ "v": 1
+}
