@@ -1,0 +1,33 @@
+{
+ "ts": "20260820-060305",
+ "line": "vinf-market-kernel",
+ "checks": {
+  "outbox": "unregistered",
+  "pulse": {
+   "last": "20260820-023559",
+   "age_h": 3.5,
+   "chain_log": "8dc4587bd005f471"
+  },
+  "chain_match": true,
+  "matrix": [
+   {
+    "id": "shadow-pulse@vci-vinf",
+    "status": "ok"
+   }
+  ],
+  "inbox_unread": 26
+ },
+ "findings": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  }
+ ],
+ "cleared": [],
+ "escalated": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  }
+ ]
+}
