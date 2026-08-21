@@ -1,0 +1,10 @@
+{
+ "ts": "20260821-214410",
+ "line": "vinf-market-kernel",
+ "outbox": {
+  "url": "https://stgdle5yj3o7s.ok.kimi.link/vinf-outbox.json",
+  "http": 200,
+  "sha256": "97f1813cf3fe24ef"
+ },
+ "note": "snapshot ok"
+}
