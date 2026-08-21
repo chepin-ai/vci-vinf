@@ -6,25 +6,16 @@
     "note": "对线未在公面注册表登记 outbox"
    },
    "first": "20260819-012633",
-   "ticks": 43,
+   "ticks": 44,
    "escalate": true
   },
-  "72bd4c4bc9": {
+  "02f3f32b35": {
    "finding": {
     "kind": "pulse-stale",
-    "note": "影子脉搏 20260820-075836 年龄 22.9h（>2×6h 班）"
+    "note": "影子脉搏 20260820-075836 年龄 24.5h（>2×6h 班）"
    },
-   "first": "20260821-065440",
+   "first": "20260821-082700",
    "ticks": 1
-  },
-  "98a97e443b": {
-   "finding": {
-    "kind": "matrix-fail",
-    "note": "公面矩阵 shadow-pulse@vci-vinf=fail"
-   },
-   "first": "20260820-204840",
-   "ticks": 5,
-   "escalate": true
   }
  }
 }
