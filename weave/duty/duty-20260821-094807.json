@@ -1,0 +1,46 @@
+{
+ "ts": "20260821-094807",
+ "line": "vinf-market-kernel",
+ "checks": {
+  "outbox": "unregistered",
+  "pulse": {
+   "last": "20260820-075836",
+   "age_h": 25.8,
+   "chain_log": "4d0794e249c11905"
+  },
+  "chain_match": true,
+  "matrix": [
+   {
+    "id": "shadow-pulse@vci-vinf",
+    "status": "fail"
+   }
+  ],
+  "inbox_unread": 45
+ },
+ "findings": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  },
+  {
+   "kind": "pulse-stale",
+   "note": "影子脉搏 20260820-075836 年龄 25.8h（>2×6h 班）"
+  },
+  {
+   "kind": "matrix-fail",
+   "note": "公面矩阵 shadow-pulse@vci-vinf=fail"
+  }
+ ],
+ "cleared": [
+  {
+   "kind": "pulse-stale",
+   "note": "影子脉搏 20260820-075836 年龄 24.5h（>2×6h 班）"
+  }
+ ],
+ "escalated": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  }
+ ]
+}
