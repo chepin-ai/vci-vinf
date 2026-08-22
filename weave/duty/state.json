@@ -1,21 +1,3 @@
 {
- "open": {
-  "fec84f4f76": {
-   "finding": {
-    "kind": "outbox-unregistered",
-    "note": "对线未在公面注册表登记 outbox"
-   },
-   "first": "20260819-012633",
-   "ticks": 47,
-   "escalate": true
-  },
-  "a689ac280c": {
-   "finding": {
-    "kind": "pulse-stale",
-    "note": "影子脉搏 20260820-075836 年龄 30.5h（>2×6h 班）"
-   },
-   "first": "20260821-142928",
-   "ticks": 1
-  }
- }
+ "open": {}
 }
