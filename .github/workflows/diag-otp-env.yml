@@ -7,6 +7,7 @@ jobs:
   d:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: 运行时渲染长度
         env:
           OTP_PHONE: ${{ secrets.OTP_PHONE }}
