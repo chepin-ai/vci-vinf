@@ -1,0 +1,31 @@
+{
+ "ts": "20260830-095208",
+ "line": "vinf",
+ "checks": {
+  "outbox": {
+   "http": 200,
+   "sha256_16": "3fefa84a400a8b67"
+  },
+  "pulse": {
+   "last": "20260830-032738",
+   "age_h": 6.4,
+   "chain_log": "ab3c9c2060d97b10"
+  },
+  "chain_match": false,
+  "matrix": "unreachable",
+  "inbox_unread": 54
+ },
+ "findings": [
+  {
+   "kind": "chain-diverge",
+   "note": "pulse.log 链头与 status.json 不一致"
+  }
+ ],
+ "cleared": [],
+ "escalated": [
+  {
+   "kind": "chain-diverge",
+   "note": "pulse.log 链头与 status.json 不一致"
+  }
+ ]
+}
