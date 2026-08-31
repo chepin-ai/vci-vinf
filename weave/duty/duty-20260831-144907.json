@@ -1,0 +1,31 @@
+{
+ "ts": "20260831-144907",
+ "line": "vinf",
+ "checks": {
+  "outbox": {
+   "http": 200,
+   "sha256_16": "3fefa84a400a8b67"
+  },
+  "pulse": {
+   "last": "20260830-095955",
+   "age_h": 28.8,
+   "chain_log": "92f888441229421e"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 57
+ },
+ "findings": [
+  {
+   "kind": "pulse-stale",
+   "note": "影子脉搏 20260830-095955 年龄 28.8h（>2×6h 班）"
+  }
+ ],
+ "cleared": [
+  {
+   "kind": "pulse-stale",
+   "note": "影子脉搏 20260830-095955 年龄 25.8h（>2×6h 班）"
+  }
+ ],
+ "escalated": []
+}
