@@ -1,13 +1,12 @@
 {
  "open": {
-  "baeabcac78": {
+  "af6e9ec194": {
    "finding": {
     "kind": "pulse-stale",
-    "note": "影子脉搏 20260830-095955 年龄 31.1h（>2×6h 班）"
+    "note": "影子脉搏 20260830-095955 年龄 31.2h（>2×6h 班）"
    },
-   "first": "20260831-170348",
-   "ticks": 3,
-   "escalate": true
+   "first": "20260831-171026",
+   "ticks": 1
   }
  }
 }
