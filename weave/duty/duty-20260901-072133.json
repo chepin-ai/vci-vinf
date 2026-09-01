@@ -1,0 +1,26 @@
+{
+ "ts": "20260901-072133",
+ "line": "vinf",
+ "checks": {
+  "outbox": {
+   "http": 200,
+   "sha256_16": "3fefa84a400a8b67"
+  },
+  "pulse": {
+   "last": "20260830-095955",
+   "age_h": 45.4,
+   "chain_log": "92f888441229421e"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 70
+ },
+ "findings": [
+  {
+   "kind": "pulse-stale",
+   "note": "影子脉搏 20260830-095955 年龄 45.4h（>2×6h 班）"
+  }
+ ],
+ "cleared": [],
+ "escalated": []
+}
