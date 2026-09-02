@@ -1,0 +1,22 @@
+{
+ "ts": "20260902-215349",
+ "line": "vinf",
+ "checks": {
+  "outbox": {
+   "http": 200,
+   "sha256_16": "3fefa84a400a8b67"
+  },
+  "pulse": {
+   "last": "20260902-215258",
+   "age_h": 0.0,
+   "chain_log": "e2d4b718baad622e"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 0,
+  "inbox_digest": []
+ },
+ "findings": [],
+ "cleared": [],
+ "escalated": []
+}
