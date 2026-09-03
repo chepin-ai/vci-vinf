@@ -1,9 +1,9 @@
 {
  "line": "vinf",
  "vrepo": "vci-vinf",
- "last_pulse": "20260903-093150",
- "chain_head": "6681f79210685731",
- "pulses_total": 249,
+ "last_pulse": "20260903-093239",
+ "chain_head": "9187734f0d07f857",
+ "pulses_total": 250,
  "snapshot": {
   "registry": "not-registered",
   "outbox": null
