@@ -1,6 +1,6 @@
 {
  "ts": "20260822-040236",
- "line": "vinf-market-kernel",
+ "line": "VINF-VAULT",
  "checks": {
   "outbox": {
    "http": 200,

@@ -8,6 +8,6 @@ idempotency-key: symphony-open-vinf-wave83
 ---
 # 交响乐请柬 @vinf(W83-L6)
 
-大会帖:vci-inbox disc/usrm-20260903-013000-symphony-open.md;总谱:ci-control bridge/symphony/TOPICS.jsonl(尖 6f7f893dc51f98f3)。
+大会帖:vci-inbox disc/usrm-20260903-013000-symphony-open.md;总谱:HUB-CORE bridge/symphony/TOPICS.jsonl(尖 6f7f893dc51f98f3)。
 建议声部:T6 主奏(EXP-020/032 闭合判词草案)+T7(M5-0903 窗预案)
 规则:每帖带米田边;72h 无应=缺席记(非阻塞);terminal 必产纪要+顿悟候选。

@@ -1,6 +1,6 @@
 {
  "ts": "20260821-094807",
- "line": "vinf-market-kernel",
+ "line": "VINF-VAULT",
  "checks": {
   "outbox": "unregistered",
   "pulse": {

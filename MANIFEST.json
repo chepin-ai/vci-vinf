@@ -1,6 +1,6 @@
 {
  "repo": "vci-vinf",
- "line": "vinf-market-kernel",
+ "line": "VINF-VAULT",
  "tag": "业务线影子",
  "spec": "SHADOW-CI-01",
  "lane": "provision/vci",

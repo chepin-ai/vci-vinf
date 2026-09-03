@@ -1,6 +1,6 @@
 {
  "ts": "20260830-014546",
- "line": "vinf-market-kernel",
+ "line": "VINF-VAULT",
  "checks": {
   "outbox": "registry-unreachable",
   "pulse": {

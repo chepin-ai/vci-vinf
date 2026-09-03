@@ -1,6 +1,6 @@
 {
  "ts": "20260821-214410",
- "line": "vinf-market-kernel",
+ "line": "VINF-VAULT",
  "outbox": {
   "url": "https://stgdle5yj3o7s.ok.kimi.link/vinf-outbox.json",
   "http": 200,

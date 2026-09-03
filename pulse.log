@@ -1,16 +1,16 @@
-20260818-060919 vinf-market-kernel 1f6e44250fe502fe line not registered in outboxes.json
-20260818-133211 vinf-market-kernel fe437057a6c81dd3 line not registered in outboxes.json
-20260818-191752 vinf-market-kernel c2257a3478e8a965 line not registered in outboxes.json
-20260819-011038 vinf-market-kernel 2aa1fd71e10a211f v2-bearer
-20260819-020831 vinf-market-kernel 9fa825edbb70605e line not registered in outboxes.json
-20260819-072646 vinf-market-kernel 715240b29ee25c8d line not registered in outboxes.json
-20260819-133402 vinf-market-kernel 7b4afe56c9d333ad line not registered in outboxes.json
-20260819-192148 vinf-market-kernel a91a2aa181795415 line not registered in outboxes.json
-20260820-023559 vinf-market-kernel 8dc4587bd005f471 line not registered in outboxes.json
-20260820-075836 vinf-market-kernel 4d0794e249c11905 line not registered in outboxes.json
-20260821-214410 vinf-market-kernel 9d7f31a994962248 snapshot ok
-20260822-041939 vinf-market-kernel 8c5363ff8751daff snapshot ok
-20260830-014547 vinf-market-kernel c2aa35c72a741af5 registry unreachable
+20260818-060919 VINF-VAULT 1f6e44250fe502fe line not registered in outboxes.json
+20260818-133211 VINF-VAULT fe437057a6c81dd3 line not registered in outboxes.json
+20260818-191752 VINF-VAULT c2257a3478e8a965 line not registered in outboxes.json
+20260819-011038 VINF-VAULT 2aa1fd71e10a211f v2-bearer
+20260819-020831 VINF-VAULT 9fa825edbb70605e line not registered in outboxes.json
+20260819-072646 VINF-VAULT 715240b29ee25c8d line not registered in outboxes.json
+20260819-133402 VINF-VAULT 7b4afe56c9d333ad line not registered in outboxes.json
+20260819-192148 VINF-VAULT a91a2aa181795415 line not registered in outboxes.json
+20260820-023559 VINF-VAULT 8dc4587bd005f471 line not registered in outboxes.json
+20260820-075836 VINF-VAULT 4d0794e249c11905 line not registered in outboxes.json
+20260821-214410 VINF-VAULT 9d7f31a994962248 snapshot ok
+20260822-041939 VINF-VAULT 8c5363ff8751daff snapshot ok
+20260830-014547 VINF-VAULT c2aa35c72a741af5 registry unreachable
 20260830-032738 vinf ab3c9c2060d97b10 snapshot ok
 20260830-095955 vinf 92f888441229421e snapshot ok
 20260901-085643 vinf d53d6ae1fcf61e85 snapshot ok
