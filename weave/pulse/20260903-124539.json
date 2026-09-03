@@ -1,0 +1,10 @@
+{
+ "ts": "20260903-124539",
+ "line": "vinf",
+ "outbox": {
+  "url": "https://raw.githubusercontent.com/chepin-ai/vci-vinf/main/outbox/vinf-outbox.json",
+  "http": 200,
+  "sha256": "3fefa84a400a8b67"
+ },
+ "note": "snapshot ok"
+}
