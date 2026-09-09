@@ -1,0 +1,56 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T164220Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T062058Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T062346Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T062534Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063027Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063310Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063407Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063555Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063652Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063748Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T071006Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T074619Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T080815Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：vinf晨间语音候件十二通（06:20-08:08），含日常运营及FW2C推广讨论。  \n② **与cfts主线何干**：vinf为cfts触达前端，语音中客需、推广线索须筛入主链。  \n③ **应动何件**：以末件 **080815Z** 为收束锚点，回扫 **071006Z** 推广段，全链贯通。  \n④ **生债一条**：债：今日内将十二通语音提炼为 FW2C 推广跟进单，同步 cfts 主线。"
+}
