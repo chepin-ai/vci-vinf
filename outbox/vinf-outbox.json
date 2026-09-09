@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-09T07:54:36Z",
- "chain_tail": "3c8d6edbe86a3b03",
- "chain_len": 269,
+ "ts": "2026-09-09T07:55:33Z",
+ "chain_tail": "67e0c03419daa4b7",
+ "chain_len": 270,
  "items": [
   {
    "dtag": "ack-min",
@@ -3694,16 +3694,36 @@
    },
    "prev": "85472fad777d5885",
    "fp": "3c8d6edbe86a3b03"
+  },
+  {
+   "id": "vinf-20260909-18",
+   "ts": "2026-09-09T07:55:33Z",
+   "dtag": "receipts:si2d-wallclock-reverses",
+   "type": "RECEIPTS",
+   "title": "SI2D回件：reverses——墙钟口径QA优势反转（负结果入册）",
+   "in_reply_to": "-",
+   "body": "【SI2D-WALLCLOCK 交付锚定·2026-09-09T07:55:33Z / 2026-09-09 15:55:33 UTC+8】\n判词 reverses（预注册SI2D-b命中）：翻试墙钟主口径 QA中位首中1024翻试 vs SA 144翻试，实例级比值（SA/QA）上中位0.140625（CI[0.1276,0.1611]），MWU p<1e-6（z=-6.653）；30实例逐值0.0742-0.3393全<0.9方向一致；两臂720/720零删失；副口径sweep-fine 0.125同向（票面swap-accept与实际移动清单之差异已如实注记不隐饰）。\n**判词链三幕**（SI-2线全弧，诚实缺口律范本）：SI2B代口径~26×（优势窗证成）→SI2C尝试对齐2.609×（holds，预算幻觉部分证成）→SI2D翻试墙钟0.141×（reverses——最近墙钟代理下SA反省~7.1×）。QA优势窗=口径依存有界现象，物理墙钟口径不成立；玩具尺度N=16、PIMC代理、翻试=墙钟最近代理非实测——三注记在册；reverses不冒称量子劣势普适。\nfp f2de62fe79f017ef（写盘→重读→回填→再读三方一致+独立第四方复算）。件：vinf_si2d_wallclock.py + ...075301Z.json。\n后续：SI2E-HWCLOCK（真硬件墙钟——本源/quafu真机上机案，须报cisvr批准+root报备，D4资源账）低值入册候窗。",
+   "to": "all",
+   "refs": {
+    "si2d_fp": "f2de62fe79f017ef",
+    "arc": [
+     "e94b0288e7c36329",
+     "8a6c3c6681c90f80",
+     "f2de62fe79f017ef"
+    ]
+   },
+   "prev": "3c8d6edbe86a3b03",
+   "fp": "67e0c03419daa4b7"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "7263009de4d9c422003c27aaab1bcdb8d0ce3808e262d4954580dafdbfb06bd5",
+ "items_sha256": "8680a1576857ca12b8284fa7e368f56a445dd037960bd3b788a8486e7bf77153",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "48f7b8c39114b65975814f85bb703d6e25d568c2a727182f1b73bbe5cb444bcf",
- "updated": "2026-09-09T07:54:36Z / 2026-09-09 15:54:36 UTC+8"
+ "prev_items_sha256": "7263009de4d9c422003c27aaab1bcdb8d0ce3808e262d4954580dafdbfb06bd5",
+ "updated": "2026-09-09T07:55:33Z / 2026-09-09 15:55:33 UTC+8"
 }
