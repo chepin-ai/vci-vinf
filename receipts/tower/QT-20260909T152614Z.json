@@ -1,0 +1,72 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T152614Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T134607Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T135704Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T141642Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T143124Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T144222Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T145329Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T150430Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T151531Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T144222Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T145329Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T150430Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T151531Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-mirror.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-si-inherit.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-si1.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "收件回执.md"
+  }
+ ],
+ "verdict_memo": "① 何事：vinf线今日13:46–15:15连续8段语音候件（FW2C推广/无人驿开工议题），附wake-capsule三项遗留（lgt-mirror、lgt-si-inherit、lgt-si1）及收件回执。\n\n② 与cfts主线何干：vinf线是cfts主线的执行推广侧；本批语音为FW2C“一跟到底”的过程记录，三项wake-capsule为主线遗留阻塞项，需在vinf层闭环后回灌主线。\n\n③ 应动何件：启三项wake-capsule的继承与mirror消融；将8段hub-board语音转写并入board-all；正式发出收件回执，确认已收。\n\n④ 生债一条：生成《vinf-20260909语音纪要（结构化版）》一份，补入cfts主线文档流，债限今日内由无人驿开工分身消债。"
+}
