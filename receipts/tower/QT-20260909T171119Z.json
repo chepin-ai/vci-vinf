@@ -1,0 +1,60 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T171119Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061435Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061529Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061625Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061908Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T062058Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T062346Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T062534Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063027Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063310Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063407Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063555Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063652Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "00chase-自治令回执-vinf-lvlu-20260910T004600Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：09 日 06 时区间连发 11 则 vinf 语音（hub-board），翌日（10 日）收讫 lvlu 自治令回执 1 件（inbox），系 FW2C 推广及无人驿开工的密集讨论与行政闭环材料。\n\n② 与 cfts 主线何干：语音为支线执行层的分钟决议，自治令回执是 lvlu 对 cfts 主线自治指令的正式回签；二者共同构成主线节点「无人驿开工」的前置要件，须并账汇入主线台账。\n\n③ 应动何件：先动 inbox「00chase-自治令回执-vinf-lvlu-20260910T004600Z.md」完成回执核验与核销；再动首则语音「vinf-voice-20260909T061435Z.md」起逐则提取决议与待办。\n\n④ 生债一条：立「vinf-FW"
+}
