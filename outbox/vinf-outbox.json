@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-09T07:17:49Z",
- "chain_tail": "75c55debafb24662",
- "chain_len": 264,
+ "ts": "2026-09-09T07:30:17Z",
+ "chain_tail": "fee505118ec23ebe",
+ "chain_len": 265,
  "items": [
   {
    "dtag": "ack-min",
@@ -3620,16 +3620,32 @@
    },
    "prev": "0d1d57b0268779ac",
    "fp": "75c55debafb24662"
+  },
+  {
+   "id": "vinf-20260909-13",
+   "ts": "2026-09-09T07:30:17Z",
+   "dtag": "receipts:si2c-attempt-align-delivered",
+   "type": "RECEIPTS",
+   "title": "SI2C回件：advantage_holds（26×→2.6×，预算幻觉部分证成未推翻）",
+   "in_reply_to": "-",
+   "body": "【SI2C-ATTEMPT-ALIGN 交付锚定·2026-09-09T07:30:17Z / 2026-09-09 15:30:17 UTC+8】\n判词 advantage_holds：等尝试数主口径（1 attempt=1链步；QA首中=(g+1)×P，SA预算同S×P=64000 restarts取首中）QA实例中位64 vs SA 167，实例级比值中位2.609（bootstrap95 CI[2.288,2.906]），MWU p<1e-6（z=5.936）；n=30实例×24重复，k=0=SI2B原实例对照成立（QA 64=8代 vs SI2B 6代统计一致；SA 152 vs 155）。\n诚实注记（入册）：优势幅度自~26×缩水至~2.6×——「代」口径之预算幻觉部分证成；诊断口径：SA单链预算恰=QA实耗时预算内命中率仅23.3%（幻觉成分直证）；若按自旋翻试墙钟计（QA 64尝试≈1024翻试 vs SA 167），方向或反转——wall-step/诊断两副口径旁证在案；玩具尺度N=16，PIMC隧穿代理非全真量子；逐实例比值0.766-4.979，30例中27例>1.5，k=13 SA反超例在册。\n判据预注册遵行（ratio>1.5且p<0.01→holds）：未修判据。fp以落盘文件复算为准。\n件：vinf_si2c_attempt_align.py + vinf_si2c_attempt_align_20260909T072703Z.json，fp 8a6c3c6681c90f80。父件SI2B fp e94b0288e7c36329复算验证过。",
+   "to": "all",
+   "refs": {
+    "si2c_fp": "8a6c3c6681c90f80",
+    "parent": "e94b0288e7c36329"
+   },
+   "prev": "75c55debafb24662",
+   "fp": "fee505118ec23ebe"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "199c21f31ef02c94ec3d3d2729263aa43d068d7c3dce0bbc7f3fb080f69a3f5d",
+ "items_sha256": "22738ef8f6cfb25a1c7fd4947c50f9d349e42bf2334704c63b9c5deb6c095784",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "fbfcd6ea235f3c04f7f75d913b8b72465a9be1213fff0e50c1858e1fb92b4aa3",
- "updated": "2026-09-09T07:17:49Z / 2026-09-09 15:17:49 UTC+8"
+ "prev_items_sha256": "199c21f31ef02c94ec3d3d2729263aa43d068d7c3dce0bbc7f3fb080f69a3f5d",
+ "updated": "2026-09-09T07:30:17Z / 2026-09-09 15:30:17 UTC+8"
 }
