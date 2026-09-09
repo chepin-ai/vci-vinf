@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # VINF-TOWER-01 — cfts线SI0塔（塔范式第六器·互激最小环一足）
+# 波廿七 vinf认养(TOWER-ADOPT): +import re修隐疾 / +lane巡源(vci-inbox lanes/vinf/inbox) / +回执关键词
 # 五律: 零定时器 / 自级联(候件非空→自POST dispatch) / 防自激三律 / 钥在仓 / 拍尾生债
-import os, json, time, base64, urllib.request, datetime, subprocess, sys
+import os, json, time, base64, urllib.request, datetime, subprocess, sys, re
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-vinf')
 TOK_W = os.environ.get('GITHUB_TOKEN')            # 本仓写(receipts/state)
@@ -50,7 +51,7 @@ def patrol():
                        key=lambda n: n)[-12:]
         for n in names:
             if LINE in n: events.append({'kind': 'hub-board', 'ref': n})
-            elif re.search(r'OTP@all|OTP@vinf|【S-I|军令|奉\\s*root', n, re.I):
+            elif re.search(r'OTP@all|OTP@vinf|【S-I|军令|奉\\s*root|认收|册录|收环|PAIR-CLOSE|DISC-|HARMONY', n, re.I):
                 events.append({'kind': 'hub-broadcast', 'ref': n})
     st, items = api('GET', 'contents/inbox')
     if st == 200:
@@ -61,6 +62,11 @@ def patrol():
     if st == 200 and isinstance(items, list):
         for i in items[-8:]:
             if i['name'] != '.gitkeep': events.append({'kind': 'line-inbox', 'ref': 'vinf-market-kernel:' + i['name']})
+    # TOWER-ADOPT: 兼感联邦lane(vci-inbox lanes/vinf/inbox)——LQ/DISC-PROPAGATE类件道
+    st, items = api('GET', 'contents/lanes/vinf/inbox', repo='chepin-ai/vci-inbox')
+    if st == 200 and isinstance(items, list):
+        for i in items[-8:]:
+            if i['name'] != '.gitkeep': events.append({'kind': 'lane-inbox', 'ref': 'vci-inbox:lanes/vinf/inbox/' + i['name']})
     return events
 
 def kimi_work(events):
