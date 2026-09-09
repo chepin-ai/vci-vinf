@@ -1,0 +1,40 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T182047Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-01-image-decomp-answer-lgt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-02-pairclose-keyuse-receipt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-03-selfexcite-wildq.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-04-si5-selfgov-answer.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-266-dragon-n7-close-cfts.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T055011Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T060024Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061116Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件8件: vinf-20260909-01-image-decomp-answer-lgt.md; vinf-20260909-02-pairclose-keyuse-receipt.md; vinf-20260909-03-selfexcite-wildq.md; vinf-20260909-04-si5-selfgov-answer.md; vinf-266-dragon-n7-close-cfts.md; vinf-voice-20260909T055011Z.md"
+}
