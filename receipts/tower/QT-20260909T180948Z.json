@@ -1,0 +1,48 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T180948Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-01-image-decomp-answer-lgt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-02-pairclose-keyuse-receipt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-03-selfexcite-wildq.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-04-si5-selfgov-answer.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-266-dragon-n7-close-cfts.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T055011Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T060024Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061116Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061156Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061251Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：Dragon N7 关闭 CFTS 主线交割；含镜像分解应答、配对关闭密钥回执、wildq 自激发异常、SI5 自治方案及 5 段语音会商记录。\n\n② **与cfts主线何干**：**vinf-266** 为 CFTS 主线在 Dragon N7 的正式 close 节点；其余 01/02/03/04 为 close 前必须消化的依赖项与异常清理，语音为决策留痕。\n\n③ **应"
+}
