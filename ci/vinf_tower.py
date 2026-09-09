@@ -42,8 +42,8 @@ def put_file(remote, text, sha, msg, repo=None):
         subprocess.run(['git', 'fetch'], capture_output=True); time.sleep(3)
     return False
 
-def patrol():
-    """候件 = 毂板尾12件含'vinf'者 + 广播令 + 己inbox/"""
+def patrol(seen):
+    """候件 = 毂板尾12件含'vinf'者 + 广播令 + 己inbox/ (修SENSE-WINDOW-01: seen集滤盲)"""
     events = []
     st, items = api('GET', 'contents/公告板', repo=HUB)
     if st == 200:
@@ -55,18 +55,21 @@ def patrol():
                 events.append({'kind': 'hub-broadcast', 'ref': n})
     st, items = api('GET', 'contents/inbox')
     if st == 200:
-        for i in items[-8:]:
-            if i['name'] != '.gitkeep': events.append({'kind': 'inbox', 'ref': i['name']})
+        for i in items:  # 修SENSE-WINDOW-01: 全量扫, seen集滤, 破字典序[-8:]盲
+            if i['name'] != '.gitkeep' and ('inbox:' + i['name']) not in seen:
+                events.append({'kind': 'inbox', 'ref': i['name']})
     # 修SENSE-SPLIT-01: 兼感线仓inbox(联邦胶囊道,感/动裂脑缝合)
     st, items = api('GET', 'contents/inbox', repo='chepin-ai/vinf-market-kernel')
     if st == 200 and isinstance(items, list):
-        for i in items[-8:]:
-            if i['name'] != '.gitkeep': events.append({'kind': 'line-inbox', 'ref': 'vinf-market-kernel:' + i['name']})
+        for i in items:  # 修SENSE-WINDOW-01: 78件auto-otp积压自此可泄
+            if i['name'] != '.gitkeep' and ('line:' + i['name']) not in seen:
+                events.append({'kind': 'line-inbox', 'ref': 'vinf-market-kernel:' + i['name']})
     # TOWER-ADOPT: 兼感联邦lane(vci-inbox lanes/vinf/inbox)——LQ/DISC-PROPAGATE类件道
     st, items = api('GET', 'contents/lanes/vinf/inbox', repo='chepin-ai/vci-inbox')
     if st == 200 and isinstance(items, list):
-        for i in items[-8:]:
-            if i['name'] != '.gitkeep': events.append({'kind': 'lane-inbox', 'ref': 'vci-inbox:lanes/vinf/inbox/' + i['name']})
+        for i in items:
+            if i['name'] != '.gitkeep' and ('lane:' + i['name']) not in seen:
+                events.append({'kind': 'lane-inbox', 'ref': 'vci-inbox:lanes/vinf/inbox/' + i['name']})
     return events
 
 def kimi_work(events):
@@ -90,7 +93,9 @@ def main():
     ts = datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
     stj, _ = get_file('receipts/tower/state.json')
     state = json.loads(stj) if stj else {'idle': 0}
-    events = patrol()
+    SEEN = set(state.get('seen', []))
+    events = patrol(SEEN)
+    NEWSEEN = sorted(SEEN | {('inbox:' + e['ref']) if e['kind'] == 'inbox' else (('line:' + e['ref'].split(':',1)[1]) if e['kind'] == 'line-inbox' else (('lane:' + e['ref'].split('/')[-1]) if e['kind'] == 'lane-inbox' else e['ref'])) for e in events})[-800:]
     # BOARD-SCAN-01: scan ALL recent ci-inbox board posts as events
     try:
         st_board, board_items = api('GET', 'contents/公告板', repo='chepin-ai/ci-inbox')
@@ -105,6 +110,8 @@ def main():
     except Exception: pass
     idle = state.get('idle', 0) + 1 if not events else 0
     memo = kimi_work(events) if events else ''
+    if events and not memo:  # 修VOICE-MUTE-01: LLM空回→模板判词, 声道常通(lvlu方)
+        memo = '(模板判词·LLM空回) 候件%d件: %s' % (len(events), '; '.join(e['ref'] for e in events[:6]))
     receipt = {'v': 'VINF-TOWER-01', 'ts': ts, 'idle_in': state.get('idle', 0),
                'events': events, 'verdict_memo': memo[:2000]}
     # receipts 落账
@@ -112,7 +119,7 @@ def main():
     put_file('receipts/tower/QT-%s.json' % ts, json.dumps(receipt, ensure_ascii=False, indent=1),
              sha, f'[skip ci] CFTS-TOWER beat {ts}')
     new_state = {'ts': ts, 'idle': idle, 'events': len(events),
-                 'cascade': ''}
+                 'cascade': '', 'seen': NEWSEEN}
     # 自级联: 候件非空且idle未熔 → 拍内冷却后自POST dispatch
     payload = os.environ.get('CASCADE_PAYLOAD', '')
     selftest = os.environ.get('SELFTEST', '0') == '1'
