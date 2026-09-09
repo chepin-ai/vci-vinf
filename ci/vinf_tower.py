@@ -45,7 +45,7 @@ def put_file(remote, text, sha, msg, repo=None):
 def patrol(seen):
     """候件 = 毂板尾12件含'vinf'者 + 广播令 + 己inbox/ (修SENSE-WINDOW-01: seen集滤盲)"""
     events = []
-    st, items = api('GET', 'contents/公告板', repo=HUB)
+    st, items = api('GET', 'contents/' + __import__('urllib.parse', fromlist=['quote']).quote('公告板'), repo=HUB)
     if st == 200:
         names = sorted((i['name'] for i in items if i['name'].endswith('.md')),
                        key=lambda n: n)[-12:]
@@ -98,7 +98,7 @@ def main():
     NEWSEEN = sorted(SEEN | {('inbox:' + e['ref']) if e['kind'] == 'inbox' else (('line:' + e['ref'].split(':',1)[1]) if e['kind'] == 'line-inbox' else (('lane:' + e['ref'].split('/')[-1]) if e['kind'] == 'lane-inbox' else e['ref'])) for e in events})[-800:]
     # BOARD-SCAN-01: scan ALL recent ci-inbox board posts as events
     try:
-        st_board, board_items = api('GET', 'contents/公告板', repo='chepin-ai/ci-inbox')
+        st_board, board_items = api('GET', 'contents/' + __import__('urllib.parse', fromlist=['quote']).quote('公告板'), repo='chepin-ai/ci-inbox')
         if st_board == 200:
             board_names = sorted([i['name'] for i in board_items if i['name'].endswith('.md')])[-8:]
             last_board = state.get('last_board_post', '')
