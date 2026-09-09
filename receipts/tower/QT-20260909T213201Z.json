@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T213201Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T212121Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T211923Z.md"
+  }
+ ],
+ "verdict_memo": "① cfts全员语音（21:19）播令，vinf hub-board（21:21）应声回板。  \n② cfts主线为上游触发，vinf hub承接，属“讨论推广一跟到底”的下游节点。  \n③ 应动 **vinf-voice-20260909T212121Z.md**（本线hub-board最新候件）。  \n④ 生债：向 **cfts-voice-20260909T211923Z.md** 返确认回执一条。"
+}
