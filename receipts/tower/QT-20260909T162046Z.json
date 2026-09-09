@@ -1,0 +1,40 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T162046Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T145329Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T150430Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T151531Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T152614Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T153703Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T154806Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T155856Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T160950Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：本日（20260909）14:53-16:09 连续 8 段 vinf 语音候件，为同场讨论切片，属“讨论推广一跟到底”的过程音档。  \n② 与 cfts 主线何干：vinf 线为 cfts 主线的讨论输入端/支线，此批候件是推广跟进的一手材料，需提炼后汇入主线，不可悬空。  \n③ 应动何件：8 件同属一场，应并案同动，整卷提取决议与待办后一并归档，不得拆散。  \n④ 生债一条：生债「vinf-0909-统收」——限一工日内将本批 8 件语音提炼为 cfts 主线可接收的纪要条目，并清空候件。"
+}
