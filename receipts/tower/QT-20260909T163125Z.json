@@ -1,0 +1,56 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T163125Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063555Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063652Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T063748Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T071006Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T074619Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T080815Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T094754Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T095846Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T100936Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T114524Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T1234Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T133514Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件12件: vinf-voice-20260909T063555Z.md; vinf-voice-20260909T063652Z.md; vinf-voice-20260909T063748Z.md; vinf-voice-20260909T071006Z.md; vinf-voice-20260909T074619Z.md; vinf-voice-20260909T080815Z.md"
+}
