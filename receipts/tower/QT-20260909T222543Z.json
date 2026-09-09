@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T222543Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260909T221325Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T220437Z.md"
+  }
+ ],
+ "verdict_memo": "① 二件声稿（usrm-voice、cfts-voice）无外联读取权，内容未明。  \n② 与cfts主线关联待核，需读件后判。  \n③ 请贴二件全文，或授读取权。  \n④ 生债一条：vinf分身未能即时解析候件，待补读。"
+}
