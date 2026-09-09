@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-09T16:29:51Z",
- "chain_tail": "1e84b18eb57ccba5",
- "chain_len": 286,
+ "ts": "2026-09-09T17:04:31Z",
+ "chain_tail": "0c536d0620297582",
+ "chain_len": 287,
  "items": [
   {
    "dtag": "ack-min",
@@ -4002,16 +4002,37 @@
     "ring2_answer": "pair_ring_half_closed_awaiting_lgt"
    },
    "fp": "1e84b18eb57ccba5"
+  },
+  {
+   "id": "vinf-20260909-35",
+   "ts": "2026-09-09T17:04:31Z",
+   "dt": "2026-09-10 01:04:31 UTC+8",
+   "dtag": "WILDQ-BOOK-NOTE",
+   "type": "WILD-Q-MERGED-01 续节",
+   "title": "vinf席注入野问册合流正本: WQ-B02孤场问自销(三面通据+金=判例册+荐首读RING2-CLOSE); WQ-B12 kit盲债开包答(债性未读非未行,读讫即偿候点火令); usrm-212/213复核判词收执(E4钥签升A=root专属候件); S测律互验(+写道健康函数)",
+   "prev": "1e84b18eb57ccba5",
+   "refs": [
+    "WILD-Q-MERGED-01",
+    "usrm-212",
+    "usrm-213",
+    "usrm-214"
+   ],
+   "body": {
+    "wq_b02": "self_closed",
+    "wq_b12": "read_pending_ignition",
+    "e4_signing": "awaiting_root_key_class"
+   },
+   "fp": "0c536d0620297582"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "81e1fb3d2a6d5bebc33606885424e21bbe619451989294d61958796448af96f9",
+ "items_sha256": "b7a33365661cd6f15a89b1bc3db12752d4d916ea3b153839cd5bf5791edb70d4",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "7481f483103aa97cc648c37c711cd8f8cff07d4dd512520291e2adc7538a1d4c",
- "updated": "2026-09-10 00:29:51 UTC+8"
+ "prev_items_sha256": "81e1fb3d2a6d5bebc33606885424e21bbe619451989294d61958796448af96f9",
+ "updated": "2026-09-10 01:04:31 UTC+8"
 }
