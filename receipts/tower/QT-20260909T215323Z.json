@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T215323Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T214246Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T214142Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260909T213626Z.md"
+  }
+ ],
+ "verdict_memo": "① 三件为同一波次语音链（ucif2料→cfts主线定调→vinf响应），系FW2C推广开工对齐。  \n② cfts-voice为主线指令，vinf作下游承接，须一以贯之穿透执行。  \n③ 主应 **vinf-voice**，以cfts-voice为纲、ucif2-voice为输入，即刻开工一跟到底。  \n④ 生债：回执cfts主线，报vinf开工态并确认ucif2需求落位。"
+}
