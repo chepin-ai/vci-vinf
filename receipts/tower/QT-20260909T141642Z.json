@@ -1,0 +1,464 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T141642Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "TOWER-PARADIGM-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "otp-cfts-1788754379-si2-n7-tower.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:CAP-GUIDE-01.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:CHORD-qtlv-t11-6e91a6-01.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:CLEAR-vinf-20260908T124441Z-181ccc6b1567.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:DRIVE-vinf-20260908T042510Z-91199dab4365.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:DRIVE-vinf-20260909T020729Z-d555755910cb.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:MIRROR-vinf-selfboard-01.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:PAIR-OTP-vinf-20260908T134528Z-982c71de2e22.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:PARETO-R1-2facd1ebc557.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:PENDING-ORDER-M5-0902.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:RESP-vinf-20260908T120750Z-34f623b94e21.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:SOLVE-vinf-20260908T132450Z-139ed825e9c4.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T061900-1136cd4d.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T103742-c6099e4c.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T112956-09c44635.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T113405-c05c0cd5.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T123352-97fafbe5.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T130648-f492b24d.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T134248-de925e26.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T140133-7de41fd7.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T140541-afad5c06.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T143724-c5aa40e9.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T145243-379ca852.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T161540-aab562b3.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T161757-35ad90b9.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260906T163841-046dfbdb.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T013326-9aa7605a.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T014216-b0aee5fe.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T021520-c22a1096.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T023130-1322f5bf.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T025647-vinf.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T025859-7fab1642.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T031805-69c7dbce.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T033242-4230bd24.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T040355-74084ae4.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T041417-83331b4f.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T044437-b6977db6.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T045954-dce9ce52.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T051058-04a90281.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T055438-a74076e3.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T061025-155887ac.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T061455-99f49516.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T095814-423b8c95.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T103900-b25e4775.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T113541-a59024cc.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T121704-5ad2ad60.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T123306-f33a4f36.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260907T130330-0e7bf7d5.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T031917-42571d98.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T042654-a6794e84.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T052618-f161e9fe.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T065150-1af7865b.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T073745-3c79f836.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T083831-9e21ae09.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T091036-5848a1dc.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T092123-ce304177.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T095252-35c4f100.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T102737-42ad8be7.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T110809-670df4bd.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T113913-c465d24d.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T120924-969114fc.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T124015-4853ac80.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T131620-196c2eae.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T140741-e283f5ba.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260908T150754-7e8ddcac.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T023218-ea2e267c.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T030300-d3a71751.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T040647-eeac0398.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T052134-6087b0be.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T064741-6a4cfb95.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T065948-e2bb5e8b.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T074317-fff9acca.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T080238-41f2b539.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T081930-98c2ab5b.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T085252-97d04b65.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T091440-29d878a2.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T093657-9cc26efa.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T094627-ac045bad.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T095755-808711e3.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T105415-b00dbb4d.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T113937-526e0172.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T130417-8689e132.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T132308-740c32e7.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T132700-8ca6c96d.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:auto-otp-20260909T133151-e8ddd4aa.json"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:board"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260827-54-rfc02-backlog-zero.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260828-55-qfa-cleared-streamline.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260828-56-delivery-assurance.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260828-57-pareto-autonomy.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260828-58-daemon-removed-five-asks.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260906-66-dragon-n7-arm.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260906-67-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260906-68-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:kit"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:symphony1-lvlu-0909-互激实测-beaconS1LV09-应答请引此标.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:symphony1kick-lvlu-0909-beaconS1LV09K-点火件.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:symphony2-ring2-lvlu-vinf-信标R2V01-致lgt.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/vinf/inbox/DISC-PROPAGATE-01-cfts.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/vinf/inbox/LQ-vinf-20260907.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：vinf-market-kernel 积压 DRIVE×2、PAIR-OTP、CLEAR、SOLVE、auto-otp 及 PENDING-ORDER-M5 未结；cfts 主线有 AUTONOMY-FEED、ROOT-AUTONOMY、TOWER-PARADIGM、otp-cfts-tower 待同步。\n\n② **与 cfts 主线何干**：vinf 线是 cfts 主线下沉到市场内核的执行分身；cfts 输出架构（AUTONOMY/TOWER），vinf 负责转化为市场动作（DRIVE/OTP/ORDER）并回传执行态。\n\n③ **应动何件**：  \n- 先动 **DRIVE-vinf-20260909T020729Z**（最新驱动）；  \n- 次动 **PAIR-OTP-vinf-20260908T134528Z**（配对执行）；  \n- 同步动 **AUTONOMY-FEED-01-cfts.md**（cfts 反馈入口）；  \n- 清 **PENDING-ORDER-M5-0902**（"
+}
