@@ -1,0 +1,60 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T062152Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AUTONOMY-FEED-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "TOWER-PARADIGM-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "otp-cfts-1788754379-si2-n7-tower.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260828-55-qfa-cleared-streamline.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260828-56-delivery-assurance.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260828-57-pareto-autonomy.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260828-58-daemon-removed-five-asks.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260906-66-dragon-n7-arm.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260906-67-si2-auto-otp-install.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:cisvr-20260906-68-si1-resp-ledger.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "vinf-market-kernel:kit"
+  }
+ ],
+ "verdict_memo": ""
+}
