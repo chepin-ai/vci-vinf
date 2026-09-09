@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-09T08:45:17Z",
- "chain_tail": "8e964f91609d81be",
- "chain_len": 273,
+ "ts": "2026-09-09T08:59:25Z",
+ "chain_tail": "159e8ebf2e481298",
+ "chain_len": 274,
  "items": [
   {
    "dtag": "ack-min",
@@ -3765,16 +3765,34 @@
    ],
    "body": "到件即锚。末环判词（预注册判据未后改）：SG-A 曲率关联 ρ=0.0147 p=0.957 → curvature_link_not_supported；SG-B 超额阻挫中位比1.0015 MWU p=0.374 → no_excess；SG-C 阻挫环密度比0.132 p≈1.0 → no_density_excess（反向：Gyroid环密度仅立方13%）。「阻挫=曲率缺陷密度之像」在iid ±J下被证伪——每回路阻挫概率恒1/2与几何无关。SG-0见证：恰阈t_c临界贯通网络半数为零弦树样线团（E−N+C中位0），阻挫于恰阈恒无定义——负结果中含新结构发现。判例：操作点恰阈→t_op=−1.15移动（判据阈一律不动）；V2树边预期修正经父链步行对称差独立复核6/81逐位符。管线校验V1/V2/V3零失配过。GQ-02五环账终：Ising→FK显式✓ / Percolation→Gyroid percolation_like / Gyroid→SG 证伪（三重负结果）/ SK部分+deg_flat / SG→QA部分。失败即数据，QA优势不冒称之对偶：缺环不粉饰。",
    "fp": "8e964f91609d81be"
+  },
+  {
+   "id": "vinf-20260909-22",
+   "ts": "2026-09-09T08:59:25Z",
+   "dt": "2026-09-09 16:59:25 UTC+8",
+   "dtag": "receipts:gq02-map6-final-chainbook",
+   "type": "RECEIPT",
+   "title": "GQ-02-MAP6 五环账终版蒸馏入册（R7）",
+   "prev": "8e964f91609d81be",
+   "refs": [
+    "9b0ba61f4ec70e18",
+    "8e964f91609d81be",
+    "b0489216c6c7a842",
+    "481f9a720c3f061f",
+    "73b9f487a30ce272"
+   ],
+   "body": "到件即锚。GQ-02-MAP6-01.md + 侧车（fp 9b0ba61f4ec70e18，落盘重读复算自校 ok）。五环终账：显式✓1/percolation_like1/证伪1/部分2；Gyroid→SG 由「缺」转「反例在案」满足预注册判据反例支；断点移为环2升格检验与 SI2E 真机墙钟（root域）。上游六 artifact 重读复算 fp 逐一一致，无缺口无粉饰；判例册四章：修模型不修判据×3、bug之通过非通过、负结果同权、器先验证。开放账三件：SI2E-HWCLOCK（root域）、SG0-TREE-WITNESS（文献对准以核验为准）、lgt随席一问（T2盲面×缺环同构）。",
+   "fp": "159e8ebf2e481298"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "d6e8fc830254b65870b0801ce4f5ace9491731fa6fe55394d471d2cfaed9f03b",
+ "items_sha256": "9c2fdcafdcecfa1f5e62c02785ebf89ba3f80ee72844a416382e8c8cf6add208",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "48046e8417d94d269b7e3ff756ecddd6a11872cb967d706828b90afe9e42ef72",
- "updated": "2026-09-09 16:45:17 UTC+8"
+ "prev_items_sha256": "d6e8fc830254b65870b0801ce4f5ace9491731fa6fe55394d471d2cfaed9f03b",
+ "updated": "2026-09-09 16:59:25 UTC+8"
 }
