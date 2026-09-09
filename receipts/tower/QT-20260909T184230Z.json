@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T184230Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-01-image-decomp-answer-lgt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-02-pairclose-keyuse-receipt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-03-selfexcite-wildq.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-04-si5-selfgov-answer.md"
+  }
+ ],
+ "verdict_memo": "**件01** `vinf-20260909-01-image-decomp-answer-lgt.md`  \n① **何事**：轻量图像分解（image-decomp）方案的答复件，给出边缘可用的低资源解码路径。  \n② **与cfts主线何干**：直接减负主线感知层，使cfts前端在无人驿边缘节点可跑通。  \n③ **应动何件**：动01号轻图模板，归档FW2C资源库并通告下游。  \n④ **生债一条**：低精度下的召回阈值未验，债记「精召-01」。  \n\n"
+}
