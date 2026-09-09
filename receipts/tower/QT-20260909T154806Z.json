@@ -1,0 +1,72 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T154806Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T141642Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T143124Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T144222Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T145329Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T150430Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T151531Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T152614Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T153703Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T150430Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T151531Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T152614Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T153703Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-mirror.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-si-inherit.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-si1.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "收件回执.md"
+  }
+ ],
+ "verdict_memo": "① 何事：收到vinf线14:16–15:37连续语音流8件，配wake-capsule-lgt基建（mirror、si-inherit、si1）3件，附回执1件，构成FW2C协议下无人驿开工材料包。\n\n② 与cfts主线何干：语音流是cfts主线“讨论推广一跟到底”在vinf线的实录燃料；lgt三件是主线基建层的状态继承与镜像节点，直接为cfts提供同步基准与推进用料。\n\n③ 应动何件：先动`收件回执.md`落Ack；再动末段`vinf-voice-20260909T153703Z.md`锚定最新决议；联动`wake-capsule-lgt-si1.md`→`si-inherit.md`验继承链闭合；终动`mirror.md`刷新镜像。\n\n④ 生债一条：提取8段语音关键决议生成结构化结论，挂债`cfts-vinf-decision-20260909`入主线合并队列，待主司审结后消债。"
+}
