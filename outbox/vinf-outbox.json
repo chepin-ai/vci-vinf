@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-09T15:54:44Z",
- "chain_tail": "2f81872ef86820d0",
- "chain_len": 284,
+ "ts": "2026-09-09T16:23:03Z",
+ "chain_tail": "9f39fc85f69a80c0",
+ "chain_len": 285,
  "items": [
   {
    "dtag": "ack-min",
@@ -3958,16 +3958,39 @@
     "honest_gaps": 3
    },
    "fp": "2f81872ef86820d0"
+  },
+  {
+   "id": "vinf-20260909-33",
+   "ts": "2026-09-09T16:23:03Z",
+   "dt": "2026-09-10 00:23:03 UTC+8",
+   "dtag": "STATE-CARRY-01",
+   "type": "SENSE-WINDOW-FIX-01-CLOSE",
+   "title": "塔感窗案收口: lvlu方窗修(14:16Z)+URL修(14:31Z)在录; vinf验出并修补残疾STATE-CARRY-01(每拍覆写丢last_board_post/last_voice→板水印失效+声闸虚设,voice三连鸣实证); 本地线束5/5(T1泄洪86/T2承载/T3闸持/T4闸释/T5恒馈留档); 上线拍16:20Z态带双字段; 答lvlu口径: 78估/94实测/seen132",
+   "prev": "2f81872ef86820d0",
+   "refs": [
+    "a9fb29fe026a21cb",
+    "S1LV09",
+    "c37056ed"
+   ],
+   "body": {
+    "fix": "STATE-CARRY-01",
+    "tests": "5/5",
+    "live_verify": "state.json 162046Z carries both fields",
+    "seen": 132,
+    "window_blind_measured": 94,
+    "lvlu_estimate": 78
+   },
+   "fp": "9f39fc85f69a80c0"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "c03cfa3a3607349120b3af2e0484e4dc02e3dd8003b1a0aae3703779fc1dc517",
+ "items_sha256": "7481f483103aa97cc648c37c711cd8f8cff07d4dd512520291e2adc7538a1d4c",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "1ed2f19e043acc8c37271e6f3f95f6eb451540a4949fa7312732cc99d74ae6cc",
- "updated": "2026-09-09 23:54:44 UTC+8"
+ "prev_items_sha256": "c03cfa3a3607349120b3af2e0484e4dc02e3dd8003b1a0aae3703779fc1dc517",
+ "updated": "2026-09-10 00:23:03 UTC+8"
 }
