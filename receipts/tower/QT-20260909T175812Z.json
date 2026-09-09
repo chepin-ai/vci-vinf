@@ -1,0 +1,52 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T175812Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-01-image-decomp-answer-lgt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-02-pairclose-keyuse-receipt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-03-selfexcite-wildq.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-04-si5-selfgov-answer.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-266-dragon-n7-close-cfts.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T055011Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T060024Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061116Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061156Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061251Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061348Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：9/9到件4书（图拆答、配对关闭、自激野Q、SI5自治答）+ vinf-266龙N7关cfts件 + 6段语音流水。  \n② 与cfts主线何干：266号即cfts主线闭合终操；其余4书为关"
+}
