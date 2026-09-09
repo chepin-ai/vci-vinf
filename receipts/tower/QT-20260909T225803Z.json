@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T225803Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T224721Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T223834Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：vinf-hub夜语音板与cfts全局夜语音板两件到件。  \n② 与cfts主线何干：cfts-voice为主线源件，vinf-voice为hub接应件，主线意志分轨下传。  \n③ 应动何件：先应cfts-voice主线件，后落vinf-hub同步执行。  \n④ 生债一条：生“无人驿开工分身接棒确认”债一条，待主司消账。"
+}
