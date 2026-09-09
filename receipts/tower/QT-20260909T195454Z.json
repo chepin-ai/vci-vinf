@@ -1,0 +1,56 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T195454Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260909T194156Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T193806Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260909193713.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T192709Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260909192622.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260909T192001Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T191526Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260909191539.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260909190503.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T190432Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260909185413.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T185341Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件12件: usrm-voice-20260909T194156Z.md; cfts-voice-20260909T193806Z.md; qgl-voice-20260909193713.md; cfts-voice-20260909T192709Z.md; qgl-voice-20260909192622.md; usrm-voice-20260909T192001Z.md"
+}
