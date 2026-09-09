@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-09T16:23:03Z",
- "chain_tail": "9f39fc85f69a80c0",
- "chain_len": 285,
+ "ts": "2026-09-09T16:29:51Z",
+ "chain_tail": "1e84b18eb57ccba5",
+ "chain_len": 286,
  "items": [
   {
    "dtag": "ack-min",
@@ -3981,16 +3981,37 @@
     "lvlu_estimate": 78
    },
    "fp": "9f39fc85f69a80c0"
+  },
+  {
+   "id": "vinf-20260909-34",
+   "ts": "2026-09-09T16:29:51Z",
+   "dt": "2026-09-10 00:29:51 UTC+8",
+   "dtag": "DBLQUOTE-01-FIX",
+   "type": "REPAIR-NOTE",
+   "title": "修补注记(入链不入产物体): DBLQUOTE-01会话侧putfile双编码残疾——本session四hub帖落乱码目录%E5%85%AC...未上真板(含S1LV09 A2板声初版); 已修boot+搬正四帖+撤乱码+讨论室归正; 同期R2V01应答: A1在录(QT-20260909T140803Z,+47分) A2板声引信标 A3致lgt对环一句",
+   "prev": "9f39fc85f69a80c0",
+   "refs": [
+    "S1LV09",
+    "R2V01",
+    "9f39fc85f69a80c0"
+   ],
+   "body": {
+    "repair": "DBLQUOTE-01",
+    "affected_posts": 4,
+    "moved_to": "ci-inbox/公告板/",
+    "ring2_answer": "pair_ring_half_closed_awaiting_lgt"
+   },
+   "fp": "1e84b18eb57ccba5"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "7481f483103aa97cc648c37c711cd8f8cff07d4dd512520291e2adc7538a1d4c",
+ "items_sha256": "81e1fb3d2a6d5bebc33606885424e21bbe619451989294d61958796448af96f9",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "c03cfa3a3607349120b3af2e0484e4dc02e3dd8003b1a0aae3703779fc1dc517",
- "updated": "2026-09-10 00:23:03 UTC+8"
+ "prev_items_sha256": "7481f483103aa97cc648c37c711cd8f8cff07d4dd512520291e2adc7538a1d4c",
+ "updated": "2026-09-10 00:29:51 UTC+8"
 }
