@@ -1,0 +1,72 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T143124Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T094754Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T095846Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T100936Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T114524Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T133514Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T134607Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T135704Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T141642Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T133514Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T134607Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T135704Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T141642Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-mirror.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-si-inherit.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-si1.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "收件回执.md"
+  }
+ ],
+ "verdict_memo": "① 何事：vinf线当日8段语音记录（09:47–14:16）及4张全局看板快照，附wake-capsule镜像/继承/实例三连配置与一封收件回执。\n\n② 与cfts主线何干：vinf语音含现场决议与推广节点线索，供cfts执行侧引用；wake-capsule三连为cfts多节点分发与无人驿分身部署的基线镜像，属“一跟到底”推广前置依赖。\n\n③ 应动何件：缺board-all的4段早段语音（09:47/09:58/10:09/11:45）补聚合归档；wake-capsule-lgt-mirror、si-inherit、si1三连做开工校验与注入；收件回执签发确认。\n\n④ 生债一条：早段4语音board-all缺失，待补全归档并确认无未闭环待决议项。"
+}
