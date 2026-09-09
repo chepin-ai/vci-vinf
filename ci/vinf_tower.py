@@ -120,6 +120,10 @@ def main():
              sha, f'[skip ci] CFTS-TOWER beat {ts}')
     new_state = {'ts': ts, 'idle': idle, 'events': len(events),
                  'cascade': '', 'seen': NEWSEEN}
+    # 修STATE-CARRY-01: 承载 last_board_post/last_voice 入 new_state——
+    # 否则每拍覆写丢失: board-all 水印失效恒复燃 + VOICE-THROTTLE-01 30min闸形同虚设(voice 每拍鸣)
+    for _k in ('last_board_post', 'last_voice'):
+        if _k in state: new_state[_k] = state[_k]
     # 自级联: 候件非空且idle未熔 → 拍内冷却后自POST dispatch
     payload = os.environ.get('CASCADE_PAYLOAD', '')
     selftest = os.environ.get('SELFTEST', '0') == '1'
