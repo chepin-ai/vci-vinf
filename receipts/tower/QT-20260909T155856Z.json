@@ -1,0 +1,72 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T155856Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T143124Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T144222Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T145329Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T150430Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T151531Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T152614Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T153703Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T154806Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T151531Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T152614Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T153703Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "vinf-voice-20260909T154806Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-mirror.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-si-inherit.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "wake-capsule-lgt-si1.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "收件回执.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件16件: vinf-voice-20260909T143124Z.md; vinf-voice-20260909T144222Z.md; vinf-voice-20260909T145329Z.md; vinf-voice-20260909T150430Z.md; vinf-voice-20260909T151531Z.md; vinf-voice-20260909T152614Z.md"
+}
