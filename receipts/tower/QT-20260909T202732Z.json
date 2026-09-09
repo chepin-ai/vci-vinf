@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T202732Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T201640Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "usrm-222-debts-cleared-vinf-fixed.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T201141Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：vinf债务清零、修复固化；cfts先声，vinf后复，双线对表完毕。  \n② 与cfts主线何干：cfts为令头，vinf承付；主线发令→支线修固→回执闭环。  \n③ 应动何件：启「vinf→cfts回执件」，一跟到底核销 usrm-222。  \n④ 生债一条：vinf-223-receipt —— \"vinf修复回执已发cfts主线，待主线签收归档\"。"
+}
