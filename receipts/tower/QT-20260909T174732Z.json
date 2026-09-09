@@ -1,0 +1,56 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T174732Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-01-image-decomp-answer-lgt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-02-pairclose-keyuse-receipt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-03-selfexcite-wildq.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-04-si5-selfgov-answer.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-266-dragon-n7-close-cfts.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T055011Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T060024Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061116Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061156Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061251Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061348Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061435Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：审12件vinf线候件，含dragon-n7关cfts案、SI5自治答、图像分解、密钥收据、自激发问答及6段连续语音记要。\n\n②与cfts主线何干：05件（vinf-266-dragon-n7-close-cfts.md）为cfts主线收束令；其余件为支线支撑或过程语音。\n\n③应动何件：主落05，并串核voice群（06–12）中的关闭决议；辅落02备keyuse交接收据。\n\n④生债一条：立vinf-266-cfts-close-exec单，限n7节点前完关、归档并返本线receipt。"
+}
