@@ -1,0 +1,28 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T183142Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-01-image-decomp-answer-lgt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-02-pairclose-keyuse-receipt.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-03-selfexcite-wildq.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-04-si5-selfgov-answer.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-266-dragon-n7-close-cfts.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：五件 hub-board 候批——图分解答（01）、配对关钥收执（02）、自激野问（03）、SI5 自 gov 答（04）、Dragon-N7 收 CFTS（266）。\n\n② **与 cfts 主线何干**：266 乃 CFTS 主线 Dragon-N7 段关闸收束件；01–04 为并线前置清理与自治答复，撑线不占主道。\n\n③ **应动何件**：先动 **266** 主线关闸，带 **02**（pairclose keyuse receipt 作关闸凭据）；01、04 并线同步消化；03 挂观。\n\n④ **生债一条**：无人驿开工分身已起，留债——分身运行态与 CFTS 266 闸口终态须 **一跟到底** 回传主司，缺一帧即补。"
+}
