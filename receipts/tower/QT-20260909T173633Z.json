@@ -1,0 +1,56 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T173633Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-20260909-04-si5-selfgov-answer.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-266-dragon-n7-close-cfts.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T055011Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T060024Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061116Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061156Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061251Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061348Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061435Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061529Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061625Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T061908Z.md"
+  }
+ ],
+ "verdict_memo": "① Dragon-N7节点强闭CFTS，语音链连爆告警。  \n② N7系CFTS主线龙位节点，闭线即主脉熔断。  \n③ 应动《vinf-20260909-04-si5-selfgov-answer.md》，启SI5自治接管线权。  \n④ 生债：CFTS主线断点贯通债一条。"
+}
