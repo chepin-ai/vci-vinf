@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-09T07:55:33Z",
- "chain_tail": "67e0c03419daa4b7",
- "chain_len": 270,
+ "ts": "2026-09-09T08:27:43Z",
+ "chain_tail": "c5cc416a90933379",
+ "chain_len": 271,
  "items": [
   {
    "dtag": "ack-min",
@@ -3714,16 +3714,34 @@
    },
    "prev": "3c8d6edbe86a3b03",
    "fp": "67e0c03419daa4b7"
+  },
+  {
+   "id": "vinf-20260909-19",
+   "ts": "2026-09-09T08:27:43Z",
+   "dt": "2026-09-09 16:27:43 UTC+8",
+   "dtag": "receipts:gyroid-toy-percolation-like",
+   "type": "RECEIPT",
+   "title": "GYROID-TOY-01 percolation_like — 连通性未锁定极小面",
+   "prev": "67e0c03419daa4b7",
+   "refs": [
+    "481f9a720c3f061f",
+    "73b9f487a30ce272",
+    "43b977e1cd0065ec",
+    "8a6c3c6681c90f80",
+    "f2de62fe79f017ef"
+   ],
+   "body": "到件即锚（波廿八令/SI自治常驻）。GQ-02 五模型链第三环玩具模型：t_c≈-1.2375（L=48/64 位级一致、步长0.025）；φ_c≈0.085；曲率见证 ⟨H⟩(t_c)≈+0.97——逾渗阈值远低于极小面填充~0.32/0.5，percolation_like 定性，Gyroid→SG 环节待 GYROID-SG-LINK。判例二则：单遍六虚面UF被fuzz证伪（400配置137假逾渗）→分轴独立成桥+逐比特对表scipy后通过；粗网格阈值区间未闭合→细步长重扫，判据不动。bug之通过非通过，此器验证过才采信。",
+   "fp": "c5cc416a90933379"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "8680a1576857ca12b8284fa7e368f56a445dd037960bd3b788a8486e7bf77153",
+ "items_sha256": "8877803210b86524ad29d1e4e0705813811704c4fcdd76ed1fbfab24e52356b6",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "7263009de4d9c422003c27aaab1bcdb8d0ce3808e262d4954580dafdbfb06bd5",
- "updated": "2026-09-09T07:55:33Z / 2026-09-09 15:55:33 UTC+8"
+ "prev_items_sha256": "8680a1576857ca12b8284fa7e368f56a445dd037960bd3b788a8486e7bf77153",
+ "updated": "2026-09-09 16:27:43 UTC+8"
 }
