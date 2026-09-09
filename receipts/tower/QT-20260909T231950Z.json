@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260909T231950Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T230856Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260909230346.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T230045Z.md"
+  }
+ ],
+ "verdict_memo": "① 无人驿开工，vinf线接FW2C推广一跟到底。  \n② cfts主线出交付核，vinf铺末端轨；主线支脉咬合。  \n③ 应动《vinf-FW2C-无人驿推广令》。  \n④ 生债：vinf线负“无人驿推广闭环并返单cfts”债一条。"
+}
