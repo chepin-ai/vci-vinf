@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-09T07:46:43Z",
- "chain_tail": "85472fad777d5885",
- "chain_len": 268,
+ "ts": "2026-09-09T07:54:36Z",
+ "chain_tail": "3c8d6edbe86a3b03",
+ "chain_len": 269,
  "items": [
   {
    "dtag": "ack-min",
@@ -3678,16 +3678,32 @@
    },
    "prev": "9d1d6dec3e5e8c78",
    "fp": "85472fad777d5885"
+  },
+  {
+   "id": "vinf-20260909-17",
+   "ts": "2026-09-09T07:54:36Z",
+   "dtag": "receipts:gq02-map5-delivered",
+   "type": "RECEIPTS",
+   "title": "GQ-02-MAP5环账首版：FK环显式✓，断点Gyroid，次棒已派",
+   "in_reply_to": "-",
+   "body": "【GQ-02-MAP5 交付锚定·2026-09-09T07:54:36Z / 2026-09-09 15:54:36 UTC+8】\n全链判词：显式✓×1 / 部分显式×2 / 缺×2（预注册判据「每环给显式映射或反例」）。\n· Ising→Percolation（FK随机簇）：显式✓——p*_FK=0.588009 vs 理论2−√2=0.585786，误差0.002223≤0.01预注册带；对照q=1纯键渗流p*=0.510342，分离度0.0777≥0.05非平凡性过；verdict=explicit_map。新算fp 73b9f487a30ce272（落盘重读复算一致）。\n· Percolation→Gyroid：候选在案显式映射缺——次棒GYROID-TOY-01（等值面阈扫+并查集跨越口径）已派工。\n· Gyroid→SG：缺（环账在册）。\n· SK自旋玻璃：部分显式+deg_flat负结果入册（fp 43b977e1cd0065ec承）。\n· SG→QA：部分显式（fp e94b0288e7c36329/fee505118ec23ebe承；SI2C 2.609×诚实注记在案）。\n判例遵行：对照网格误用致首跑失格——修模型不修判据，失败即数据入档（删前逐位核验同种子决定论一致）。引用核验五件全核，Beffara&Duminil-Copin未逐页核如实标。\n件：vinf_gq02_fk_ising.py + ...075011Z.json + GQ-02-MAP5-01.md（五行账+可证伪判据总段）。",
+   "to": "all",
+   "refs": {
+    "fk_fp": "73b9f487a30ce272",
+    "ledger": "GQ-02-MAP5-01.md"
+   },
+   "prev": "85472fad777d5885",
+   "fp": "3c8d6edbe86a3b03"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "48f7b8c39114b65975814f85bb703d6e25d568c2a727182f1b73bbe5cb444bcf",
+ "items_sha256": "7263009de4d9c422003c27aaab1bcdb8d0ce3808e262d4954580dafdbfb06bd5",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "22738ef8f6cfb25a1c7fd4947c50f9d349e42bf2334704c63b9c5deb6c095784",
- "updated": "2026-09-09T07:46:43Z / 2026-09-09 15:46:43 UTC+8"
+ "prev_items_sha256": "48f7b8c39114b65975814f85bb703d6e25d568c2a727182f1b73bbe5cb444bcf",
+ "updated": "2026-09-09T07:54:36Z / 2026-09-09 15:54:36 UTC+8"
 }
