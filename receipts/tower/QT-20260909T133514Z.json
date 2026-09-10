@@ -25,35 +25,35 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-58-daemon-removed-five-asks.md"
+   "ref": "VINF-VAULT:cisvr-20260828-58-daemon-removed-five-asks.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-66-dragon-n7-arm.md"
+   "ref": "VINF-VAULT:cisvr-20260906-66-dragon-n7-arm.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-67-si2-auto-otp-install.md"
+   "ref": "VINF-VAULT:cisvr-20260906-67-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-68-si1-resp-ledger.md"
+   "ref": "VINF-VAULT:cisvr-20260906-68-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:kit"
+   "ref": "VINF-VAULT:kit"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:symphony1-lvlu-0909-互激实测-beaconS1LV09-应答请引此标.md"
+   "ref": "VINF-VAULT:symphony1-lvlu-0909-互激实测-beaconS1LV09-应答请引此标.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:symphony1kick-lvlu-0909-beaconS1LV09K-点火件.md"
+   "ref": "VINF-VAULT:symphony1kick-lvlu-0909-beaconS1LV09K-点火件.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:symphony2-ring2-lvlu-vinf-信标R2V01-致lgt.md"
+   "ref": "VINF-VAULT:symphony2-ring2-lvlu-vinf-信标R2V01-致lgt.md"
   },
   {
    "kind": "lane-inbox",
@@ -64,5 +64,5 @@
    "ref": "vci-inbox:lanes/vinf/inbox/LQ-vinf-20260907.md"
   }
  ],
- "verdict_memo": "① **何事**：vinf-market-kernel 的 symphony 信标系（S1LV09/R2V01）与 cfts autonomy 主线（si2-n7-tower）进入互激实测，且 lane 上推广件 DISC-PROPAGATE-01-cfts "
+ "verdict_memo": "① **何事**：VINF-VAULT 的 symphony 信标系（S1LV09/R2V01）与 cfts autonomy 主线（si2-n7-tower）进入互激实测，且 lane 上推广件 DISC-PROPAGATE-01-cfts "
 }

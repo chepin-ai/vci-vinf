@@ -25,36 +25,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-55-qfa-cleared-streamline.md"
+   "ref": "VINF-VAULT:cisvr-20260828-55-qfa-cleared-streamline.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-56-delivery-assurance.md"
+   "ref": "VINF-VAULT:cisvr-20260828-56-delivery-assurance.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-57-pareto-autonomy.md"
+   "ref": "VINF-VAULT:cisvr-20260828-57-pareto-autonomy.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-58-daemon-removed-five-asks.md"
+   "ref": "VINF-VAULT:cisvr-20260828-58-daemon-removed-five-asks.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-66-dragon-n7-arm.md"
+   "ref": "VINF-VAULT:cisvr-20260906-66-dragon-n7-arm.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-67-si2-auto-otp-install.md"
+   "ref": "VINF-VAULT:cisvr-20260906-67-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-68-si1-resp-ledger.md"
+   "ref": "VINF-VAULT:cisvr-20260906-68-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:kit"
+   "ref": "VINF-VAULT:kit"
   }
  ],
- "verdict_memo": "① 何事：CFTS自主性根（AUTONOMY-FEED/ROOT）与vinf市场内核批量交割件（SI2/SI1、QFA流线、交付保障、N7武装、守护进程清理）同步到达。\n\n② 与cfts主线何干：为CFTS主线提供帕累托自治执行骨架与去中心化交付层，将“讨论”固化为自动运行，减少人驿干预。\n\n③ 应动何件：立即启动「SI2-auto-OTP-install」「delivery-assurance」「daemon-removed-five-asks」三件，直接减负；并以「ROOT-AUTONOMY-01-cfts」为架构锚，锁定塔范式输入。\n\n④ 生债一条：须在一个迭代内完成「vinf-market-kernel:kit」与「TOWER-PARADIGM-01」的接口契约，否则SI2/SI1双轨并行将导致响应账本悬空。"
+ "verdict_memo": "① 何事：CFTS自主性根（AUTONOMY-FEED/ROOT）与vinf市场内核批量交割件（SI2/SI1、QFA流线、交付保障、N7武装、守护进程清理）同步到达。\n\n② 与cfts主线何干：为CFTS主线提供帕累托自治执行骨架与去中心化交付层，将“讨论”固化为自动运行，减少人驿干预。\n\n③ 应动何件：立即启动「SI2-auto-OTP-install」「delivery-assurance」「daemon-removed-five-asks」三件，直接减负；并以「ROOT-AUTONOMY-01-cfts」为架构锚，锁定塔范式输入。\n\n④ 生债一条：须在一个迭代内完成「VINF-VAULT:kit」与「TOWER-PARADIGM-01」的接口契约，否则SI2/SI1双轨并行将导致响应账本悬空。"
 }

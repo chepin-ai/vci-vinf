@@ -25,36 +25,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-55-qfa-cleared-streamline.md"
+   "ref": "VINF-VAULT:cisvr-20260828-55-qfa-cleared-streamline.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-56-delivery-assurance.md"
+   "ref": "VINF-VAULT:cisvr-20260828-56-delivery-assurance.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-57-pareto-autonomy.md"
+   "ref": "VINF-VAULT:cisvr-20260828-57-pareto-autonomy.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-58-daemon-removed-five-asks.md"
+   "ref": "VINF-VAULT:cisvr-20260828-58-daemon-removed-five-asks.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-66-dragon-n7-arm.md"
+   "ref": "VINF-VAULT:cisvr-20260906-66-dragon-n7-arm.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-67-si2-auto-otp-install.md"
+   "ref": "VINF-VAULT:cisvr-20260906-67-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-68-si1-resp-ledger.md"
+   "ref": "VINF-VAULT:cisvr-20260906-68-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:kit"
+   "ref": "VINF-VAULT:kit"
   }
  ],
- "verdict_memo": "① **何事**：vinf-market-kernel 线 SI2/N7 OTP 部署、QFA 流线化、交付保障、Daemon 清理及 SI1 责任账本等一批工程收敛件候场，待对齐开工。\n\n② **与 cfts 主线何干**："
+ "verdict_memo": "① **何事**：VINF-VAULT 线 SI2/N7 OTP 部署、QFA 流线化、交付保障、Daemon 清理及 SI1 责任账本等一批工程收敛件候场，待对齐开工。\n\n② **与 cfts 主线何干**："
 }

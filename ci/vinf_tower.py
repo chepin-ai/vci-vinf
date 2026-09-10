@@ -74,7 +74,7 @@ def patrol(seen):
     if st == 200 and isinstance(items, list):
         for i in items:  # 修SENSE-WINDOW-01: 78件auto-otp积压自此可泄
             if i['name'] != '.gitkeep' and ('line:' + i['name']) not in seen:
-                events.append({'kind': 'line-inbox', 'ref': 'vinf-market-kernel:' + i['name']})
+                events.append({'kind': 'line-inbox', 'ref': 'VINF-VAULT:' + i['name']})
     # TOWER-ADOPT: 兼感联邦lane(vci-inbox lanes/vinf/inbox)——LQ/DISC-PROPAGATE类件道
     st, items = api('GET', 'contents/lanes/vinf/inbox', repo='chepin-ai/vci-inbox')
     if st == 200 and isinstance(items, list):

@@ -5,35 +5,35 @@
  "events": [
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-55-qfa-cleared-streamline.md"
+   "ref": "VINF-VAULT:cisvr-20260828-55-qfa-cleared-streamline.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-56-delivery-assurance.md"
+   "ref": "VINF-VAULT:cisvr-20260828-56-delivery-assurance.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-57-pareto-autonomy.md"
+   "ref": "VINF-VAULT:cisvr-20260828-57-pareto-autonomy.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-58-daemon-removed-five-asks.md"
+   "ref": "VINF-VAULT:cisvr-20260828-58-daemon-removed-five-asks.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-66-dragon-n7-arm.md"
+   "ref": "VINF-VAULT:cisvr-20260906-66-dragon-n7-arm.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-67-si2-auto-otp-install.md"
+   "ref": "VINF-VAULT:cisvr-20260906-67-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-68-si1-resp-ledger.md"
+   "ref": "VINF-VAULT:cisvr-20260906-68-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:kit"
+   "ref": "VINF-VAULT:kit"
   }
  ],
  "verdict_memo": "① 何事：八件 cisvr 候件，涉 QFA 清算流线、交付保障、帕累托自治、守护进程移除五问、Dragon N7 ARM 适配、SI2 自动 OTP 安装、SI1 响应账本及 kit 基座。\n\n② 与 cfts 主线何干：皆属市场内核层“运行-交付-治理”硬支撑，缺一即卡 cfts 主线闭环。\n\n③ 应动何件：先动 58（除障）、66（架构）、68（账本），kit 同步打底；55、56、57、67 随后或并行。\n\n④ 生债一条：68（si1-resp-ledger）若不动，cfts 主线响应无据，必生“无主底账”之债。"

@@ -25,35 +25,35 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-55-qfa-cleared-streamline.md"
+   "ref": "VINF-VAULT:cisvr-20260828-55-qfa-cleared-streamline.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-56-delivery-assurance.md"
+   "ref": "VINF-VAULT:cisvr-20260828-56-delivery-assurance.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-57-pareto-autonomy.md"
+   "ref": "VINF-VAULT:cisvr-20260828-57-pareto-autonomy.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-58-daemon-removed-five-asks.md"
+   "ref": "VINF-VAULT:cisvr-20260828-58-daemon-removed-five-asks.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-66-dragon-n7-arm.md"
+   "ref": "VINF-VAULT:cisvr-20260906-66-dragon-n7-arm.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-67-si2-auto-otp-install.md"
+   "ref": "VINF-VAULT:cisvr-20260906-67-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-68-si1-resp-ledger.md"
+   "ref": "VINF-VAULT:cisvr-20260906-68-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:kit"
+   "ref": "VINF-VAULT:kit"
   }
  ],
  "verdict_memo": "① 何事：CFTS 自治主线与 vinf 市场内核在 SI2/N7/Tower/OTP 等节点的待同步候件堆，含根协议、塔范式、交付保证、流线、账本、守护清理。\n\n② 与 cfts 主线何干：cfts 供 ROOT-AUTONOMY、AUTONOMY-FEED、otp-cfts 规范；vinf 负责市场转译、落地、推广一跟到底。此堆即转译层待拆包。\n\n③ 应动何件：vinf 主拆 line-inbox 的 55/56/"

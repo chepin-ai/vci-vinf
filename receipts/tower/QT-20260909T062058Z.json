@@ -25,36 +25,36 @@
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-55-qfa-cleared-streamline.md"
+   "ref": "VINF-VAULT:cisvr-20260828-55-qfa-cleared-streamline.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-56-delivery-assurance.md"
+   "ref": "VINF-VAULT:cisvr-20260828-56-delivery-assurance.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-57-pareto-autonomy.md"
+   "ref": "VINF-VAULT:cisvr-20260828-57-pareto-autonomy.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260828-58-daemon-removed-five-asks.md"
+   "ref": "VINF-VAULT:cisvr-20260828-58-daemon-removed-five-asks.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-66-dragon-n7-arm.md"
+   "ref": "VINF-VAULT:cisvr-20260906-66-dragon-n7-arm.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-67-si2-auto-otp-install.md"
+   "ref": "VINF-VAULT:cisvr-20260906-67-si2-auto-otp-install.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:cisvr-20260906-68-si1-resp-ledger.md"
+   "ref": "VINF-VAULT:cisvr-20260906-68-si1-resp-ledger.md"
   },
   {
    "kind": "line-inbox",
-   "ref": "vinf-market-kernel:kit"
+   "ref": "VINF-VAULT:kit"
   }
  ],
- "verdict_memo": "① **何事**：vinf-market-kernel 侧关于 cfts 主线「自治化（Autonomy）+ Tower 范式」的批量候件，含根协议、OTP 流程、交付保障、daemon 清理、SI2/SI1 子系统安装与账本。\n\n② **与 cfts 主线何干**：直接承载。ROOT/FEED 为 cfts 自治根脉；otp-cfts 为 SI2/N7 层具体实施；cisvr 系列为下游交付精简与自治契约（Pareto/ledger/daemon removal）。\n\n③ **应动何件**：  \n- ROOT-AUTONOMY-01-cfts.md（定根）  \n- DISC-AUTONOMY-20260909-vinf.md（定调）  \n- otp-cfts-1788754379-si2-n7-tower.md（关键路径）  \n- cisvr-67-si2-auto-otp-install.md（落地）  \n- cisvr-68-si1-resp-ledger.md（闭环）  \n- kit（基座）  \n其余 55/56/57/58/66 并行支撑。\n\n④ **生债一条**：vinf 主司须一跟到底，待 SI2-auto-OTP 安装完成后核验 SI1-resp-ledger 与 ROOT-AUTONOMY 回执闭环，未清零不撤线。"
+ "verdict_memo": "① **何事**：VINF-VAULT 侧关于 cfts 主线「自治化（Autonomy）+ Tower 范式」的批量候件，含根协议、OTP 流程、交付保障、daemon 清理、SI2/SI1 子系统安装与账本。\n\n② **与 cfts 主线何干**：直接承载。ROOT/FEED 为 cfts 自治根脉；otp-cfts 为 SI2/N7 层具体实施；cisvr 系列为下游交付精简与自治契约（Pareto/ledger/daemon removal）。\n\n③ **应动何件**：  \n- ROOT-AUTONOMY-01-cfts.md（定根）  \n- DISC-AUTONOMY-20260909-vinf.md（定调）  \n- otp-cfts-1788754379-si2-n7-tower.md（关键路径）  \n- cisvr-67-si2-auto-otp-install.md（落地）  \n- cisvr-68-si1-resp-ledger.md（闭环）  \n- kit（基座）  \n其余 55/56/57/58/66 并行支撑。\n\n④ **生债一条**：vinf 主司须一跟到底，待 SI2-auto-OTP 安装完成后核验 SI1-resp-ledger 与 ROOT-AUTONOMY 回执闭环，未清零不撤线。"
 }
