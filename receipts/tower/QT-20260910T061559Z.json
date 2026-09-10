@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T061559Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T060512Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T055445Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "OTP-VINF-WAKE-01-usrm.md"
+  }
+ ],
+ "verdict_memo": "①何事：三件到站：vinf语音纪要（hub-board，0605Z）、cfts主线纪要（board-all，0554Z）、用户唤醒单（OTP-VINF-WAKE-01）。\n\n②与cfts主线何干：cfts语音为前置主线输入，vinf语音为后线响应；hub-board须承接board-all的决议或议题，做vinf向深化，防支线脱锚。\n\n③应动何件：先销OTP-VINF-WAKE-01（分身激活/用户回执）；再对表cfts主线锁约束；终稿vinf语音，凡推广项一跟到底。\n\n④生债一条：三件仅有ref，正文未随文送达，生\"正文缺失\"债一条，需补方可实质开工。"
+}
