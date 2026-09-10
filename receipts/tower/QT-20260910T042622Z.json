@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T042622Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T041532Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T040919Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910041001.md"
+  }
+ ],
+ "verdict_memo": "① 何事：三件语音候件到站——vinf hub-board、cfts board-all、qgl board-all，系无人驿开工分身前置同步。  \n② 与cfts主线何干：cfts-voice为干线底板，vinf分身推广须依其节点、口径对齐，不得偏离。  \n③ 应动何件：先动cfts主线件定纲，次动vinf hub-board件落位执行，qgl件阅存备参。  \n④ 生债一条：生“一跟到底责任书签认未回”之债一条，限即日销账。"
+}
