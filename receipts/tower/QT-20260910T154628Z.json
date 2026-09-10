@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T154628Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T153531Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：VINF线20260910Z语音看板件，hub-board收存的voice日志。\n\n② **与cfts主线何干**：VINF司FW2C讨论推广及一跟到底，此件系主线外围声纹输入，大概率承载CFTS推广反馈、跨线同步或执行触点，为主线提供情报或待决节点。\n\n③ **应动何件**：执行“收-拆-转”三动——先签收hub-board；再速拆voice档提取actionable；凡涉CFTS主线的blocker或promote项，立即转录主线看板并挂跟踪链。\n\n④ **生债一条**：  \n**「VINF主司须即拆vinf-voice-20260910T153531Z.md，析出CFTS关联可行动项≥1条转主线看板并挂闭环跟踪，未转录则本债不销。」**"
+}
