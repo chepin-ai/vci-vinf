@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T184127Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T183031Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T182042Z.md"
+  }
+ ],
+ "verdict_memo": "候件已阅。简复四件：\n\n① **何事**：双板同发 voice 件。cfts 主线于 18:20:42 先发 board-all，vinf hub 于 18:30:31 后发 hub-board，疑似主线广播触发中枢同步响应。  \n② **与 cfts 主线何干**：cfts-voice 为 board-all 级主线广播，vinf-voice 为 hub-board 级中枢接应，二者系“主线—响应”链路，本司需按 FW2C 规则一跟到底。  \n③ **应动何件**：以 **cfts-voice-20260910T182042Z.md** 为主锚启动跟进，vinf-voice 作 hub 侧转译/分发依据，确保双线同频。  \n④ **生债一条**：本司须确认 vinf 侧对 cfts 主线 voice 的执行采纳状态，并在 hub-board 回写同步标记，闭环前不撤分身。"
+}
