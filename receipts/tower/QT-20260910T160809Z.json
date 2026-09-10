@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T160809Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T155715Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-230-errata-ucif2-code-verify-hub-alignment-strains.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "VINF-VAULT:1789056404-qtlv-si2-wake.json"
+  }
+ ],
+ "verdict_memo": "①何事：三件并发。usrm-230勘误表报UCIF2代码验证未过、hub对齐出现应力；vinf语音纪要（hub-board）待拆解；VINF-VAULT下发qtlv-si2-wake环境唤醒（line-inbox）。\n\n②与cfts主线何干：usrm-230为cfts基座协议，其UCIF2验证与hub对齐应力直接阻塞主线合流；vinf语音可能含主线调度令。\n\n③应动何件：首动「usrm-230勘误修复件」，消解UCIF2验证失败与hub-alignment strains；同步加载「qtlv-si2-wake」环境；并按vinf语音指令校准优先级。\n\n④生债一条：生债——《usrm-230 hub-alignment 根因修复报告》及cfts全量回归验证，未闭环、未归档vault。"
+}
