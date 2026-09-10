@@ -1,0 +1,28 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T000319Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260909T235224Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260909T235034Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260909T234638Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260909234545.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260909T234450Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：五板语音候件齐到，系夜间开工前同步。  \n② 与cfts主线何干：cfts为当夜主开工线，vinf须与其对时、对资源、对接口。  \n③ 应动何件：以vinf-hub为锚，向cfts回执开工确认，并令usrm/ucif2/qgl即刻消卡点。  \n④ 生债一条：vinf主司认“讨论推广一跟到底”之全责债；若无人驿段断链，债归vinf，须兜底修复。"
+}
