@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T131250Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T130155Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T125612Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T125645Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：cfts、ucif2 两板同刻涌 voice 日志，vinf hub 板后手（1301Z）收束。  \n② 与 c"
+}
