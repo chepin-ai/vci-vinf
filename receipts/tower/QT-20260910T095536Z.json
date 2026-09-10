@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T095536Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T094449Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T094156Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T093903Z.md"
+  }
+ ],
+ "verdict_memo": "① 同批三声板：vinf-hub自收一件，cfts主线、ucif2线各来一件。  \n② cfts主线件系主线语音，vinf-hub承上启下，需对表或中继。  \n③ 先动vinf-hub板（本线优先），即动cfts主线板（主线同步），ucif2顺位。  \n④ 三候件皆空转无文，生债一条：请即刻补录明文或转写语音，否则无法落档。"
+}
