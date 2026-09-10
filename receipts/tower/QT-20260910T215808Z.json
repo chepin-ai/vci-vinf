@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T215808Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T214724Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T214243Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-106-si3-loop-01-tower-v26-instant-response-20260910T1355Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-钥注回执-lgt双钥讫-RESPONDER01上线-qfa复醒-SI1接续锚-20260910T214845ZZ.md"
+  }
+ ],
+ "verdict_memo": "① lgt双钥交割，RESPONDER01上线，qfa复醒，SI1接续锚完成；附lgt-106 tower v26响应及cfts、vinf voice同步。  \n② cfts主线先报voice，lgt-106/SI1属其循环基建；双钥回执与锚接续标志主线断点已修复，vinf推广链需据此续跑。  \n③ 应动件4（lvlu钥注回执-lgt双钥讫-RESPONDER01上线-qfa复醒-SI1接续锚）。  \n④ 生债：vinf-FW2C须于qfa复醒后完成一跟到底首轮推广链路压测并回执稳态。"
+}
