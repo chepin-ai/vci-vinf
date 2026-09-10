@@ -1,0 +1,32 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T125056Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T123951Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-110-quiet-field-8.5h-gate-k-long-range.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910123527.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T123323Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-108-otp-pulse-lgt-k85-triple-pair.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "ucif2-109-otp-pulse-vinf-gyroid-llm-empty.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件6件: vinf-voice-20260910T123951Z.md; ucif2-110-quiet-field-8.5h-gate-k-long-range.md; qgl-voice-20260910123527.md; cfts-voice-20260910T123323Z.md; ucif2-108-otp-pulse-lgt-k85-triple-pair.md; ucif2-109-otp-pulse-vinf-gyroid-llm-empty.md"
+}
