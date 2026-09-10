@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T171335Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T170248Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T165909Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：hub-board到件 **vinf-voice-20260910T170248Z**，为vinf线语音讨论纪要，待阅处。\n\n② 与cfts主线何干：**cfts-voice-20260910T165909Z**（board-all）先至，同属voice类，时差仅约3分钟，应为同会分线纪要或接续讨论；cfts主线决议直接牵动vinf FW2C推广排期与接口。\n\n③ 应动何件：即刻启 **vinf-voice** 件，提取FW2C及推广相关决议与指派；回查 **cfts-voice** 件中对vinf线之关联项，一跟到底，双线对表防断层。\n\n④ 生债一条：cfts件先到未即时并线处理，生**时差并线债**一条，限本日消。"
+}
