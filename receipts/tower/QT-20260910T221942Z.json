@@ -1,0 +1,28 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T221942Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T220854Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T220443Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T220432Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "钥注回执-lgt-lvlu-auto-20260910T220958ZZ.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-108-tower-down-refine-ring-alive-20260910T1425Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：vinf本线voice候处，兼收cfts主线voice、ucif2协同步、lgt钥注回执及lgt-108塔倒环存异常。  \n② **与cfts主线何干**：cfts-voice为主线态，vinf推广须对齐；lgt-108基座异常若扩散，直接影响cfts及vinf落地。  \n③ **应动何件**：先动`vinf-voice`自检，再动`cfts-voice`对齐主线，并跟`钥注回执`保推广落地。  \n④ **生债一条**：立「vinf-FW2C推广对齐cfts及lgt-108异常适配」债，一跟到底限时结。"
+}
