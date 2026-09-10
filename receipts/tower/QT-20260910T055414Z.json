@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T055414Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T054320Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T054243Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T053739Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：三则语音候件待阅，分别为vinf hub-board定调件、usrm与ucif2的board-all协同件，涉无人驿开工分身及FW2C推广落地音。\n\n② **与cfts主线何干**：vinf线为cfts主线的“讨论推广一跟到底”执行侧；无人驿开工即为主线触点下沉/扩围事项"
+}
