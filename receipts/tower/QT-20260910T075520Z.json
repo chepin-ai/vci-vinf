@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T075520Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910074044.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T073719Z.md"
+  }
+ ],
+ "verdict_memo": "① 双线晨间语音：cfts 主线 0737 先发，qgl 旁线 0740 后至，时差约 3 分钟。  \n② cfts 件即主线原生基线；qgl 件为支线输入，需判其是否切入主线或并行推广。  \n③ 先动 cfts 主线件守基线，再以 vinf 分身将 qgl 件差异点做「一跟到底」推广，回并主线。  \n④ 生债：vinf-0910-双线语音对账及合并跟进一条，限今日闭环。"
+}
