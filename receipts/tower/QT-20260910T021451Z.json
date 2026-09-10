@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T021451Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T020344Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：vinf线语音录制件（20260910T020344Z），待转录/审听。  \n② 与cfts主线何干：辅线素材，若含CFTS主司指令或节点信息则并主线，否则仅归档备查。  \n③ 应动何件：走FW2C语音转录，出文本后挂hub-board；涉主线即开cfts-merge请求。  \n④ 生债一条：挂账VINF-20260910-020344-V，转录完成销账。"
+}
