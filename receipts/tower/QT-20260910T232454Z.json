@@ -1,0 +1,32 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T232454Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T231359Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T231322Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "SI5-VOTE-QFA-EXP-FLOOR-02-20260910T231548Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-92-si05-circle-si5-ring-20260910T231548Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T225940Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260910T230548Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件6件: vinf-voice-20260910T231359Z.md; cfts-voice-20260910T231322Z.md; SI5-VOTE-QFA-EXP-FLOOR-02-20260910T231548Z.md; qfa-92-si05-circle-si5-ring-20260910T231548Z.md; usrm-voice-20260910T225940Z.md; qlv-voice-20260910T230548Z.md"
+}
