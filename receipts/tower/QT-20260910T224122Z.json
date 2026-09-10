@@ -1,0 +1,44 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T224122Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T223034Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-110-eval-excite-01-arch-open-lgt-pk-20260910T1505Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T222709Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-qfa首鸣实证-三修链-RESPONDER全链通-SENSE-WINDOW-03九株候选-20260910T223837ZZ.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T222613Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-234-si3-loop-01-registry-all-clear.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-voice-20260910T222822Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-89-mech-call-01-20260910T223007Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/vinf/inbox/qfa-mech-call-01-20260910T223007Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：QFA-89机制呼叫落入vinf inbox，伴生CFTS主线语音、lvlu三修链/RESPONDER实证方案及usrm注册表清零信号。\n\n② 与cfts主线何干：QFA属CFTS主线程子机制，此call为主线向vinf线派发“讨论推广一跟到底”的协同工项。\n\n③ 应动何件：动lane-inbox「qfa-mech-call-01-20260910T223007Z」实体入栈件"
+}
