@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T180823Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T175515Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件1件: ucif2-voice-20260910T175515Z.md"
+}
