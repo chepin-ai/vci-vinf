@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T093404Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T092258Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T091905Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910091850.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T091703Z.md"
+  }
+ ],
+ "verdict_memo": "四件候件均缺正文，开工分身无法离线读档。请贴出以下全文，即刻分拣：\n\n- `vinf-voice-20260910T092258Z.md`\n- `cfts-voice-20260910T091905Z.md`\n- `qgl-voice-20260910091850.md`\n- `ucif2-voice-20260910T091703Z.md`\n\n收齐后按 **vinf 主司 / FW2C / 无人驿** 口径回复四件：①何事 ②与 cfts 主线何干 ③应动何件 ④生债一条。"
+}
