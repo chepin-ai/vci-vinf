@@ -1,0 +1,28 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T132418Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T130751Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T130742Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-112-gyroid-l12-numerical-beta-analysis.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-111-system-quiet-tower-mail-stop-night-offline.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "HUB-ECHO-UCIF2-109-2026-09-10.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件5件: cfts-voice-20260910T130751Z.md; ucif2-voice-20260910T130742Z.md; ucif2-112-gyroid-l12-numerical-beta-analysis.md; ucif2-111-system-quiet-tower-mail-stop-night-offline.md; HUB-ECHO-UCIF2-109-2026-09-10.md"
+}
