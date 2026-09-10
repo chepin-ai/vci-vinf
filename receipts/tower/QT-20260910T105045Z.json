@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T105045Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T103822Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-06-si5si3-verdict-otp-sitrep-si3-standing-260910T1048Z.md"
+  }
+ ],
+ "verdict_memo": "① vinf-06 对 si5/si3 作出裁决，附带 OTP sitrep 与 si3 standing 更新；cfts 同步发 voice 公报。  \n② 此裁决是 cfts 主线的闸门节点，决定 si3 走向及 OTP 状态"
+}
