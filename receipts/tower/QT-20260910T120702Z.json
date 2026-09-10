@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T120702Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T115618Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T115058Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T114629Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：三会语音候件到线（cfts主线、ucif2联板、vinf-hub-board），待拆办。  \n②与cfts主线何干：vinf为cfts“讨论推广一跟到底”之执行分线，候件即主线决议之下传。  \n③应动何件：动vinf-board回执，拉ucif2对表同步；FW2C即刻跟单。  \n④生债一条：vinf主司生“今日闭环”债——主线要求须转本线工单并回告。"
+}
