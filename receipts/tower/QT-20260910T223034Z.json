@@ -1,0 +1,32 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T223034Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "lgt-109-verdict-retract-public-ci-worker-migrate-help-20260910T1450Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-233-otp-f3-beta-cosign-escalation.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-232-si2-restake-reset-drop-01.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T221539Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T221523Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-88-si05-unified-grandhall-20260910T221847Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：公版 CI 工站迁移求援、F3 Beta 联签升级、SI2 再质押重置、CFTS／UCIF2／QFA 三厅语音六件并发。  \n② 与 cfts 主线何干：CFTS 语音是主线现场；usrm-233/232 为侧翼签核与质押；lgt-109 为底座迁移；余为跨厅协奏。  \n③ 应动何件：先落 **cfts-voice** 主线现场，兼援 **lgt-109** 稳底座。  \n④ 生债一条：本班须将 CFTS 语音纪要化并回灌 usrm-233 签核流，否则 F3 Beta cosign 升级无锚。"
+}
