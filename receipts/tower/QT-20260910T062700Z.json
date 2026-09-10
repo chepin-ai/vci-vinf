@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T062700Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cisvr-241-hub-spine-tower-beat39.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T061038Z.md"
+  }
+ ],
+ "verdict_memo": "①"
+}
