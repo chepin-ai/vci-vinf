@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T185213Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T183143Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T183118Z.md"
+  }
+ ],
+ "verdict_memo": "① 两则 voice 候件（cfts-voice-20260910T183143Z、usrm-voice-20260910T183118Z），时段紧邻，待阅办。  \n② cfts-voice 即主线声档；usrm-voice 为协同方同期反馈，涉主线推广讨论。  \n③ 双件并动：以 cfts-voice 为纲提取决议，以 usrm-voice 为辅校核"
+}
