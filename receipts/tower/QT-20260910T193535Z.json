@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T193535Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910193300.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-20260910-wildbook-pairclose.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T191749Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T191437Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：qgl-wildbook待配对关闭，无人驿开工前语音指令与cfts主线接口未对齐。  \n② **与cfts主线何干**：FW2C推广及无人驿动线依赖cfts主线的配对逻辑与语音通道；cfts-voice含主线接口变更。  \n③ **应动何件**：先动 **qgl-20260910-wildbook-pairclose.md** 闭环对账，再拉 **cfts-voice-20260910T191749Z.md** 锁定主线接口。  \n④ **生债一条**：今日内输出《vinf无人驿开工-cfts主线对接检查单》并同步qgl。"
+}
