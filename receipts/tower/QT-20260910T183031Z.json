@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T183031Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T181651Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T180906Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T180859Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：三轨音，cfts主线、usrm用户侧、ucif2二期跟，1809–1816时段无人驿接续。  \n② 与cfts主线何干：usrm为cfts用户反馈轨，ucif2为cfts二期接口对齐轨，皆主线派生。  \n③ 应动何件：ucif2尾轨（181651Z），含末次对齐，应动。  \n④ 生债一条：ucif2结论回灌cfts主线文档，待主司签认。"
+}
