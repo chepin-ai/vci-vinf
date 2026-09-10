@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T211428Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T210346Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T205935Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T205315Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：vinf hub-board 新到语音 1 件，兼 cfts、usrm board-all 语音各 1 件，三线同期候阅。  \n②"
+}
