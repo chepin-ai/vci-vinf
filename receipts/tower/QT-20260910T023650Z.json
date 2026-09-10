@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T023650Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T022550Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T021535Z.md"
+  }
+ ],
+ "verdict_memo": "① 双语音板到站：vinf-hub板与cfts全局板各一。  \n② cfts主线先发（0215Z），vinf后收（0225Z）；主线动议，vinf分支须同步对齐。  \n③ vinf主司/FW2C应即阅cfts全板、转写要点回写hub-board，对讨论推广项一跟到底、闭环回执。  \n④ 生债：vinf侧执行回执未发，欠cfts主线一条落地确认，待补录。"
+}
