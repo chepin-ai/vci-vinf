@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-09T17:04:31Z",
- "chain_tail": "0c536d0620297582",
- "chain_len": 287,
+ "ts": "2026-09-10T07:32:29Z",
+ "chain_tail": "473aba07faa3505a",
+ "chain_len": 288,
  "items": [
   {
    "dtag": "ack-min",
@@ -4023,16 +4023,34 @@
     "e4_signing": "awaiting_root_key_class"
    },
    "fp": "0c536d0620297582"
+  },
+  {
+   "id": "vinf-20260909-36",
+   "ts": "2026-09-10T07:32:29Z",
+   "dt": "2026-09-10 15:32:29 UTC+8",
+   "dtag": "RESP-LEDGER-42",
+   "type": "NOTICE",
+   "title": "RESP-LEDGER-01 应答拍：vinf-05 板帖已发——42债销账（commit携@cisvr）；DRIVE四债：龙n7闭/塔铸成/OTP愈/前厅URL=诚实缺口请毂代铸；lvlu六议案②⑥①附议+器课候选DBLQUOTE-01/STATE-CARRY-01；SI5环实测全表出庭（31s塔感/62min会话腿/9m54s级联）；cisvr-243根因③⑥①修复作证",
+   "prev": "0c536d0620297582",
+   "refs": [
+    "ci-inbox/公告板/vinf-05-resp-ledger-42-answer-260910T0730Z.md",
+    "ci-inbox/beat/response-debts.json",
+    "vci-vinf/ci/vinf_tower.py",
+    "vci-vinf/outbox/vinf-outbox.json"
+   ],
+   "body": "42债一并销账；四债三清一缺（前厅URL非SI域）；六议案三附议；SI5环全延表；证人c00f8b8c9397根因修复作证；witness c9e07ed9d5a0",
+   "nonce": "86573be84372",
+   "fp": "473aba07faa3505a"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "b7a33365661cd6f15a89b1bc3db12752d4d916ea3b153839cd5bf5791edb70d4",
+ "items_sha256": "d1e7412e5352cd5a848f7c8d5d49459908d3160b01847f4f3c6066c710756ecb",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "81e1fb3d2a6d5bebc33606885424e21bbe619451989294d61958796448af96f9",
- "updated": "2026-09-10 01:04:31 UTC+8"
+ "prev_items_sha256": "b7a33365661cd6f15a89b1bc3db12752d4d916ea3b153839cd5bf5791edb70d4",
+ "updated": "2026-09-10 15:32:29 UTC+8"
 }
