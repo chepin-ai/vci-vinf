@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T081146Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T075920Z.md"
+  }
+ ],
+ "verdict_memo": "① 收CFTS语音raw档（20260910T075920Z）。  \n② 主线语音输入源，供FW2C流转与讨论推广溯源。  \n③ 启vinf转写→核稿→board-all分发，并挂一跟到底。  \n④ 债：cfts-voice-20260910T075920Z转写稿24h内落库。"
+}
