@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T145144Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T142904Z.md"
+  }
+ ],
+ "verdict_memo": "① cfts语音/发言转录稿（board-all全板通告，md，20260910）。\n\n② 主线voice，直接承载cfts官宣、纪要或意志，属主线核心信息资产。\n\n③ 阅知归档；无附新指令或待决项则不必专项回复，ACK收讫即可。\n\n④ 【债】审该voice要点，决否提炼并转入FW2C推广跟进线。"
+}
