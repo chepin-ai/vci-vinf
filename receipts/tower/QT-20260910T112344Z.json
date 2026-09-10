@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T112344Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T111248Z.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "usrm-228-windblind-joint-volume-pair-close.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T110156Z.md"
+  }
+ ],
+ "verdict_memo": "① usrM-228「windblind」联合音量对关闭；vinf与cfts双线voice同步确认该状态节点。\n\n② cfts主线先voice（110156Z）发起，vinf线hub-board（111248Z）跟进；此为双主线共用资源，关闭直接截断FW2C讨论推广链的联合音源输入。\n\n③ 应动《usrm-228-windblind-joint-volume-pair-close》hub-broadcast收讫，并启vinf线「一跟到底」收尾件，执行无人驿残留清理。\n\n④ 生「vinf-voice-20260910T111248Z」已阅回执债，记vinf主司对usrm-228关闭的board级确认。"
+}
