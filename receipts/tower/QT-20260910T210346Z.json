@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T210346Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T204824Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：CFTS语音（voice）议题稿，涉接口调整或异常通报。  \n② 与cfts主线何干：主线人机交互层，关协议一致与数据通路。  \n③ 应动何件：FW2C收阅，勘定对vinf线影响域并反馈board-all。  \n④ 生债一条：vinf线须限时核清voice模块依赖，回告处置结论。"
+}
