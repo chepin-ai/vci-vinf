@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T053223Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T052122Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T051913Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910051525.md"
+  }
+ ],
+ "verdict_memo": "① 何事"
+}
