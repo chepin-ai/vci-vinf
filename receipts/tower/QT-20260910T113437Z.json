@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T113437Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T111340Z.md"
+  }
+ ],
+ "verdict_memo": "候件未传，本地无 `cfts-voice-20260910T111340Z.md` 可读。请贴全文，复命四件如下：\n\n① 何事  \n② 与 cfts 主线何干  \n③ 应动何件  \n④ 生债一条"
+}
