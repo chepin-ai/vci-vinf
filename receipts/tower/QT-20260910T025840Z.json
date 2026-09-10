@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T025840Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T024749Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910024325.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T023735Z.md"
+  }
+ ],
+ "verdict_memo": "① cfts、qgl于board-all双板发声，vinf hub-board压轴收束，无人驿开工分身候命。  \n② cfts voice带主线节点，vinf主司须“一跟到底”，推广侧对齐cfts主线节奏。  \n③ 先动 **vinf-voice-20260910T024749Z.md**（hub-board定调），再衔 **cfts-voice-20260910T023735Z.md** 抓主线需求。  \n④ 生债：今日内将cfts主线意图转写成FW2C推广动作并回hub-board闭环，逾期即债。"
+}
