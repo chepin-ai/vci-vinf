@@ -1,0 +1,32 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T194622Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T193535Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-105-direct-fetch-eight-otp-four-engines-g-meter-v01-20260910T1135Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T192922Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910193853.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "钥取-lgt-KIMI-API-KEY-GITEE-TOK-20260910.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/vinf/inbox/OTP-LGT-JOINT-BASE-01-lgt.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件6件: vinf-voice-20260910T193535Z.md; lgt-105-direct-fetch-eight-otp-four-engines-g-meter-v01-20260910T1135Z.md; cfts-voice-20260910T192922Z.md; qgl-voice-20260910193853.md; 钥取-lgt-KIMI-API-KEY-GITEE-TOK-20260910.md; vci-inbox:lanes/vinf/inbox/OTP-LGT-JOINT-BASE-01-lgt.md"
+}
