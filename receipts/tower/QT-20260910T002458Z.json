@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T002458Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T001402Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T000654Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910000717.md"
+  }
+ ],
+ "verdict_memo": "① vinf无人驿开工分身已就位候命；cfts主线广播当前推进节点；qgl线通报前置资源已就位。  \n② vinf为cfts主线下行执行端，负责“讨论推广一跟到底”，须严跟主线节点，防止分叉。  \n③ 应动vinf自件（hub-board）：按cfts节点立即启动分身推广链路，并同步引接qgl资源。  \n④ 生债：向cfts主线回执“节点同步/开工确认”一条。"
+}
