@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T205251Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T204205Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T203816Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T203721Z.md"
+  }
+ ],
+ "verdict_memo": "① 2042批次语音三件，各线节点开工汇讯。  \n② cfts-voice为主线定调件，锚“一跟到底”之底；vinf、ucif2承翼策应。  \n③ 动hub-board **vinf-voice**，以主司身份开工分身；兼按board-all收 **cfts** 主线令及 **ucif2** 协响。  \n④ 生债：候cfts主线落锤"
+}
