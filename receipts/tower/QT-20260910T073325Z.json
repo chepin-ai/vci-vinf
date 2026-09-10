@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T073325Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T072219Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-05-resp-ledger-42-answer-260910T0730Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T071442Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：三件候达——`cfts` 声、`usrm` 声、`vinf-05 ledger-42` 回件齐至。\n\n② **与 cfts 主线何干**：`cfts` 声为主线侧约束输入；`vinf` 回件须与之咬合，不越不岔。\n\n③ **应动何件**：主应动 `vinf-05-resp-ledger-42-answer-260910T0730Z.md`，据此统一回 `usrm`，并覆 `cfts`。\n\n④ **生债一条**：`ledger-42` 答件已发，待 `usrm`/`cfts` 回签确认，悬账一条。"
+}
