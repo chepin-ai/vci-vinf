@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T060512Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T054302Z.md"
+  }
+ ],
+ "verdict_memo": "① board-all 广播，挂出 `cfts-voice-20260910T054302Z.md` 日志。  \n② 属 CFTS 主线语音/通讯子系统的节点同步材料，用于状态通联。  \n③ 应动 `voice-sync`（或 `log-ingest`）：拉取该 md，更新本地 voice 索引，按需解码或归档。  \n④ 生债一条：校验文件完整性（hash），并补出全文转录稿。"
+}
