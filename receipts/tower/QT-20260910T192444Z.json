@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T192444Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T191352Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T190617Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：vinf hub-board 语音件，主议无人驿分身开工及推广一跟到底节点激活；兼收 cfts board-all 语音件。  \n② 与cfts主线何干：cfts 为主线，vinf 分身部署与推广流转需主线资源/接口/口径支撑，属跨线前置联动。  \n③ 应动何件：先追 cfts-voice 件确认接口与版本，再动 vinf-voice 件落分身开工及推广配置。  \n④ 生债一条"
+}
