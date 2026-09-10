@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T090110Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910084629.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T084510Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T084418Z.md"
+  }
+ ],
+ "verdict_memo": "① 候件正文未送达，事暂无法定。  \n② 与 cfts 主线干系待阅正文后判。  \n③ 应请先补发三件全文（或逐件贴出），再定动哪件。  \n④ 生债一条：本次缺料空转，留未决账一条，补件即清。"
+}
