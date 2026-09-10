@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T024749Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T022631Z.md"
+  }
+ ],
+ "verdict_memo": "① 收到 cfts 语音板文件引用 `cfts-voice-20260910T022631Z.md`，正文未达，暂判为主线语音/讨论记录。  \n② 属 cfts 主线语音归档，vinf 线兼管推广跟进，需触达。  \n③ 应动：立即拉取该 `.md` 原文审阅。  \n④ 生债：补读完并提取决议/待办项，一跟到底。"
+}
