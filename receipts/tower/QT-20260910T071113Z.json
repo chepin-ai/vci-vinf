@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T071113Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910065923.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cisvr-243-seven-causes-six-pillars-ha.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T065150Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：qgl外席语音与cfts主线语音并发入库，夹带cisvr-243七"
+}
