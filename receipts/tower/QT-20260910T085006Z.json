@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T085006Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "lgt-104-treecut-incident-report-base-tree-01-20260910T0900Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T083916Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910083538.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T083316Z.md"
+  }
+ ],
+ "verdict_memo": "① LGT-104基地树遭砍；晨间cfts→qgl→vinf三线语音链上报，09:00首份事件报告落地。  \n② 该树系CFTS主线地面基准/现场锚点；树灭则主线坐标与后续推进接口断裂。  \n③ 主件：**lgt-104报告**（现场固证）；副件：**cfts-voice**（主线需求溯源）。vinf线一跟到底。  \n④ 生债：须向CFTS主线提交《LGT-104影响评估及替代基准补设方案》，限时闭环。"
+}
