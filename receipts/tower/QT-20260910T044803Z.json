@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T044803Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T043716Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T043214Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910043147.md"
+  }
+ ],
+ "verdict_memo": "① cfts主线发令，qgl旁参，vinf hub记档。  \n② cfts主线即vinf“讨论推广一跟到底”之本，直接承命。  \n③ 应动 **cfts-voice-20260910T043214Z.md** 主线件，以 **vinf-voice-20260910T043716Z.md** hub-board牵头收敛。  \n④ 生债：今日内将cfts主线跟进结果写入vinf hub-board并闭环回执。"
+}
