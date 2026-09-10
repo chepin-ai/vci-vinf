@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T015250Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T014151Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T014026Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：vinf hub-board 与 cfts board-all 各到一 voice 候件，呈待阅同步记录。  \n② 与 cfts 主线何干：cfts voice 或涉需 vinf 侧协推节点、排期或资源，需交叉验证。  \n③ 应动何件：启 **vinf-voice-20260910T014151Z.md**，对照 cfts voice 批注差异，回写 hub-board。  \n④ 生债一条：今日内输出双线对齐意见，并生「一跟到底」推广跟进单一条。"
+}
