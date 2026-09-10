@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T072220Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T071113Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T071118Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T070546Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T070337Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件4件: vinf-voice-20260910T071113Z.md; usrm-voice-20260910T071118Z.md; ucif2-voice-20260910T070546Z.md; cfts-voice-20260910T070337Z.md"
+}
