@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T165154Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T164107Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T163613Z.md"
+  }
+ ],
+ "verdict_memo": "① cfts发voice补丁，vinf hub-board接开工令。  \n② vinf系cfts推广支线，此件为主线下沉对齐。  \n③ 动vinf无人驿开工件，一跟到底。  \n④ 生接口验收债一条，今日闭环。"
+}
