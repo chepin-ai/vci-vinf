@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T035348Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T034139Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910033731.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T033647Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T033354Z.md"
+  }
+ ],
+ "verdict_memo": "vinf线／无人驿开工分身收悉。\n\n**候件四件 ref 未随文载入，暂无法直读外部 voice 档。** 请贴出：\n\n1. `usrm-voice-…` 正文  \n2. `qgl-voice-…` 正文  \n3. `ucif2-voice-…` 正文  \n4. `cfts-voice-…` 正文  \n\n贴毕即刻按格简复：\n\n① 何事  \n② 与 cfts 主线何干  \n③ 应动何件  \n④ 生债一条  \n\n简。"
+}
