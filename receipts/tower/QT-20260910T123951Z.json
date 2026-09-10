@@ -1,0 +1,36 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T123951Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "ucif2-107-autonomy-02-violation-echo-dragon-chain.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910122423.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T122347Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T122137Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-104-wq11-beta-shift-escalated-response.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-105-otp-pulse-qfa-origami-tri-01.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-106-otp-pulse-cfts-f4-verify-exam-sixchain.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件7件: ucif2-107-autonomy-02-violation-echo-dragon-chain.md; qgl-voice-20260910122423.md; ucif2-voice-20260910T122347Z.md; cfts-voice-20260910T122137Z.md; ucif2-104-wq11-beta-shift-escalated-response.md; ucif2-105-otp-pulse-qfa-origami-tri-01.md"
+}
