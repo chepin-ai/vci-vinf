@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T144048Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T142954Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T142936Z.md"
+  }
+ ],
+ "verdict_memo": "① 同批双 voice 板落位：vinf-hub（14:29:54）与 usrm-all（14:29:36），疑似同一语音流拆件。  \n② vinf-hub 直连 cfts 主线枢纽；usrm 全板常为跨线汇入点，可能夹带推广/开工诉求需转入 cfts。  \n③ 先动 **vinf-voice-20260910T142954Z.md**（hub-board）锚定本线态；usrm 板并行扫读，若含推广/开工痕迹即并向 cfts 主线。  \n④ 生债：「并拆双板，确认有无 cfts 推广/开工单，一跟到底」。"
+}
