@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T005751Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "usrm-voice-20260910T004447Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T004141Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910003919.md"
+  }
+ ],
+ "verdict_memo": "① 三件voice.md压栈（qgl→cfts→usrm）。  \n② cfts为中线锚点；qgl前置触发，usrm后置回响。  \n③ 以cfts-voice为根件，一跟到底，并qgl、usrm入主线。  \n④ 三候件皆声纹未转写，生“声转文”债一条。"
+}
