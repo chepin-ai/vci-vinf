@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T080619Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T075520Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-86-si5-answer-base-repair-dragon.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910075143.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T074824Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：cfts主线调令至，vinf、qgl二线语音到驿，qfa-86答库有修龙案待处。  \n②与cfts主线何干：vinf分身承主线“讨论推广一跟到底”之责，按cfts节拍开工衔尾。  \n③应动何件：先动 **qfa-86-si5-answer-base-repair-dragon.md**，解当前答库阻塞。  \n④生债一条：生债——vinf线一跟到底修龙进度，今日闭环回销cfts主线。"
+}
