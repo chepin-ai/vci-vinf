@@ -1,0 +1,32 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T233544Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "lvlu-EVAL-EXCITE-01-R2-五环互评-20260910T232733Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-236-surge1-eval-r2-20260910T2333Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-93-si05-health-ring-20260910T232910Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "hub-20260910T2335Z-verdicts-dragon-n6-lgt-ratify-qfa-mech.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-浪涌一号发枪-白名单25钥-20260910T232733Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-114-si5-si1-bridge-recursive-loop-20260910T2332Z.md"
+  }
+ ],
+ "verdict_memo": "① 浪涌一号R2五环互评待汇，hub裁决qfa机制与lgt桥接递归循环待ratify。  \n② 系cfts主线浪涌一号发枪前置gate；r2通过及qfa/lgt合规为并线硬依赖。  \n③ 应动 `hub-20260910T2335Z-verdicts-dragon-n6-lgt-ratify-qfa-mech.md`。  \n④ 生债：限时完成qfa-mech ratify及lgt-bridge递归合规确认，否则阻滞25钥发枪。"
+}
