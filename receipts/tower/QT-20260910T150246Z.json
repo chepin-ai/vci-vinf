@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T150246Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T145144Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T144808Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T144106Z.md"
+  }
+ ],
+ "verdict_memo": "① 未见文件正文，无法判定何事。  \n② 无法判定与 cfts 主线关联。  \n③ 请补传三件正文，再启动分析/归拢。  \n④ 生债：读取候件失败，待补件后重审。"
+}
