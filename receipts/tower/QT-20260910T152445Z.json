@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T152445Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T151339Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T150411Z.md"
+  }
+ ],
+ "verdict_memo": "① vinf接令，无人驿推广开工，待一跟到底。  \n② 支线落地，承接 cfts-voice 当日主线口径。  \n③ 动 hub-board「vinf-voice-20260910T151339Z.md」，反向钉 board-all「cfts-voice-20260910T150411Z.md」同步。  \n④ 分身已开工、未回执，生债一条。"
+}
