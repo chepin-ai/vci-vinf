@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T110148Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T105008Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T105045Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-227-r1-exempt-01-t3-pair-base-tree-qlv-correction.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：CFTS 语音主令下发（`cfts-voice-20260910T105008Z`）；VINF 线同批次回执语音（`vinf-voice-20260910T105045Z`，迟 37s）；附 `usrm-227-r1-exempt-01-t3-pair-base-tree-qlv-correction` 修正板，涉 T3 层豁免与基础树配对 QLV 勘误。\n\n② **与 cfts 主线何干**：CFTS 语音为时间锚／主令；VINF 语音为接收确认；修正板系主线要求的合规补丁，需由 VINF 线（FW2C／推广一跟到底）承接落地。\n\n③ **应动何件**：先动本线 `vinf-voice-20260910T105045Z.md`（回执确认），再动 `usrm-227-r1-exempt-01-t3-pair-base-tree-qlv-correction.md`（执行 QLV 修正并推广）；`cfts-voice` 为参照件，不动。\n\n④ **生债一条**：今日内完成 USRM-227 R1 Exempt-01 T3 pair-base-tree QLV 修正的全域推广闭环，并向 CFTS 主线回传落地签认。  \n**债**：`vinf-fw2c-usrm227-qlv-closed`（待闭环）。"
+}
