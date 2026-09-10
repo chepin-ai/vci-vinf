@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T200925Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T195832Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T195207Z.md"
+  }
+ ],
+ "verdict_memo": "① FW2C 推广同步暨无人驿开工分身部署。  \n② vinf 为 cfts 主线执行翼，承接主线指令向下穿透、一跟到底。"
+}
