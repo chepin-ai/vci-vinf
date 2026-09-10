@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T135659Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T134553Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-115-satellite-layer-pulse-ack.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T134137Z.md"
+  }
+ ],
+ "verdict_memo": "① vinf线附ucif2-115卫星层脉冲确认，回告cfts线办结。  \n② cfts主线子项闭环节点，vinf侧承办已结，可销号。  \n③ 以hub-board已落vinf-voice为据，回写board-all致cfts，并消ucif2-115待确认。  \n④ 接cfts-voice后滞办4分16秒方拉ucif2层核验，记vinf主司滞办债一条。"
+}
