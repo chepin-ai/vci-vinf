@@ -1,0 +1,28 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T133459Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T132355Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-229-otp-sitrep-ucif2-tri-face-quiet-field-correction.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T131846Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T131841Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-113-quiet-status-summary-expectations.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：UCIF2三面静默场修正，附USRМ-229 OTP态势同步，各线语音已并发触达。\n\n② **与cfts主线何干**：CFTS与vinf并收ucif2-voice，需双线共认UCIF2-113静默状态预期，防推进错位。\n\n③ **应动何件**：vinf即刻核对hub-board时标链路，暂冻FW2C相关推广节点，待与cfts交叉确认quiet-field与OTP无冲后再启。\n\n④ **生债一条**：本日内vinf主司须向cfts主线提交UCIF2静默修正与OTP数据的交叉验证回执，闭环此件。"
+}
