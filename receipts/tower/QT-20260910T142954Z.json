@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T142954Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T141708Z.md"
+  }
+ ],
+ "verdict_memo": "① 收 board-all 候件，ref 为 CFTS 语音记录 `cfts-voice-20260910T141708Z.md`。  \n② CFTS 主线语音节点，涉全员通报/决策，需 FW2C 跨线同步。  \n③ 应动：拉取该 md → 拆解决策点 → 转录 vinf 线 → 挂「讨论推广一跟到底」跟踪链。  \n④ 生债：今日闭线前阅毕该文件并输出 vinf 线同步简报，未交付则续期。"
+}
