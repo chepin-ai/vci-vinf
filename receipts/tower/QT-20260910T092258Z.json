@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T092258Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910090749.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cisvr-245-beat43-候决消解与举一反三判词.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T090609Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910091336.md"
+  }
+ ],
+ "verdict_memo": "① **cisvr-245-beat43 候决消解与举一反三判词**一件，附 **qgl 语音二通**（0907、0913）、**ucif2 语音"
+}
