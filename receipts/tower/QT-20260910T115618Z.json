@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T115618Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T114001Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T113545Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：无人驿开工分身启动，UCIF2语音/接口模块联调。  \n② **与cfts主线何干**：UCIF2是CFTS主线的对客交互面，协议、数据流、推广节奏须三向对齐。  \n③ **应动何件**：动《UCIF2-CFTS对接件》及《分身推广一跟到底件》。  \n④ **生债一条**：接口契约终版/资源节点待闭环。"
+}
