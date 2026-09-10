@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T202015Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T200533Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T200250Z.md"
+  }
+ ],
+ "verdict_memo": "① 候件仅见档名，正文未达，暂无法定何事。\n② cfts-voice档名近主线；ucif2-voice或涉协接，干系待阅文后判。\n③ 应动之件：请速贴两文件正文，方定跟进与推广动作。\n④ 【生债】vinf主司-20260910-缺件债：候件ucif2/cfts-voice正文未收，blocker，待补件一跟到底。"
+}
