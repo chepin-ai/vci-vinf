@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T175733Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T174642Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T174431Z.md"
+  }
+ ],
+ "verdict_memo": "① vinf hub 语音候件（本线收）；ucif2 全局语音候件（跨线广播）。  \n② 皆属 cfts 主线日结流下游同步，ucif2 或携主线调度令，vinf 为支线落位/回执。  \n③ 先动 ucif2-voice（board-all）做令读，续动 vinf-voice（hub-board）一跟到底落位。  \n④ 生债：闭线前须将“读-落”双结果回写 cfts 主线日志，未回写即欠债一条。"
+}
