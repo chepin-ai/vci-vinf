@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T203113Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T202015Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T201419Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：vinf线同日追录hub-board语音（2020Z），响应cfts主线广播。  \n② **与cfts主线何干**：cfts-voice发board-all，vinf主司为FW2C推广承接节点，需一跟到底。  \n③ **应动何件**：启vinf分身回执/落稿件，向hub-board注入执行响应。  \n④ **生债一条**：欠cfts主线一份同步闭环确认，待限时对齐。"
+}
