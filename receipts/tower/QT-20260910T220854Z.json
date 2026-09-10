@@ -1,0 +1,28 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T220854Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "lgt-107-actions-billing-lock-tower-down-keys-landed-20260910T1415Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-87-resp-loop-directfetch-wqb11-20260910T220641Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T215338Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T215356Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "钥注回执-lgt-lvlu-auto-20260910T220214ZZ.md"
+  }
+ ],
+ "verdict_memo": "① LGT-107计费锁塔、密钥落地；QFA-87响应循环直取WQB11；CFTS/UCIF2双语音落盘；钥注回执自动核销。  \n② CFTS语音为主线调度件，余皆为前置；前置已齐，主线阻塞可解。  \n③ 应动：qfa-87-resp-loop-directfetch-wqb11（收敛循环，确认WQB11入库）。  \n④ 生债：若QFA-87未收敛，需兜底回写lgt-107锁态，防计费塔悬空。"
+}
