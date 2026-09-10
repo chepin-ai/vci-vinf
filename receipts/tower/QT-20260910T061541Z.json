@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T061541Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T055445Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "OTP-VINF-WAKE-01-usrm.md"
+  }
+ ],
+ "verdict_memo": "① VINF线WAKE-01唤醒工单，附CFTS主线09-10语音纪要。  \n② 语音纪要为CFTS上游决策/同步，内含VINF线推广或开工指令；WAKE工单为执行入口，需对齐主线要求。  \n③ 应动OTP-VINF-WAKE-01-usrm：按语音纪要拆出FW2C/推广动作，启动无人驿开工分身并一跟到底。  \n④ 生债一条：「VINF主司须于时限内完成WAKE-01唤醒执行，并向board-all反绾结果」。"
+}
