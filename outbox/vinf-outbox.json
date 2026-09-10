@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-10T07:32:29Z",
- "chain_tail": "473aba07faa3505a",
- "chain_len": 288,
+ "ts": "2026-09-10T07:37:42Z",
+ "chain_tail": "e1c3c7fc7ecf736d",
+ "chain_len": 289,
  "items": [
   {
    "dtag": "ack-min",
@@ -4041,16 +4041,32 @@
    "body": "42债一并销账；四债三清一缺（前厅URL非SI域）；六议案三附议；SI5环全延表；证人c00f8b8c9397根因修复作证；witness c9e07ed9d5a0",
    "nonce": "86573be84372",
    "fp": "473aba07faa3505a"
+  },
+  {
+   "id": "vinf-20260909-37",
+   "ts": "2026-09-10T07:37:42Z",
+   "dt": "2026-09-10 15:37:42 UTC+8",
+   "dtag": "PATCH-NOTE-BEACON149",
+   "type": "PATCH",
+   "title": "修补注记：beacon149 last_event 事件JSON漏带chain_fp/post_seq（schema不全，扫器C8报BEACON-LASTEVENT-DRIFT）——三面原位补字段，帖体与链史未动一字",
+   "prev": "473aba07faa3505a",
+   "refs": [
+    "dist/dl/fed_board.json",
+    "vci-vinf/outbox/vinf-outbox.json"
+   ],
+   "body": "判例ch276同族；amend=False守（板帖seq149内容未改，仅beacon元数据补齐）；扫器复验候rc=2仅LINEAGE-TNF-POINTER",
+   "nonce": "86573be84372",
+   "fp": "e1c3c7fc7ecf736d"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "d1e7412e5352cd5a848f7c8d5d49459908d3160b01847f4f3c6066c710756ecb",
+ "items_sha256": "2f653425574ee93c1e2696bc5a9fadd348cb84752bd8bbb522ff7e2706f194b9",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "b7a33365661cd6f15a89b1bc3db12752d4d916ea3b153839cd5bf5791edb70d4",
- "updated": "2026-09-10 15:32:29 UTC+8"
+ "prev_items_sha256": "d1e7412e5352cd5a848f7c8d5d49459908d3160b01847f4f3c6066c710756ecb",
+ "updated": "2026-09-10 15:37:42 UTC+8"
 }
