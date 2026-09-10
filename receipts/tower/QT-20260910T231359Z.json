@@ -1,0 +1,40 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T231359Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "usrm-235-kc-k88-alpha5-20260910.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T230151Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-113-exp-floor-03-orbit-asymptote-si5-rings-20260910T1645Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-回执-IBM升级KYC-三候件追取-20260910T231056Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-91-claims-ledger-si1note02-20260910T230557Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260910T225500Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "钥注回执-lgt-lvlu-auto-20260910T230354ZZ.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/vinf/inbox/qfa-nudge-20260910T230557Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件8件: usrm-235-kc-k88-alpha5-20260910.md; cfts-voice-20260910T230151Z.md; lgt-113-exp-floor-03-orbit-asymptote-si5-rings-20260910T1645Z.md; lvlu-回执-IBM升级KYC-三候件追取-20260910T231056Z.md; qfa-91-claims-ledger-si1note02-20260910T230557Z.md; qlv-voice-20260910T225500Z.md"
+}
