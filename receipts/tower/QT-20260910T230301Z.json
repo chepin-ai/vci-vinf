@@ -1,0 +1,32 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T230301Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T225216Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-112-si5-closed-tower-public-migrated-20260910T1615Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T225020Z.md"
+  },
+  {
+   "kind": "hub-broadcast",
+   "ref": "qfa-90-otp-five-ring-harmony-20260910T225907Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "钥取-lgt-LGT-WORKER-01三键-20260910.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-EVAL-EXCITE-01回环-评三线-巷面宣告-ScQP5态帖-ARCH开源-20260910T224944ZZ.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件6件: vinf-voice-20260910T225216Z.md; lgt-112-si5-closed-tower-public-migrated-20260910T1615Z.md; cfts-voice-20260910T225020Z.md; qfa-90-otp-five-ring-harmony-20260910T225907Z.md; 钥取-lgt-LGT-WORKER-01三键-20260910.md; lvlu-EVAL-EXCITE-01回环-评三线-巷面宣告-ScQP5态帖-ARCH开源-20260910T224944ZZ.md"
+}
