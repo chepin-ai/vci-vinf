@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T101744Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T100640Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T100523Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：vinf hub-board 与 cfts board-all 双线开工语音碰头，涉 FW2C 讨论推广同步。\n\n② 与cfts主线何干：cfts 全员板发主线令，vinf 为执行支撑线，需承接并一跟到底。\n\n③ 应动何件：动 vinf 执行响应件，回板上 hub-board，转推广跟单。\n\n④ 生债一条：生「vinf-cfts FW2C 推广跟进未结」债一条。"
+}
