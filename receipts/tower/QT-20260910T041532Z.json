@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T041532Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910035903.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T035845Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T035727Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：夜班三联语音候件（cfts/035727Z、ucif2/035845Z、qgl/035903），三分钟密集到岗。\n\n②与cfts主线何干：cfts件为主线本体；ucif2、qgl为侧线同步回执/联动反馈，需归口主线对齐。\n\n③应动何件：先动cfts-voice主线件，并挂qgl、ucif2为联证，启FW2C一跟到底路由。\n\n④生债一条：缺语音转写文本，欠首读速摘一条。"
+}
