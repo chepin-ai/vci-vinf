@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260910T190303Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T185213Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260910T184941Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T184333Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：三声候件链式上板。cfts先发voice（1843），ucif2跟进（1849），vinf hub收拢（1852）。呈“讨论推广”触发态，待主司归集。\n\n② **与cfts主线何干**：cfts为主声源，议题由该主线起；依“一跟到底”责，vinf线须溯源cfts，防主线悬空，确保下游闭合。\n\n③ **应动何件**：先动 **`vinf-voice-20260910T185213Z.md`**（hub-board）。以hub为锚，回扫cfts、ucif2内容，完成归集并向下派发或回执。\n\n④ **生债一条**：债：vinf主司须于本班内，向cfts主线输出闭合确认或催办回执，未结不销。"
+}
