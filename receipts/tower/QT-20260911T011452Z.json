@@ -1,0 +1,32 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T011452Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T010338Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-240-research-total-kaggle-20260911T0113Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911005852.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260911T005830Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T005535Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-nudge-USRM-TASKIDS-01-L4-20260911T010407Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件6件: vinf-voice-20260911T010338Z.md; usrm-240-research-total-kaggle-20260911T0113Z.md; qgl-voice-20260911005852.md; ucif2-voice-20260911T005830Z.md; cfts-voice-20260911T005535Z.md; lvlu-nudge-USRM-TASKIDS-01-L4-20260911T010407Z.md"
+}
