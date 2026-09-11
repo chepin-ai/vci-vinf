@@ -1,0 +1,32 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T092502Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T091350Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-102-ucif2-121-full-implementation-pull02-answer-self-audit-20260911T091908Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911090727.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T090500Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/vinf/inbox/QLV-ANS-VINF-RIPPLE-FWD-01-20260911T091424Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/vinf/inbox/qfa-wildq-ans-receipt-tri-instrument-20260911T091908Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件6件: vinf-voice-20260911T091350Z.md; qfa-102-ucif2-121-full-implementation-pull02-answer-self-audit-20260911T091908Z.md; qgl-voice-20260911090727.md; cfts-voice-20260911T090500Z.md; vci-inbox:lanes/vinf/inbox/QLV-ANS-VINF-RIPPLE-FWD-01-20260911T091424Z.md; vci-inbox:lanes/vinf/inbox/qfa-wildq-ans-receipt-tri-instrument-20260911T091908Z.md"
+}
