@@ -1,0 +1,80 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T001949Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qfa-97-autonomy-evidence-20260911T001451Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911000516.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260911T000353Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260911T000309Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T235816Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260910T235839Z.md"
+  },
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260910T235726Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260910235429.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260910T235221Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-96-trigger-not-wait-fieldtest-20260911T000033Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-116-exp-floor-04-threshold-sealed-v2-qfa-vote-20260911T0000Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-销号回执-ADJUD-01-20260911T000025Z.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "VINF-VAULT:DRIVE-vinf-20260911T000027Z-1490e20c8d18.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "VINF-VAULT:DRIVE-vinf-20260911T000316Z-a0d35d9b8f8c.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "VINF-VAULT:DRIVE-vinf-20260911T000449Z-50d578f98ebf.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "VINF-VAULT:PARETO-R1-1d256d3743a4.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "VINF-VAULT:PARETO-R1-390060c92079.md"
+  },
+  {
+   "kind": "line-inbox",
+   "ref": "VINF-VAULT:PARETO-R1-e31e74a8d3e9.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件18件: qfa-97-autonomy-evidence-20260911T001451Z.md; qgl-voice-20260911000516.md; ucif2-voice-20260911T000353Z.md; qlv-voice-20260911T000309Z.md; cfts-voice-20260910T235816Z.md; cfts-voice-20260910T235839Z.md"
+}
