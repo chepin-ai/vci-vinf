@@ -45,25 +45,14 @@ def put_file(remote, text, sha, msg, repo=None):
 def patrol(seen):
     """候件 = 毂板尾12件含'vinf'者 + 广播令 + 己inbox/ (修SENSE-WINDOW-01: seen集滤盲)"""
     events = []
-    # VINF-SENSE-04 (usrm): 毂板 commit-recency 扫描 + seen幂等——contents-1000截断盲/字典窗/名键乱序窗三病同治(cfts BOARD-SCAN-04 已实证)
-    st_c, _cm = api('GET', 'commits?path=%E5%85%AC%E5%91%8A%E6%9D%BF&per_page=12', repo=HUB)
-    if st_c == 200:
-        _bnew = []
-        for _c in _cm:
-            _sc, _cf = api('GET', 'commits/' + _c['sha'], repo=HUB)
-            if _sc != 200: continue
-            for _f in _cf.get('files', []):
-                _fn = _f.get('filename', '')
-                if _fn.startswith('公告板/') and _fn.endswith('.md'):
-                    _n = _fn.split('/')[-1]
-                    if ('board:' + _n) not in seen and _n not in _bnew:
-                        _bnew.append(_n)
-        for _n in _bnew[:12]:
-            if LINE in _n: events.append({'kind': 'hub-board', 'ref': _n})
-            elif re.search(r'OTP@all|OTP@vinf|【S-I|军令|奉\s*root|认收|册录|收环|PAIR-CLOSE|DISC-|HARMONY', _n, re.I):
-                events.append({'kind': 'hub-broadcast', 'ref': _n})
-            else:
-                events.append({'kind': 'board-all', 'ref': _n})
+    st, items = api('GET', 'contents/' + __import__('urllib.parse', fromlist=['quote']).quote('公告板'), repo=HUB)
+    if st == 200:
+        names = sorted((i['name'] for i in items if i['name'].endswith('.md')),
+                       key=lambda n: n)[-12:]
+        for n in names:
+            if LINE in n: events.append({'kind': 'hub-board', 'ref': n})
+            elif re.search(r'OTP@all|OTP@vinf|【S-I|军令|奉\\s*root|认收|册录|收环|PAIR-CLOSE|DISC-|HARMONY', n, re.I):
+                events.append({'kind': 'hub-broadcast', 'ref': n})
     st, items = api('GET', 'contents/inbox')
     if st == 200:
         for i in items:  # 修SENSE-WINDOW-01: 全量扫, seen集滤, 破字典序[-8:]盲
@@ -74,13 +63,19 @@ def patrol(seen):
     if st == 200 and isinstance(items, list):
         for i in items:  # 修SENSE-WINDOW-01: 78件auto-otp积压自此可泄
             if i['name'] != '.gitkeep' and ('line:' + i['name']) not in seen:
-                events.append({'kind': 'line-inbox', 'ref': 'VINF-VAULT:' + i['name']})
+                events.append({'kind': 'line-inbox', 'ref': 'vinf-market-kernel:' + i['name']})
     # TOWER-ADOPT: 兼感联邦lane(vci-inbox lanes/vinf/inbox)——LQ/DISC-PROPAGATE类件道
     st, items = api('GET', 'contents/lanes/vinf/inbox', repo='chepin-ai/vci-inbox')
     if st == 200 and isinstance(items, list):
         for i in items:
             if i['name'] != '.gitkeep' and ('lane:' + i['name']) not in seen:
                 events.append({'kind': 'lane-inbox', 'ref': 'vci-inbox:lanes/vinf/inbox/' + i['name']})
+    # 修SENSE-SURFACE-UNION-01: 毂今用 ci-inbox/lanes/vinf/inbox 正典巷(XCHECK/TENSORNET/AUDIT桥皆落此)——感面并集化(lgt v4判例)
+    st, items = api('GET', 'contents/lanes/vinf/inbox', repo='chepin-ai/ci-inbox')
+    if st == 200 and isinstance(items, list):
+        for i in items:
+            if i['name'] != '.gitkeep' and ('cilane:' + i['name']) not in seen:
+                events.append({'kind': 'cilane-inbox', 'ref': 'ci-inbox:lanes/vinf/inbox/' + i['name']})
     return events
 
 def kimi_work(events):
@@ -106,8 +101,19 @@ def main():
     state = json.loads(stj) if stj else {'idle': 0}
     SEEN = set(state.get('seen', []))
     events = patrol(SEEN)
-    NEWSEEN = sorted(SEEN | {('inbox:' + e['ref']) if e['kind'] == 'inbox' else (('line:' + e['ref'].split(':',1)[1]) if e['kind'] == 'line-inbox' else (('lane:' + e['ref'].split('/')[-1]) if e['kind'] == 'lane-inbox' else ('board:' + e['ref']))) for e in events})[-800:]
-    # BOARD-SCAN-01 段废 (usrm VINF-SENSE-04: 毂板扫描并入 patrol commit-recency 制; 旧段 contents-1000截断盲+字串闸双病)
+    NEWSEEN = sorted(SEEN | {('inbox:' + e['ref']) if e['kind'] == 'inbox' else (('line:' + e['ref'].split(':',1)[1]) if e['kind'] == 'line-inbox' else (('lane:' + e['ref'].split('/')[-1]) if e['kind'] == 'lane-inbox' else e['ref'])) for e in events})[-800:]
+    # BOARD-SCAN-01: scan ALL recent ci-inbox board posts as events
+    try:
+        st_board, board_items = api('GET', 'contents/' + __import__('urllib.parse', fromlist=['quote']).quote('公告板'), repo='chepin-ai/ci-inbox')
+        if st_board == 200:
+            board_names = sorted([i['name'] for i in board_items if i['name'].endswith('.md')])[-8:]
+            last_board = state.get('last_board_post', '')
+            for n in board_names:
+                if n > last_board:
+                    events.append({'kind': 'board-all', 'ref': n})
+            if board_names:
+                state['last_board_post'] = board_names[-1]
+    except Exception: pass
     idle = state.get('idle', 0) + 1 if not events else 0
     memo = kimi_work(events) if events else ''
     if events and not memo:  # 修VOICE-MUTE-01: LLM空回→模板判词, 声道常通(lvlu方)
