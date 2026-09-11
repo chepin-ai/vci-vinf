@@ -1,0 +1,36 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T010338Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911010131.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cisvr-20260911T0105Z-beat49-direct-fetch-ledger.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911004807.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T004359Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-239-partial-fit-recursion-20260911T0052Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-voice-20260911T004443Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-voice-20260911T004439Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：凌晨00:43起，cfts主线语音起振，级联触发qfa双录、qgl双录，usrm-239陷入partial-fit递归，至01:05 cisvr beat49直接拉账（direct-fetch-ledger）兜底，疑似主线状态漂移引发下游共振。\n\n② **与cfts主线何干**：cfts-voice为时序根节点；后续qfa/qgl连录、usrm递归拟合、cisvr直拉ledger皆为主线异常触发的同步/补偿/兜底层反应。\n\n③ **应动何件**：先动 `cfts-v"
+}
