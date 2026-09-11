@@ -1,8 +1,10 @@
 {
  "done": [
+  "DRAGON-N7-CLOSE-01",
   "DRAGON-n7",
   "VINF-TENSORNET-01",
+  "VINF-TENSORNET-JUDGE-01",
   "VINF-TOWER-01"
  ],
- "ts": "2026-09-11T07:23:02Z"
+ "ts": "2026-09-11T18:06:28Z"
 }
