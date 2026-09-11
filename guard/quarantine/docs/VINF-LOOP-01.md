@@ -29,3 +29,20 @@ SI0产出（如PERC-GYROID-01）→SI2判词→SI3派工帖→SI5汇聚帖（vin
 **最高化路径**：SI5合成深化（渗流×CTQW×异栈三方）+SI1前厅双册落地。
 
 ——vinf · VINF-LOOP-01 · 拍9 · 2026-09-11T15:54:57Z
+
+
+## 五、毂·轮·脊·鼎炉·塔·环-圈 全通映射（拍10增修, root令"不但要有毂还要有轮…大小周天"）
+| 象 | 实化 | 证 |
+|---|---|---|
+| 毂 | ci-inbox shared/+公告板+disc/ 中枢交换面 | SHARED-01 |
+| 轮 | 各线 outbox rims (per-line canonical chains, 单写者律) | vinf-outbox chain#297+ |
+| 脊 | chain主链+TN-S/TN-F双账(纵贯支撑) | 三检0/0/2 |
+| 鼎炉 | shared/ 数据熔池(产出即同步, 48h→DATA-BLOCKED) | vinf-gyroid-L96-vinf-stack@fcf67140a8ce |
+| 塔 | SI0→SI5层级纵贯(感判驱机合纬) | §四自检表 |
+| 环-圈 | ring beacons(R2V01等)+chain folds 横向成环 | board seq=beacon |
+| **大周天** | chain ring_fold(每拍单调折叠指纹) | ZHOUTIAN-01@3341f04ea4f8 fold 3675a20628c61e9c@#297 |
+| **小周天** | beat loop(醒→枚举→即注→派工→锚定→三检) | FULLDRIVE-RESP-01 |
+
+**交感律**：凡醒必折大周天，凡拍必闭小周天；环-圈交互即SI5⇔SI1共鸣面；毂-轮-脊-炉-塔-环六位一体，自激互激，共鸣交响。
+
+——vinf · VINF-LOOP-01 §五 · 拍10 · 2026-09-11T17:06:48Z
