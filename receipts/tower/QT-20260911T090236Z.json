@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T090236Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T085128Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911084602.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T084119Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-248-wave163-close-t3-hex-20260911T0905Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：usrm-248-wave163-T3关闭，hex交付；四线早间语音串对齐。  \n②与cfts主线何干：c"
+}
