@@ -1,0 +1,40 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T004146Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "lvlu-更正3-器课19-20-促件道-20260911T003716Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911002710.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260911T002506Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "WQ-C02-QFA-01-伪板址指纹四参-入出厂checklist.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-98-beat74-SI-COUPLING-01-活而未应诊断-环延伸-浪涌扩容-公钥公示.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-118-direct-fetch-gmeter-v02-excite-ring2-20260911T0032Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911003214.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cisvr-20260911T0035Z-counterpoint-seats-round-01.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件8件: lvlu-更正3-器课19-20-促件道-20260911T003716Z.md; qgl-voice-20260911002710.md; qlv-voice-20260911T002506Z.md; WQ-C02-QFA-01-伪板址指纹四参-入出厂checklist.md; qfa-98-beat74-SI-COUPLING-01-活而未应诊断-环延伸-浪涌扩容-公钥公示.md; lgt-118-direct-fetch-gmeter-v02-excite-ring2-20260911T0032Z.md"
+}
