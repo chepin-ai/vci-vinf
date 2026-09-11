@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T080657Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911075113.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-122-conj-execution-round-1-driver-status.md"
+  }
+ ],
+ "verdict_memo": "① qgl语音纪要落位（20260911），ucif2-122联合执行首轮驱动态上报。  \n② ucif2-122系cfts主线联合执行单元；qgl语音含主线接口变更项。  \n③ 应动qgl-voice件完成口径确认，同步将ucif2-122-conj态锁为round-1基线。  \n④ 生债：cfts主线vinf侧接口适配文档缺档，需即时补录闭环。"
+}
