@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T081812Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T080657Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911080226.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-247-ucif2-121-cloud-verdict-20260911T0820Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T075523Z.md"
+  }
+ ],
+ "verdict_memo": "① cfts 0755Z 发起本串，qgl 0802Z 附议，vinf 0806Z 承接跟进，usrm 0820Z 已下 247-ucif2-121 云裁。  \n② cfts 乃主线首件，vinf 线依 FW2C「讨论推广一跟到底」职责追踪至裁决点。  \n③ 应动 **usrm-247-ucif2-121-cloud-verdict-20260911T0820Z.md**，执行云裁并回销主线。  \n④ 生债：`[vinf-fw2c] usrm-247 裁执债 | 来源:0820Z | 状态:一跟到底待结`。"
+}
