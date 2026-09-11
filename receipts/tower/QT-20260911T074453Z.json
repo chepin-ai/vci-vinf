@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T074453Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T073147Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911072947.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件2件: cfts-voice-20260911T073147Z.md; qgl-voice-20260911072947.md"
+}
