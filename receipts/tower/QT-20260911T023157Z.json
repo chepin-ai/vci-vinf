@@ -1,0 +1,44 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T023157Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "lvlu-nudge-EVALR2-ALL-L8-20260911T023120Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-nudge-ADJUD-01-L4-20260911T023120Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-voice-20260911T022138Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-101-beat77-机驱清算-FLOOR构成控-SI1002折叠增益.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T021648Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-120-v111-rebuild-cured-20260911T0224Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911021452.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "钥取-lgt-CI_OPS_LINE_KEY-20260911-20260911T0224Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "WQ-B15-LVLU-01-队列时延下界-三线散点-20260911T022116Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：QFA机驱清算、LGT重建钥取、LVLU评估/裁决/时延下界及多路voice并发，系FW2C跨线开工前对齐。\n\n②与cfts主线何干：CFTS主控。QFA清算+FLOOR构成控接主线节拍；LGT钥取供主线线路/权限；LVLU队列时延下界影响调度基线；cfts-voice为主线自检。\n\n③应动何件：先动 **cfts-voice**、**qfa-101-beat77**、**钥取-lgt-CI_OPS_LINE_KEY**；余件并行阅。\n\n④生债一条：qfa-beat77机驱清算接口契约未封，FW2C推广节拍顺延，生**节拍债**一条。"
+}
