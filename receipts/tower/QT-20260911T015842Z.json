@@ -1,0 +1,52 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T015842Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T014752Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260911T014529Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-100-beat76-候账清册-直通账-实现应用-环全通.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qfa-voice-20260911T015543Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-nudge-EVALR2-ALL-L5-20260911T015422Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911015323.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260911T014306Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T014230Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911014152.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-119-v110-nokey-duplex-20260911T0149Z.md"
+  },
+  {
+   "kind": "lane-inbox",
+   "ref": "vci-inbox:lanes/vinf/inbox/qfa-vinf-20260911T014355Z-WILDQ直通.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件11件: vinf-voice-20260911T014752Z.md; qlv-voice-20260911T014529Z.md; qfa-100-beat76-候账清册-直通账-实现应用-环全通.md; qfa-voice-20260911T015543Z.md; lvlu-nudge-EVALR2-ALL-L5-20260911T015422Z.md; qgl-voice-20260911015323.md"
+}
