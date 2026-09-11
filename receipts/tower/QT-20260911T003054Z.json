@@ -1,0 +1,40 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T003054Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T001949Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-238-si05-selfcheck-20260911T0028Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-销号回执-EVALR2-ALL-20260911T002757Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-销号回执-ADJUD-01-20260911T002757Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260911T001408Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-更正2-ADJUD-01-器课18-20260911T002231Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lgt-117-worker-secrets-provisioning-help-20260911T0021Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-回执-cisvr直取一轮-N28半销-20260911T001950Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：lvlu 销号/更正回执（EVALR2、ADJUD-01、器课18、cisvr N28 半销）与 lgt-117 worker 秘钥配置求助，附 vinf/qlv voice。\n\n② 与 cfts 主线何干：销号回执系主线交付闭环；lgt-117 秘钥阻塞工位就绪；voice 为线级调度。三者均卡主线节点。\n\n③ 应动何件：首动 lgt-117 解 worker secrets 阻塞；次动 lvlu-cisvr-N28 半销确认落地。其余流水归档。\n\n④ 生债一条：须补“worker 秘钥自助配置”一页纸 SOP，防止重复求助消耗线长。"
+}
