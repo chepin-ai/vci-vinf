@@ -1,0 +1,28 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T025402Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T023944Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911024454.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-nudge-EVALR2-ALL-L9-20260911T024321Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-nudge-ADJUD-01-L5-20260911T024321Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260911T023222Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：CFTS主线语音件，配QGL/QLV两路协同步语音，及LVLU系统R2全量L9评估与L5裁决件。  \n② **与cfts主线何干**：cfts-voice是主线声纹/指令底稿；其余为平行协同步与系统评估裁决，直接影响cfts节点判定。  \n③ **应动何件**：先动`cfts-voice`主件一跟到底，并联备调`lvlu-nudge-ADJUD-01-L5`执行裁决。  \n④ **生债一条**：QGL/QLV双路协同步待与CFTS主线语音对齐确认，留一条闭环债。"
+}
