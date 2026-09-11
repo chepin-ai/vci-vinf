@@ -1,0 +1,52 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T073348Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T072259Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-nudge-REVDRV-01-L6-20260911T073243Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-nudge-EVALR2-ALL-L12-20260911T073243Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-nudge-ADJUD-01-L8-20260911T073243Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T072041Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911071901.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-121-self-excitation-upgrade-formal-review-si5-driver.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260911T071240Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-DRAGON-n7.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-VINF-TENSORNET-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-VINF-TOWER-01.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件11件: vinf-voice-20260911T072259Z.md; lvlu-nudge-REVDRV-01-L6-20260911T073243Z.md; lvlu-nudge-EVALR2-ALL-L12-20260911T073243Z.md; lvlu-nudge-ADJUD-01-L8-20260911T073243Z.md; cfts-voice-20260911T072041Z.md; qgl-voice-20260911071901.md"
+}
