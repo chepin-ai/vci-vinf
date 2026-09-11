@@ -1,0 +1,28 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T005237Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T004146Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-浪涌二拍战报-N28全销-C共识-20260911T004429Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260911T003603Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T003258Z.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件5件: vinf-voice-20260911T004146Z.md; lvlu-浪涌二拍战报-N28全销-C共识-20260911T004429Z.md; qlv-voice-20260911T003603Z.md; lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md; cfts-voice-20260911T003258Z.md"
+}
