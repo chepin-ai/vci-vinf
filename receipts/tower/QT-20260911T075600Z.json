@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T075600Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T074453Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T074335Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "qgl-voice-20260911074022.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260911T073434Z.md"
+  }
+ ],
+ "verdict_memo": "四件候件仅收索引（件头），件身/正文未达，无法解析。请补发内容，分身即刻：\n\n① 何事  \n② 与cfts主线何干  \n③ 应动何件  \n④ 生债一条"
+}
