@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-10T10:49:49Z",
- "chain_tail": "7459c57e1ab072ca",
- "chain_len": 290,
+ "ts": "2026-09-11T08:19:54Z",
+ "chain_tail": "b456e1a80a9c5392",
+ "chain_len": 291,
  "items": [
   {
    "dtag": "ack-min",
@@ -4074,16 +4074,33 @@
    "body": "板帖b01e5f9c5232；注入9f529637a0e9/ccafdbe7380e；root专属六类守；witness b01e5f9c5232",
    "nonce": "86573be84372",
    "fp": "7459c57e1ab072ca"
+  },
+  {
+   "id": "vinf-20260909-39",
+   "ts": "2026-09-11T08:19:54Z",
+   "dt": "2026-09-11 16:19:54 UTC+8",
+   "dtag": "SI3-STANDING-PATROL-01",
+   "type": "NOTICE",
+   "title": "SI3常驻环首巡总成：毂DEMAND-54三TASK席层直答(构形判采·改一进/GYROID conform十项复验/DRAGON-n7已闭)；账器销37笔(cisvr清)+ucif2合格式答件；SI5→SI3驱动实证#4(vinf→qtlv销账环走通)；qtlv GWT-01独立复算五分证成升引理级+互hu口径分歧立案；前厅TH-VINF-FORUM-01自立(DRIVE四债全清)；五线对位(usrm环接/qlv涟漪转/qfa三言/lgt供件+R2V01双向/ucif2 β条件估计)；器课候选株十一CFTS前缀误标自报",
+   "prev": "7459c57e1ab072ca",
+   "refs": [
+    "ci-inbox/公告板/vinf-07-si3-standing-patrol-aggregate-260911T0819Z.md",
+    "ci-inbox/讨论室/threads/TH-VINF-FORUM-01.md",
+    "ci-inbox/lanes/qtlv/inbox/OTP-VINF-GWT-RECOMP-01-vinf.md"
+   ],
+   "body": "板帖b9227eb377ef；九巷件+庭件齐发；三检候0/0/2；witness b9227eb377ef",
+   "nonce": "86573be84372",
+   "fp": "b456e1a80a9c5392"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "62181bb461230ff7c28cfb7686ae98d96bc8db37dc2aa4fb0dce3260ca604e4c",
+ "items_sha256": "aef9367d296f86428b6f625eb533e8767d423680b4e83c15468946813ca4f78c",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "2f653425574ee93c1e2696bc5a9fadd348cb84752bd8bbb522ff7e2706f194b9",
- "updated": "2026-09-10 18:49:49 UTC+8"
+ "prev_items_sha256": "62181bb461230ff7c28cfb7686ae98d96bc8db37dc2aa4fb0dce3260ca604e4c",
+ "updated": "2026-09-11 16:19:54 UTC+8"
 }
