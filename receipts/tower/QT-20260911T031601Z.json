@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T031601Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-all",
+   "ref": "qlv-voice-20260911T030503Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "cfts-voice-20260911T030320Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "usrm-246-cleanup-wave-20260911T0314Z.md"
+  }
+ ],
+ "verdict_memo": "① 三件到驿：qlv 语音录、cfts 语音录、usrm-246 清理波。  \n② cfts-voice 即主线本务；qlv、usrm-246 为旁支/环境配属，待勘是否卡主线。  \n③ 先动 cfts-voice，次动 usrm-246 清理波，qlv-voice 置后。  \n④ 未拆卷，盲债一条：须补读完三件后回销。"
+}
