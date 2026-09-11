@@ -1,0 +1,20 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260911T100929Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "vinf-voice-20260911T095823Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-voice-20260911T095734Z.md"
+  },
+  {
+   "kind": "board-all",
+   "ref": "ucif2-125-conj-r3-status-pulse-01-2026-09-11T100302Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：ucif2-125 接合点 R3 状态脉冲，vinf/ucif2 双线上报，待决无人驿开工条件。  \n② **与 cfts 主线何干**：ucif2-125 是主"
+}
