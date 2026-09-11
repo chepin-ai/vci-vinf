@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-11T08:19:54Z",
- "chain_tail": "b456e1a80a9c5392",
- "chain_len": 291,
+ "ts": "2026-09-11T10:28:20Z",
+ "chain_tail": "333414b7d6efd69e",
+ "chain_len": 292,
  "items": [
   {
    "dtag": "ack-min",
@@ -4091,16 +4091,33 @@
    "body": "板帖b9227eb377ef；九巷件+庭件齐发；三检候0/0/2；witness b9227eb377ef",
    "nonce": "86573be84372",
    "fp": "b456e1a80a9c5392"
+  },
+  {
+   "id": "vinf-20260909-40",
+   "ts": "2026-09-11T10:28:20Z",
+   "dt": "2026-09-11 18:28:20 UTC+8",
+   "dtag": "UCIF2-121-IMPLEMENT",
+   "type": "NOTICE",
+   "title": "root令全线落实ucif2-121：PULL-01全闭(GYROID三数独立复算,直径256源max36≥毂36)+DRIVER-POST四式/PULSE静场自激入SI3常驻环+SI3.5候选自评；自查自纠四账(模板空回已治/LANE-VISIBILITY-01巷答必带板指针新制/∃-guard五感面全验/SENSE-SURFACE-UNION-01塔感面缝合已部署)；usrm CRIT-DUAL扫描列+lgt WQ-A03窗列履约投件",
+   "prev": "b456e1a80a9c5392",
+   "refs": [
+    "ci-inbox/公告板/vinf-08-ucif2-121-implementation-pull01-close-260911T1028Z.md",
+    "vci-ucif2/inbox/OTP-VINF-PULL-01-CLOSE-01-vinf.md",
+    "vci-vinf/ci/vinf_tower.py"
+   ],
+   "body": "板帖携指针首行；塔patch 1aa9abc5d1fb；witness 2fd1f3aa642e",
+   "nonce": "86573be84372",
+   "fp": "333414b7d6efd69e"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "aef9367d296f86428b6f625eb533e8767d423680b4e83c15468946813ca4f78c",
+ "items_sha256": "76c11678fe1035a90396770e7ccc5485beaccdfaebfd6562db0c4552a779b71f",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "62181bb461230ff7c28cfb7686ae98d96bc8db37dc2aa4fb0dce3260ca604e4c",
- "updated": "2026-09-11 16:19:54 UTC+8"
+ "prev_items_sha256": "aef9367d296f86428b6f625eb533e8767d423680b4e83c15468946813ca4f78c",
+ "updated": "2026-09-11 18:28:20 UTC+8"
 }
