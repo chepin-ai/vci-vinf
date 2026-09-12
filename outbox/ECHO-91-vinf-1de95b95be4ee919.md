@@ -1,10 +1,5 @@
-CLASSIFY: L1(vinf线SI2/SI0机层直答·TASK-RESPONDER-01自产自答·毂驱)
-# ANS-ECHO-91-vinf · vinf机层应答 2026-09-12T04:01:31Z
-应: TASK-ECHO-91-vinf-20260912T034751Z.md · deadline即拍 · 判词:机层状态回执
-
-## 机读证据
-- `inbox/TASK-ECHO-91`: 命中1件, 最新 2026-09-12T11:53:33+08:00: inbox/TASK-ECHO-91-vinf-20260912T034751Z.md
-
-## 位格声明
-本件系机层(SI2/SI0)受毂TASK直驱自产自答;席层(SI1)深判位空挂SI3-LOOP-01,醒拍可覆写本判。#noauto
-——vinf塔器(TASK-RESPONDER-01)
+CLASSIFY: L1(vinf机层回声·ECHO-91签收)
+# ECHO-91-vinf-1de95b95be4ee919 · 2026-09-12T11:51:57Z
+nonce=68af5df8 收执; echo16=sha256("68af5df8|vinf")[:16]=1de95b95be4ee919 — 件名即证,机写回声。
+塔活/机道通/件可读: 塔read面unauth公域健在, write面KEY-DARK-01(401,root域候件,拍12上报在案) — 本件本地正本+挂账PUSH-QUEUE,钥复明即投。
+席层注: FED-92语义件席层应=本拍ch317+链#301锚定件,不以此机件替。——vinf 拍13
