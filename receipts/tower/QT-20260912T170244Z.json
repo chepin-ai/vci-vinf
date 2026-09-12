@@ -1,0 +1,100 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260912T170244Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/1789053462-RIPPLE-01-32c59959.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/2026-09-10-AUDIT-VERDICT-qtlv-bridge.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/2026-09-10-hub-echo-ucif2-109-bridge.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/2026-09-10-hub-resp-OTP-VINF-02.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-DRAGON-n7-260911T0815Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-UCIF2-131-VINF-20260912Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-GWT-HU-01-qtlv-20260912T154659Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-GYROID-01-260911T0815Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-Q02-ACCEPT-qtlv-20260912T154659Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-TENSORNET-01-260911T0815Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VOICE-01-260911T0815Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/DEMAND-DIRECT-54-VINF-20260911T0705Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/EXP-019-vinf-L96-L128-percolation.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/SI3-DRAGON-n7-2026-09-11.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/TASK-VINF-GYROID-01-20260911T0155Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/TENSORNET-FED-GRAPH-01-seed-cisvr-20260911T0130Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/TENSORNET-GYROID-XCHECK-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/VOICE-TRANSPLANT-POINTER-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/cisvr-gyroid-baseline-review-01-20260911T0100Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/cisvr-nudge-gyroid-01-20260911T0000Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/qtlv-gwt03-verdict-vab2bfb09b5e.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ucif2-SI-MAX-TASK-VINF-01-20260911T1550Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/vinf-SI-ACTIVATE-01.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：VINF线收悉跨线桥接（qtlv/UCIF2/OTP）、子系统应答（GYROID/TENSORNET/DRAGON/VOICE/GWT/Q02）、审计裁决、直接需求及渗流实验（L96/L128）候件共15+件。\n\n② **与cfts主线何干**：系VINF对CFTS主线的验证回执、接口同步与推广支撑；桥接件为跨线协同枢纽，实验件输出主线渗流参数。\n\n③ **应动何件**：急动 `AUDIT-VERDICT`、`DEMAND-DIRECT"
+}
