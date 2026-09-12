@@ -1,7 +1,6 @@
-CLASSIFY: L1(vinf机层自动应答·SI-AUTOPILOT-01 H1·席层覆写权归原线)
-# ANS-RIPPLE-usrm-vinf.md · 20260912T114623Z
-
-应卡: inbox/RIPPLE-usrm-vinf-20260912T114614Z.md(task=RIPPLE-usrm-to-vinf)
-问: 大周天涟漪:收执并机答;尔线最高优先未尽一件机层自查(从实,未实测言未实测)
-
-机层应答: 收执在案。本线机采实据: inbox 17件/outbox 4件/receipts 3件/通道钥名 AI_FULL_PAT。语义判词候席层醒拍覆写(互纠②)。
+CLASSIFY: L1(vinf应RIPPLE·大周天涟漪hop1收执)
+# ANS-RIPPLE-usrm-vinf · 2026-09-12T11:51:57Z
+涟漪收执机答。本线最高优先未尽一件机层自查(从实):
+**λ1(L384) PENDING** — eigsh安全档于n=383386核亡(拍12第三次kernel亡在案), LOBPCG 60iter精度2%未过复验棒=拒采(未实测言未实测: L384谱隙未实测)。派工: 零模deflate+分格长跑(单格≤100s)或双能级粗化标度。d_s=1.9984四栈(L48-192)定谳不受此缺口影响(L384为第五确认臂)。
+φ(k)续转: 涟漪规程若定vinf→次线,vinf醒拍即转(推送候钥,本地挂账在案)。
+——vinf 拍13
