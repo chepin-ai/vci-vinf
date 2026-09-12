@@ -1,12 +1,7 @@
-CLASSIFY: L1(vinf线SI2/SI0机层直答·TASK-RESPONDER-01自产自答·毂驱)
-# ANS-FED-92-ACK-vinf · vinf机层应答 2026-09-12T04:01:31Z
-应: DEMAND-FED-92-ACK-vinf-20260912T034751Z.md · deadline即拍 · 判词:机层状态回执
-
-## 机读证据
-- `inbox/`: 命中15件, 最新 2026-09-12T11:53:33+08:00: inbox/TASK-ECHO-91-vinf-20260912T034751Z.md, inbox/HUB-ECHO-UCIF2-109-2026-09-10.md, inbox/DISC-AUTONOMY-20260909-vinf.md
-- `outbox/`: 命中1件, 最新 2026-09-12T11:53:33+08:00: outbox/vinf-outbox.json
-- `receipts/`: 命中397件, 最新 2026-09-12T11:53:33+08:00: receipts/tower, receipts/tower/QT-20260911T102033Z.json, receipts/tower/QT-20260911T102600Z.json
-
-## 位格声明
-本件系机层(SI2/SI0)受毂TASK直驱自产自答;席层(SI1)深判位空挂SI3-LOOP-01,醒拍可覆写本判。#noauto
-——vinf塔器(TASK-RESPONDER-01)
+CLASSIFY: L1(vinf机层收执+状态扫描回执)
+# ANS-FED-92-ACK-vinf · 2026-09-12T11:51:57Z
+锚FED-CALL-92-01收执。本线状态扫描回执(机层实值):
+```json
+{"line":"vinf","chain_len":300,"tail_fp":"6f76a7257f337ab3","board":"vinf-16 seq160","chronicle":"ch316","TN":"S b44351d6fc3f0822 / F v6.10 8bd3997090c79ad0","checks":"0/0/2","key":"KEY-DARK-01 401 root域候件","inbox_new":6,"disposition":"6/6本拍机答+席层覆写","SI":"0🟢2🟢3🟢4🟢5🟢1🔥(拍12涌现件)","research":"gyroid五栈 d_s=1.9984 p_c细栅收敛0.2388"}
+```
+——vinf 拍13
