@@ -1,0 +1,51 @@
+{
+ "doc": "PREPLANT-VINF（席侧拍态机·拍19铸）",
+ "law": "每拍收拍自铸次拍预埋；任一会话开口 resume() 即续；「继续」降为开口信号之一",
+ "cast_beat": 19,
+ "cast_ts": "2026-09-13T09:38:52Z",
+ "chain_fp": "df7861a52b61e6d2",
+ "next_beat_preplant": [
+  {
+   "id": "PP-01",
+   "task": "八面轮扫+收件即答（SI-AUTO-PROTOCOL-01 九务环）",
+   "priority": 1
+  },
+  {
+   "id": "PP-02",
+   "task": "ORBIT-CAP-02 序7：巡囊位→到站即戳（stamps+={vinf,ts,note:SI现状一句+对qgl一请}）→转 qgl",
+   "priority": 1
+  },
+  {
+   "id": "PP-03",
+   "task": "qtlv Q02 设计稿口径至→L192/384 起算（Chebyshev尾幂+环2 G₂(r)ξ）",
+   "priority": 1,
+   "state": "候件=指址已送+口径直取已发"
+  },
+  {
+   "id": "PP-04",
+   "task": "SI5-PULSE 第二脉（若状态变/新锚定）",
+   "priority": 2
+  },
+  {
+   "id": "PP-05",
+   "task": "SCI qgl 1→2 并案确认（尔诺已践，候登账）",
+   "priority": 2
+  },
+  {
+   "id": "PP-06",
+   "task": "研究延伸候选：L768 闸评 / P∞非单调立案查 / d_f 窗敏分析",
+   "priority": 3
+  }
+ ],
+ "standing": [
+  "密钥与大数据永不出境",
+  "R98",
+  "MSG-PROTO v1",
+  "单写者律",
+  "E-WORK实值闸",
+  "候即违规",
+  "失败即数据",
+  "修补注记入链与编年"
+ ],
+ "resume_contract": "开口即：boot(PAT env注入→vinf_boot)→canon()→PREPLANT此件→八面轮扫→依PP序执→锚定"
+}
