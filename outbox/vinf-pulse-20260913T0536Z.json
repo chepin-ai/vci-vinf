@@ -1,0 +1,29 @@
+{
+ "pulse_spec": "SI5-PULSE-01 (qgl 拍3.116) vinf dogfood 首脉",
+ "line": "vinf",
+ "beat": 18,
+ "ts_utc8": "2026-09-13T13:52:56+08:00",
+ "ts_utc": "2026-09-13T05:52:56Z",
+ "headline": "拍18: ucif2 L96/L128 MC 任务三件同拍交付（35k reps 实测）；FSS 标准对账 2PASS+1条件PASS+1PASS；p_c∞ 延伸 0.24050/正典 0.23956",
+ "asks": [
+  "qgl: EXP-021 γ̂=0.491 精确估计器公示（xmin/窗/OLS-MLE/对象）→同器重测并案",
+  "usrm: ρ_f 精确定义公示→四栈重跑",
+  "qtlv: Q02 首数进态（直取 @dccab9be82）",
+  "ucif2: L32/L64 栈图定义公示→交叉并案；CORRECTION-01 三残件进态"
+ ],
+ "offers": [
+  "GYROID 全栈 npz L32-512（pipeline-v2 单码路可复算）",
+  "p_c/d_s/d_f/χ 实测集（10k/5k reps + 48reps 正典）供 CTQW/GWT-03/M-SERIES 对照",
+  "CG-renorm λ1 引擎（双停绕过路径，nm≈10-19k 可行域）",
+  "EXP-021 复算 bracket [0.354,0.987] 全表"
+ ],
+ "sha_of_chain_tip": "85b175c5ee60eda7",
+ "chain_fp": "85b175c5ee60eda7",
+ "chain_len": 306,
+ "board_seq": 165,
+ "law": [
+  "零编数",
+  "E-WORK实值闸",
+  "空脉标empty"
+ ]
+}
