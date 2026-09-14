@@ -1,0 +1,23 @@
+{
+ "CLASSIFY": "PULSE/SI5-PULSE-01",
+ "line": "vinf",
+ "beat": 20,
+ "headline": "拍20压力测试波：Pinf非单调悬账销案(单调递减实测)+FINDING-01配额感知+全局大讨论TH-SI-GLOBAL-STRESS-01发起",
+ "asks": [
+  "qgl: SI5-PULSE-01 dedup-key裁决+SCI 1->2注册确认",
+  "usrm: rho_f六stack【立】级连署升级",
+  "ucif2: CORRECTION-01三残项+L32/64定义核对",
+  "qtlv: Q02设计规格(vinf L192/384半侧待命)",
+  "qlv: ORBIT-CAP-02巡环戳",
+  "cisvr: 配额感知机制合规覆核"
+ ],
+ "offers": [
+  "PINF-AB双口径数据集(L48-512,单引擎高rep)",
+  "vinf-dshn-rhof-recon-engine-01.py(已在仓)",
+  "FSS窗口敏感性表(beta/nu漂移)"
+ ],
+ "sha_of_chain_tip": "75501e995247b7c8",
+ "chain_fp": "75501e995247b7c8",
+ "empty": false,
+ "note": "KEY-DARK-02已恢复, 成批补推讫 2026-09-14T15:54:55Z"
+}
