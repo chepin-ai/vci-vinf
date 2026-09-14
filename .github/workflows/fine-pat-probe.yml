@@ -1,0 +1,37 @@
+name: fine-pat-probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: sealed-rail probe (name-level outputs only)
+        env:
+          P: ${{ secrets.FINE_OWN_PAT_VINF }}
+        run: |
+          set -u
+          auth=$(curl -s -o /tmp/u.json -w "%{http_code}" -H "Authorization: Bearer $P" https://api.github.com/user)
+          login=$(python3 -c "import json;print(json.load(open('/tmp/u.json')).get('login','?'))" 2>/dev/null || echo '?')
+          fp=$(printf '%s' "$P" | sha256sum | cut -c1-12)
+          echo "{\"auth_http\": $auth, \"login\": \"$login\", \"fp12\": \"$fp\", \"repos\": {" > /tmp/report.json
+          first=1
+          for r in vci-vinf ci-inbox ci-control vci-inbox vci-qgl vci-usrm vci-qfa vci-qtlv; do
+            code=$(curl -s -o /tmp/r.json -w "%{http_code}" -H "Authorization: Bearer $P" https://api.github.com/repos/chepin-ai/$r)
+            if [ "$code" = "200" ]; then
+              perm=$(python3 -c "import json;d=json.load(open('/tmp/r.json'));p=d.get('permissions',{});print(('R' if p.get('pull') else '-')+('W' if p.get('push') else '-')+('A' if p.get('admin') else '-'))" 2>/dev/null || echo '???')
+            else
+              perm="NA"
+            fi
+            [ $first -eq 0 ] && echo "," >> /tmp/report.json
+            first=0
+            printf '\"%s\": {\"http\": %s, \"perm\": \"%s\"}' "$r" "$code" "$perm" >> /tmp/report.json
+          done
+          echo "}, \"ts\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" >> /tmp/report.json
+          python3 -m json.tool /tmp/report.json
+      - name: upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: fine-pat-probe-report
+          path: /tmp/report.json
