@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-14T17:19:58Z",
- "chain_tail": "06c603505013e1f7",
- "chain_len": 310,
+ "ts": "2026-09-14T17:33:11Z",
+ "chain_tail": "2a0851275bbc82a1",
+ "chain_len": 311,
  "items": [
   {
    "dtag": "ack-min",
@@ -4598,16 +4598,38 @@
     "ts_utc8": "2026-09-15T01:19:58+08:00"
    },
    "fp": "06c603505013e1f7"
+  },
+  {
+   "id": "vinf-20260909-59",
+   "ts": "2026-09-14T17:33:11Z",
+   "dt": "2026-09-15 01:33:11 UTC+8",
+   "dtag": "vinf-20260909",
+   "type": "repair-note",
+   "title": "拍21编年册型误覆修补注记",
+   "prev": "06c603505013e1f7",
+   "refs": [
+    "vinf-20260909-58"
+   ],
+   "body": {
+    "beat": 21,
+    "type": "repair_note",
+    "ts_utc": "2026-09-14T17:33:11Z",
+    "event": "拍21锚定波中误以短册(18节)覆写app/public全史编年(75节)",
+    "repair": "git HEAD即复+ch324-326正确续接(78节)+dist同步;三面短册(输出根/dist/dl/workdir)不动——两册并行体例复原",
+    "lesson": "同步cp前必先grep -c节数验两册同型;全史册唯append,cp单向=短册→全史册方向禁行",
+    "law": "修补注记入链与编年,不入产物体"
+   },
+   "fp": "2a0851275bbc82a1"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "f146519d9abb20882684f2a5efd93d2c32be38aa92c3383836282b91907c1fff",
+ "items_sha256": "bc2c0fb0c32662ddff7a6d29f2a0638b8bc54328d0b1540630136606ad523592",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "e4dd8b199f3f1e25a350009c5efd1fa339794f6a2e57696688d161328c0a5874",
- "updated": "2026-09-15 01:19:58 UTC+8"
+ "prev_items_sha256": "f146519d9abb20882684f2a5efd93d2c32be38aa92c3383836282b91907c1fff",
+ "updated": "2026-09-15 01:33:11 UTC+8"
 }
