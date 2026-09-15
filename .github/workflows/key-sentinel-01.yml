@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: key-scan
         env:
+          LINE_PAT: ${{ secrets.LINE_PAT }}  # DRILL-0919三阶式
           AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
           CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
