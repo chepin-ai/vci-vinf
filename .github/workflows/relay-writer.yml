@@ -1,0 +1,46 @@
+name: relay-writer-01
+on:
+  workflow_dispatch:
+    inputs:
+      target_repo: {description: 'target repo name under chepin-ai', required: true}
+      target_path: {description: 'file path in repo', required: true}
+      message: {description: 'commit message', required: true}
+      payload_b64: {description: 'base64 of file content (utf-8)', required: true}
+permissions:
+  contents: write
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    steps:
+      - name: relay write via line app token (道D degraded lane)
+        env:
+          MESH_PAT: ${{ secrets.CI_OPS_LINE_KEY }}
+          FALLBACK: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
+          TARGET_REPO: ${{ inputs.target_repo }}
+          TARGET_PATH: ${{ inputs.target_path }}
+          MESSAGE: ${{ inputs.message }}
+          PAYLOAD_B64: ${{ inputs.payload_b64 }}
+        run: |
+          python3 - <<'PY'
+          import os, json, base64, urllib.request
+          tok = os.environ.get('MESH_PAT') or os.environ['FALLBACK']
+          repo = os.environ['TARGET_REPO']; path = os.environ['TARGET_PATH']
+          msg = os.environ['MESSAGE']
+          content = base64.b64decode(os.environ['PAYLOAD_B64']).decode('utf-8')
+          H = {'Authorization': 'token ' + tok, 'Accept': 'application/vnd.github+json', 'User-Agent': 'relay-writer-01'}
+          def req(method, url, body=None):
+              r = urllib.request.Request('https://api.github.com' + url, method=method,
+                    headers=H, data=json.dumps(body).encode() if body else None)
+              try:
+                  with urllib.request.urlopen(r, timeout=30) as resp:
+                      return resp.status, json.loads(resp.read() or b'{}')
+              except urllib.error.HTTPError as e:
+                  return e.code, {}
+          st, cur = req('GET', f'/repos/chepin-ai/{repo}/contents/{path}')
+          body = {'message': msg, 'content': base64.b64encode(content.encode()).decode()}
+          if st == 200 and cur.get('sha'):
+              body['sha'] = cur['sha']
+          st2, r2 = req('PUT', f'/repos/chepin-ai/{repo}/contents/{path}', body)
+          print(json.dumps({'put': st2, 'repo': repo, 'path': path, 'name_level_only': True}))
+          assert st2 in (200, 201), f'relay write failed {st2}'
+          PY
