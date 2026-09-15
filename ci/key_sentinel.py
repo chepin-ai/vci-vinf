@@ -40,7 +40,7 @@ def main():
             keys[name] = p
     alive = [k for k, v in keys.items() if v.get('http') == 200]
     dead = [k for k, v in keys.items() if v.get('http') == 401]
-    meta = secrets_meta(os.environ.get('LINE_PAT') or os.environ.get('AI_FULL_PAT') or os.environ.get('CI_OPS_LINE_KEY') or os.environ.get('GH_TOKEN')  # DRILL-0919三阶)
+    meta = secrets_meta(os.environ.get('LINE_PAT') or os.environ.get('AI_FULL_PAT') or os.environ.get('CI_OPS_LINE_KEY') or os.environ.get('GH_TOKEN'))  # DRILL-0919三阶
     state_p = 'receipts/key-sentinel/state.json'
     prev = {}
     if os.path.exists(state_p):
