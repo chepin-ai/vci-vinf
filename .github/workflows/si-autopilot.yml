@@ -18,10 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - env:
-          P1: ${{ secrets.AI_FULL_PAT }}
-          P2: ${{ secrets.LINE_PAT }}
-          P3: ${{ secrets.FED_PAT }}
-          P4: ${{ secrets.QI_PAT }}
+          P1: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}  # DRILL-0919三阶式
+          P2: ${{ secrets.FED_PAT }}
+          P3: ${{ secrets.QI_PAT }}
+          P4: ${{ secrets.AI_FULL_PAT }}  # C1末位(0919死期后空串自然跳过)
           LINE: vinf
           SELF_EXCITE: ${{ github.event.inputs.self_excite || '0' }}
         run: |
