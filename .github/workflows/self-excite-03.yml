@@ -1,0 +1,115 @@
+name: SELF-EXCITE-03 (vinf SI1语义自激轨·统一正位·dedupe+真重试+态生SELF-Q·supersedes 01/02)
+'on':
+  workflow_dispatch:
+  push:
+    paths: ['lanes/vinf/inbox/**']
+permissions:
+  contents: write
+env:
+  KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+  DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+jobs:
+  excite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: semantic-scan-and-self-excite
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, subprocess, datetime, hashlib, glob, re, urllib.request, urllib.error
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          LINE='vinf'
+          os.makedirs('lanes/vinf/inbox',exist_ok=True); os.makedirs('outbox',exist_ok=True); os.makedirs('si',exist_ok=True)
+          stf='si/self-excite-state.json'
+          try: stt=json.load(open(stf))
+          except Exception: stt={'done':[]}
+          done=set(stt['done'])
+          def llm(question, context):
+              key=os.environ.get('KIMI_API_KEY','')
+              if key:
+                  base='https://api.moonshot.cn/v1'
+                  H={'Authorization':'Bearer '+key,'Content-Type':'application/json'}
+                  cands=[]
+                  try:
+                      rq=urllib.request.Request(base+'/models',headers=H)
+                      with urllib.request.urlopen(rq,timeout=20) as r: ms=json.loads(r.read()).get('data',[])
+                      cands=[m['id'] for m in ms]
+                  except Exception as e: print(json.dumps({'models_fail':getattr(e,'code',-1)}))
+                  for model in cands[:6]:
+                      body={'model':model,'messages':[
+                          {'role':'system','content':'你是vinf线SI1席层自治应答机。以联邦纪律(诚实缺口/三即律/负结果入册/级名不滥)作答,务实精炼,中文,300-500字。'+context},
+                          {'role':'user','content':question}]}
+                      try:
+                          rq=urllib.request.Request(base+'/chat/completions',data=json.dumps(body).encode(),headers=H,method='POST')
+                          with urllib.request.urlopen(rq,timeout=90) as r: d=json.loads(r.read())
+                          return {'engine':'KIMI_API_KEY','model':model,'usage':d.get('usage',{}),'answer':d['choices'][0]['message']['content']}
+                      except urllib.error.HTTPError as e: print(json.dumps({'llm_fail':model,'code':e.code})); continue
+                      except Exception as e: print(json.dumps({'llm_fail':model,'err':str(e)[:60]})); continue
+              dk=os.environ.get('DEEPSEEK_API_KEY','')
+              if dk:
+                  try:
+                      body={'model':'deepseek-chat','messages':[{'role':'user','content':question[:1500]}]}
+                      rq=urllib.request.Request('https://api.deepseek.com/v1/chat/completions',data=json.dumps(body).encode(),
+                          headers={'Authorization':'Bearer '+dk,'Content-Type':'application/json'},method='POST')
+                      with urllib.request.urlopen(rq,timeout=90) as r: d=json.loads(r.read())
+                      return {'engine':'DEEPSEEK_API_KEY','model':'deepseek-chat','usage':d.get('usage',{}),'answer':d['choices'][0]['message']['content']}
+                  except Exception as e: print(json.dumps({'ds_fail':getattr(e,'code',str(e)[:40])}))
+              return None
+          new_handled=[]; sem=[]; pending=0
+          for f in sorted(glob.glob('lanes/vinf/inbox/*')):
+              nm=os.path.basename(f)
+              if nm in done: continue
+              try: t=open(f,encoding='utf-8',errors='replace').read()
+              except Exception: pending+=1; continue
+              m=re.search(r"```json\s*(\{.*?\})\s*```",t,re.S)
+              is_card=bool(m)
+              if not is_card:
+                  for pat in ('"task"','TASK-','RIPPLE-','PAIR-','SELFQ'):
+                      if pat in t or nm.startswith(('TASK-','RIPPLE-','PAIR-','SELFQ')): is_card=True; break
+              if not is_card: pending+=1; done.add(nm); continue
+              new_handled.append(nm); done.add(nm)
+              ask=None; out=None
+              if m:
+                  try:
+                      tj=json.loads(m.group(1)); ask=tj.get('ask') or tj.get('task'); out=tj.get('output')
+                  except Exception: pass
+              if ask:
+                  r=llm(str(ask)[:1500],'应卡='+nm)
+                  if r:
+                      op=out if out and out.startswith('outbox/') and not os.path.exists(out) else 'outbox/ANS-SEM-%s'%nm
+                      body='# vinf SI1语义应答\n\n应卡: %s\n引擎: %s/%s usage=%s\n\n%s\n\n——vinf SI1席层应答机·SELF-EXCITE-03·%s\n'%(nm,r['engine'],r['model'],json.dumps(r['usage']),r['answer'],ts)
+                      open(op,'w',encoding='utf-8').write(body)
+                      sem.append({'card':nm,'out':op,'engine':r['engine'],'model':r['model'],'ans_fp':hashlib.sha256(r['answer'].encode()).hexdigest()[:12],'ans_head':r['answer'][:300]})
+          log={'line':LINE,'ts':ts,'new_handled':new_handled,'prose_pending':pending,'sem':len(sem)}
+          self_excited=None
+          if not new_handled:
+              q='拍30自激题(态生非硬种·由inbox空态+前沿队列导出): ①SELF-EXCITE轨三判例(YAML标量/撞车/假重试)对联邦工作流书写律之凝练 ②互激语义轨代铸三线(lgt/usrm/qfa)之权责边界与覆写权归原线之实操 ③IGNITION-FRONTIER下一棒裁决(G2 micro-iid方差 vs 道D分片)'
+              r=llm(q,'SELF-Q自派工(无新增handled,态生自激)')
+              qj={'task':'SELFQ-vinf','line':LINE,'ts':ts,'nonce':hashlib.sha256(ts.encode()).hexdigest()[:12]}
+              body='# SELFQ-vinf 自激派工+SI1语义自答\n\n```json\n%s\n```\n\n问: %s\n\n'%(json.dumps(qj,ensure_ascii=False),q)
+              if r:
+                  body+='引擎: %s/%s usage=%s\n\n%s\n'%(r['engine'],r['model'],json.dumps(r['usage']),r['answer'])
+                  self_excited={'nonce':qj['nonce'],'engine':r['engine'],'model':r['model'],'ans_fp':hashlib.sha256(r['answer'].encode()).hexdigest()[:12],'ans_head':r['answer'][:300]}
+              else:
+                  body+='(LLM道暂闭——诚实缺口)\n'; self_excited={'nonce':qj['nonce'],'engine':None}
+              open('outbox/ANS-SELFQ-vinf-%s.md'%ts,'w',encoding='utf-8').write(body)
+              log['self_excited']=self_excited
+          open('outbox/SELF-EXCITE-LOG-vinf.jsonl','a').write(json.dumps(log,ensure_ascii=False)+'\n')
+          stt['done']=sorted(done); json.dump(stt,open(stf,'w'))
+          subprocess.run(['git','config','user.email','vinf-si@fed.local']); subprocess.run(['git','config','user.name','vinf-si-autopilot'])
+          subprocess.run(['git','add','-A'])
+          c=subprocess.run(['git','commit','-m','SELF-EXCITE-03拍 %s new=%d sem=%d excited=%s'%(ts,len(new_handled),len(sem),bool(self_excited))],capture_output=True,text=True)
+          push='skip(no-change)'
+          if c.returncode==0:
+              import time as _t
+              for i in range(4):
+                  subprocess.run(['git','fetch','-q','origin','main'],capture_output=True)
+                  rb=subprocess.run(['git','rebase','origin/main'],capture_output=True,text=True)
+                  qq=subprocess.run(['git','push','-q','origin','HEAD:main'],capture_output=True,text=True)
+                  if qq.returncode==0: push='ok'; break
+                  if rb.returncode!=0: subprocess.run(['git','rebase','--abort'],capture_output=True)
+                  _t.sleep(2+i*2)
+              else: push='fail:'+qq.stderr[:60]
+          print(json.dumps({'line':LINE,'ts':ts,'new_handled':len(new_handled),'prose_pending':pending,
+              'sem':sem,'self_excited':self_excited,'push':push},ensure_ascii=False))
+          PYEOF
