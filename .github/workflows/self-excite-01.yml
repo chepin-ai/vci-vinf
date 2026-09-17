@@ -1,0 +1,48 @@
+name: SELF-EXCITE-01 (vinf自激轨·拍29立法候选·事件驱动无cron)
+on:
+  workflow_dispatch:
+  push:
+    paths: ['lanes/vinf/inbox/**']
+permissions:
+  contents: write
+env:
+  SELF_EXCITE: '1'
+jobs:
+  excite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 - <<'PYEOF'
+
+        import os, json, subprocess, datetime, hashlib
+        ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+        LINE='vinf'
+        # 机读扫描 lanes/vinf/inbox(本仓内嵌面) + 自激闸: 无handled→SELF-Q派工(拍29 SELF-EXCITE复现轨)
+        import glob
+        os.makedirs('lanes/vinf/inbox',exist_ok=True); os.makedirs('outbox',exist_ok=True)
+        handled=[]; pending=0
+        for f in sorted(glob.glob('lanes/vinf/inbox/*')):
+            nm=os.path.basename(f)
+            try:
+                t=open(f,encoding='utf-8',errors='replace').read()
+            except Exception:
+                pending+=1; continue
+            m=None
+            for pat in ('"task"','TASK-','RIPPLE-','PAIR-','SELFQ'):
+                if pat in t or nm.startswith(('TASK-','RIPPLE-','PAIR-','SELFQ')): m=pat; break
+            if not m: pending+=1; continue
+            handled.append(nm)
+        log={'line':LINE,'ts':ts,'handled':handled,'prose_pending':pending}
+        self_excited=None
+        if os.environ.get('SELF_EXCITE','1')=='1' and not handled:
+            q={'task':'SELFQ-vinf','line':'vinf','output':'outbox/ANS-SELFQ-vinf-%s.md'%ts,'nonce':hashlib.sha256(ts.encode()).hexdigest()[:12]}
+            open(q['output'],'w').write('# SELFQ-vinf 自激派工件\n'+json.dumps(q,ensure_ascii=False)+'\n\n机层自激: 无handled事件下自动派工,SI醒拍覆写深答(塔律)。\n')
+            self_excited=q['nonce']; log['self_excited']=self_excited
+        open('outbox/SELF-EXCITE-LOG-vinf.jsonl','a').write(json.dumps(log,ensure_ascii=False)+'\n')
+        subprocess.run(['git','config','user.email','vinf-si@fed.local']); subprocess.run(['git','config','user.name','vinf-si-autopilot'])
+        subprocess.run(['git','add','-A'])
+        c=subprocess.run(['git','commit','-m','SELF-EXCITE-01拍 %s handled=%d pending=%d excited=%s'%(ts,len(handled),pending,self_excited)],capture_output=True,text=True)
+        p=subprocess.run(['git','push'],capture_output=True,text=True)
+        print(json.dumps({'line':LINE,'ts':ts,'handled':len(handled),'prose_pending':pending,'self_excited':self_excited,'commit_rc':c.returncode,'push':('ok' if p.returncode==0 else p.stderr[:80])}))
+
+        PYEOF
