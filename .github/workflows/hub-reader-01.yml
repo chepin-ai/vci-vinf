@@ -1,0 +1,42 @@
+name: HUB-READER-01 (vinf hub读轨·CI_OPS_LINE_KEY独立配额·暗窗可读·敏感面拒读)
+'on':
+  workflow_dispatch:
+    inputs:
+      repo: {description: 'repo under chepin-ai', required: true, default: 'ci-inbox'}
+      path: {description: 'prefix(list) or file path(cat)', required: true}
+      mode: {description: 'list|cat', required: true, default: 'list'}
+permissions:
+  contents: read
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    steps:
+      - name: read
+        env:
+          CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+          IN_REPO: ${{ inputs.repo }}
+          IN_PATH: ${{ inputs.path }}
+          IN_MODE: ${{ inputs.mode }}
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, base64, urllib.request, urllib.error
+          repo=os.environ.get('IN_REPO','ci-inbox'); path=os.environ.get('IN_PATH',''); mode=os.environ.get('IN_MODE','list')
+          tok=os.environ['CI_OPS_LINE_KEY']
+          def g(u):
+              rq=urllib.request.Request('https://api.github.com'+u,headers={'Authorization':'token '+tok,'Accept':'application/vnd.github+json','User-Agent':'hub-reader'})
+              with urllib.request.urlopen(rq,timeout=30) as r: return r.status, json.loads(r.read() or b'{}')
+          low=path.lower()
+          if any(k in low for k in ('secret','.env','pat','token','key.pem','id_rsa')):
+              print(json.dumps({'err':'guard: sensitive path refused'})); raise SystemExit(0)
+          if mode=='list':
+              st,d=g('/repos/chepin-ai/%s/git/trees/main?recursive=1'%repo)
+              hits=[t['path'] for t in d.get('tree',[]) if t['path'].startswith(path)]
+              print(json.dumps({'repo':repo,'prefix':path,'count':len(hits),'paths':hits[:400]},ensure_ascii=False))
+          else:
+              st,d=g('/repos/chepin-ai/%s/contents/%s'%(repo,urllib.parse.quote(path)))
+              if st==200 and isinstance(d,dict) and d.get('content'):
+                  txt=base64.b64decode(d['content']).decode('utf-8','replace')
+                  print('=====CONTENT %s:%s (%d bytes)====='%(repo,path,len(txt)))
+                  print(txt[:12000])
+              else: print(json.dumps({'err':st}))
+          PYEOF
