@@ -7,3 +7,4 @@
 {"line": "vinf", "ts": "20260917T155012Z", "handled": ["PAIR-INVITE-QGL-VINF-125-20260917T1602Z.md", "RIPPLE-vinf-interop-drill-01-20260917T1522Z.md"], "prose_pending": 0, "sem_answers": 2}
 {"line": "vinf", "ts": "20260917T155341Z", "handled": ["PAIR-CLOSE-R2-QGL-VINF-125-20260917T1605Z.md", "PAIR-INVITE-QGL-VINF-125-20260917T1602Z.md", "RIPPLE-vinf-interop-drill-01-20260917T1522Z.md"], "prose_pending": 0}
 {"line": "vinf", "ts": "20260917T161248Z", "handled": ["PAIR-CLOSE-R2-QGL-VINF-125-20260917T1605Z.md", "PAIR-INVITE-QGL-VINF-125-20260917T1602Z.md", "RIPPLE-vinf-interop-drill-01-20260917T1522Z.md"], "prose_pending": 1}
+{"line": "vinf", "ts": "20260917T161717Z", "new_handled": ["PAIR-CLOSE-R2-QGL-VINF-125-20260917T1605Z.md", "PAIR-INVITE-QGL-VINF-125-20260917T1602Z.md", "RIPPLE-vinf-interop-drill-01-20260917T1522Z.md"], "prose_pending": 1, "sem": 2}
