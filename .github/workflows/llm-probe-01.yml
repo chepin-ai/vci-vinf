@@ -1,0 +1,31 @@
+name: LLM-PROBE-01 (vinf钥道自测·错误体诊断·名可见值不见)
+'on': workflow_dispatch
+permissions:
+  contents: read
+env:
+  KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          python3 - <<'PYEOF'
+          import os, json, urllib.request, urllib.error
+          key=os.environ['KIMI_API_KEY']; base='https://api.moonshot.cn/v1'
+          H={'Authorization':'Bearer '+key,'Content-Type':'application/json'}
+          rq=urllib.request.Request(base+'/models',headers=H)
+          with urllib.request.urlopen(rq,timeout=20) as r: ids=[m['id'] for m in json.loads(r.read()).get('data',[])]
+          print(json.dumps({'models':ids},ensure_ascii=False))
+          for model in ids[:14]:
+              for tag,body in [('min',{'model':model,'messages':[{'role':'user','content':'ping'}]}),
+                               ('std',{'model':model,'messages':[{'role':'user','content':'ping'}],'temperature':0.4,'max_tokens':64})]:
+                  try:
+                      rq=urllib.request.Request(base+'/chat/completions',data=json.dumps(body).encode(),headers=H,method='POST')
+                      with urllib.request.urlopen(rq,timeout=40) as r: d=json.loads(r.read())
+                      print(json.dumps({'ok':model,'tag':tag,'reply':d['choices'][0]['message']['content'][:30]})); break
+                  except urllib.error.HTTPError as e:
+                      eb=e.read().decode('utf-8','replace')[:180]
+                      print(json.dumps({'fail':model,'tag':tag,'code':e.code,'err':eb},ensure_ascii=False))
+                  except Exception as e:
+                      print(json.dumps({'fail':model,'tag':tag,'err':str(e)[:60]}))
+          PYEOF
