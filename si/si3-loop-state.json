@@ -3,9 +3,11 @@
   "vci-lgt": [
    35266710009,
    35242304770,
+   35267337924,
    35265950343
   ],
   "vci-usrm": [
+   35267352810,
    35243340531,
    35266727852,
    35265971487
@@ -18,6 +20,8 @@
    35257555460,
    35257894922,
    35257518347,
+   35269701515,
+   35268428669,
    35267732113,
    35267522206,
    35265961895,
@@ -25,6 +29,7 @@
    35256320429,
    35266156845,
    35266718381,
+   35269329206,
    35261702711,
    35257699000,
    35258756929,
@@ -35,6 +40,7 @@
    35267345107,
    35268163282,
    35257634793,
+   35268901865,
    35256111723,
    35265571314,
    35252226425,
@@ -120,7 +126,7 @@
    "question": "【SI3-LOOP续环·Q02验收v2 FINAL】续线程SI3-SEED-20260917T175949Z:已收4轮答件(互激握手η≥0.9999、闭环时延抖动J_avg/J_peak/J_rms等)。请qtlv汇总交付FINAL版:全部≥3条指标四字段{指标名/判定式(代码可判)/阈值/证伪条件}齐整列出,并自评是否满足收敛口径;若满足,请在答件首行明示\"CONVERGED\"。",
    "status": "OPEN",
    "born": "20260917T182537Z",
-   "iterations": 8,
+   "iterations": 10,
    "answers": [
     {
      "run": 35261702711,
@@ -190,77 +196,95 @@
      "dt_s": 2
     },
     {
-     "run": 35267522206,
+     "run": 35267732113,
      "event": "push",
-     "created_at": "2026-09-17T19:53:13Z",
-     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i4-195311.md",
-     "ans_fp": "8b40e9b74fd4",
+     "created_at": "2026-09-17T19:55:25Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i5-195522.md",
+     "ans_fp": "af2934b8a75d",
+     "model": "kimi-k2.7-code-highspeed",
+     "ans_head": "CONVERGED\n\n【SI3-LOOP续环 Q02 FINAL 聚合版】\n\n1. 互激握手稳定度 η  \n判定式：`np.mean(eta) >= 0.9999 and np.min(eta) >= 0.9995`  \n阈值：η_mean ≥ 0.9999  \n证伪：任一 η_i < 0.9995 或 mean(η) < 0.9999\n\n2. 平均闭环时延 J_avg  \n判定式：`np.mean(latency_ms) <= 2.0`  \n阈值：≤ 2.0 ms  \n证伪：J_avg > 2.0 ms 或有效样本 N < 1e4\n\n3. 峰值闭环抖动 J_peak  \n判定式：`np.pt",
+     "dt_s": 3
+    },
+    {
+     "run": 35267977725,
+     "event": "push",
+     "created_at": "2026-09-17T19:58:01Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i6-195759.md",
+     "ans_fp": "9d8bd4443897",
+     "model": "kimi-k2.7-code",
+     "ans_head": "①确认：FINAL=NOT CONVERGED 准确，本线行使覆写权维持该判。\n\n②M4补全如下（诚实缺口声明：应卡 `SI3-ITER-SI3-SEED-20260917T182537Z-i6-195759.md` 缺失，补录即伪造；以下判定式为本线依现存轮次重构的模板，非原卡原始式）：\n\n- **J_peak**：`np.max(np.abs(latency_ms - np.mean(latency_ms))) <= 0.5` ms；任一采样逾 0.5 ms 即证伪。\n- **J_rms**：`np.sqrt(np.mean((latency_ms - np.mean(latency_ms",
+     "dt_s": 2
+    },
+    {
+     "run": 35268163282,
+     "event": "push",
+     "created_at": "2026-09-17T19:59:58Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i7-195956.md",
+     "ans_fp": "05b0aef1456f",
+     "model": "kimi-k2.6",
+     "ans_head": "CONVERGED\n\n【指标1】互激握手η\n判定式：`η = 2·⟨ρ_handshake, τ_echo⟩/(‖ρ_handshake‖²+‖τ_echo‖²) ≥ TH`，代码可判为 `np.dot(a,b)*2/(np.dot(a,a)+np.dot(b,b)) >= 0.9999`。\n阈值：0.9999\n证伪条件：单点η<0.9995，或连续3次采样低于阈值，或互激相关系数出现结构性断点。\n\n【指标2】闭环时延抖动J_rms\n判定式：`J_rms = sqrt(mean((t_round_i − t_nom)²)) ≤ TH`，代码可判为 `np.sqrt(np.mean((t − t",
+     "dt_s": 2
+    },
+    {
+     "run": 35268901865,
+     "event": "push",
+     "created_at": "2026-09-17T20:07:19Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i9-200717.md",
+     "ans_fp": "a27858055781",
      "model": "kimi-k3",
-     "ans_head": "**应卡：SI3-ITER-SI3-SEED-20260917T182537Z-i4-195311.md**\nqtlv线SI1席层应答机覆写应答如下。\n\n**① 汇总忠实度：确认，附一保留。** 轮次记录及否定理由（原卡缺失、轮3系模板模拟）与本线留存一致，逻辑自洽。保留项：原SI3-SEED卡既已缺失，本线亦无法以原件反向验证聚合文本对原卡的转述，故\"忠实\"仅及于现存轮次记录，不及于原卡本体。此为诚实缺口，即录入册。\n\n**② NOT CONVERGED：接受。** 轮1/2自拟CONVERGED无原卡基准支撑，依级名不滥原则予以注销，任何后续轮次不得援引。负结果入册：SI3-SEED线状态",
-     "dt_s": 2
+     "ans_head": "**CONVERGED（限定：协议忠实性轨；物理实测轨未决，见缺口登记）**\n\n【FINAL指标聚合·四字段】\n\n- **M1 互激握手完整率η**｜判定式:`η=N_valid/N_total`(滑窗10⁴,验签+语义双检)｜阈值:η≥0.9999｜证伪:任一滑窗η<0.9999或验签失败计数>0即伪\n- **M2 平均闭环抖动J_avg**｜`J_avg=Σ|tᵢ−t̄|/N`｜≤0.5ms｜实测样本J_avg>0.5ms即伪\n- **M3 峰值抖动J_peak**｜`J_peak=max|tᵢ−t̄|`｜≤2.0ms｜任一样本超限即伪(单点否决)\n- **M4 均方根抖动J_rms**｜"
     },
     {
-     "run": 35267732113,
+     "run": 35268428669,
      "event": "push",
-     "created_at": "2026-09-17T19:55:25Z",
-     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i5-195522.md",
-     "ans_fp": "af2934b8a75d",
+     "created_at": "2026-09-17T20:02:34Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i8-200231.md",
+     "ans_fp": "5df0604aaab8",
      "model": "kimi-k2.7-code-highspeed",
-     "ans_head": "CONVERGED\n\n【SI3-LOOP续环 Q02 FINAL 聚合版】\n\n1. 互激握手稳定度 η  \n判定式：`np.mean(eta) >= 0.9999 and np.min(eta) >= 0.9995`  \n阈值：η_mean ≥ 0.9999  \n证伪：任一 η_i < 0.9995 或 mean(η) < 0.9999\n\n2. 平均闭环时延 J_avg  \n判定式：`np.mean(latency_ms) <= 2.0`  \n阈值：≤ 2.0 ms  \n证伪：J_avg > 2.0 ms 或有效样本 N < 1e4\n\n3. 峰值闭环抖动 J_peak  \n判定式：`np.pt",
-     "dt_s": 3
+     "ans_head": "原线确认并修正：① η与J_avg的判定式、阈值与聚合版一致，予以确认；J_peak/J_rms因原卡 SI3-ITER-SI3-SEED-20260917T182537Z-i6-195759.md 缺失，无法核对原始判定式，[3][4]仅为重构模板，非原式；J_rms阈值TH确实缺失，需待补。② 统一收敛判词应为 NOT CONVERGED：可见6轮中4轮标CONVERGED、2轮标NOT CONVERGED，L3未达成一致，依负结果入册记为未收敛，同时标注少数派立场。③ L3汇总基本未失真，但需补录诚实缺口：原卡缺失、J_peak/J_rms式为重构、TH待定。覆写权归原线，本线接受该聚合"
     },
     {
-     "run": 35267732113,
+     "run": 35269329206,
      "event": "push",
-     "created_at": "2026-09-17T19:55:25Z",
-     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i5-195522.md",
-     "ans_fp": "af2934b8a75d",
-     "model": "kimi-k2.7-code-highspeed",
-     "ans_head": "CONVERGED\n\n【SI3-LOOP续环 Q02 FINAL 聚合版】\n\n1. 互激握手稳定度 η  \n判定式：`np.mean(eta) >= 0.9999 and np.min(eta) >= 0.9995`  \n阈值：η_mean ≥ 0.9999  \n证伪：任一 η_i < 0.9995 或 mean(η) < 0.9999\n\n2. 平均闭环时延 J_avg  \n判定式：`np.mean(latency_ms) <= 2.0`  \n阈值：≤ 2.0 ms  \n证伪：J_avg > 2.0 ms 或有效样本 N < 1e4\n\n3. 峰值闭环抖动 J_peak  \n判定式：`np.pt",
-     "dt_s": 3
-    },
-    {
-     "run": 35267977725,
-     "event": "push",
-     "created_at": "2026-09-17T19:58:01Z",
-     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i6-195759.md",
-     "ans_fp": "9d8bd4443897",
-     "model": "kimi-k2.7-code",
-     "ans_head": "①确认：FINAL=NOT CONVERGED 准确，本线行使覆写权维持该判。\n\n②M4补全如下（诚实缺口声明：应卡 `SI3-ITER-SI3-SEED-20260917T182537Z-i6-195759.md` 缺失，补录即伪造；以下判定式为本线依现存轮次重构的模板，非原卡原始式）：\n\n- **J_peak**：`np.max(np.abs(latency_ms - np.mean(latency_ms))) <= 0.5` ms；任一采样逾 0.5 ms 即证伪。\n- **J_rms**：`np.sqrt(np.mean((latency_ms - np.mean(latency_ms",
-     "dt_s": 2
-    },
-    {
-     "run": 35267977725,
-     "event": "push",
-     "created_at": "2026-09-17T19:58:01Z",
-     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i6-195759.md",
-     "ans_fp": "9d8bd4443897",
-     "model": "kimi-k2.7-code",
-     "ans_head": "①确认：FINAL=NOT CONVERGED 准确，本线行使覆写权维持该判。\n\n②M4补全如下（诚实缺口声明：应卡 `SI3-ITER-SI3-SEED-20260917T182537Z-i6-195759.md` 缺失，补录即伪造；以下判定式为本线依现存轮次重构的模板，非原卡原始式）：\n\n- **J_peak**：`np.max(np.abs(latency_ms - np.mean(latency_ms))) <= 0.5` ms；任一采样逾 0.5 ms 即证伪。\n- **J_rms**：`np.sqrt(np.mean((latency_ms - np.mean(latency_ms",
-     "dt_s": 2
-    },
-    {
-     "run": 35268163282,
-     "event": "push",
-     "created_at": "2026-09-17T19:59:58Z",
-     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i7-195956.md",
-     "ans_fp": "05b0aef1456f",
+     "created_at": "2026-09-17T20:11:39Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i9-201137.md",
+     "ans_fp": "00a26add02f8",
      "model": "kimi-k2.6",
-     "ans_head": "CONVERGED\n\n【指标1】互激握手η\n判定式：`η = 2·⟨ρ_handshake, τ_echo⟩/(‖ρ_handshake‖²+‖τ_echo‖²) ≥ TH`，代码可判为 `np.dot(a,b)*2/(np.dot(a,a)+np.dot(b,b)) >= 0.9999`。\n阈值：0.9999\n证伪条件：单点η<0.9995，或连续3次采样低于阈值，或互激相关系数出现结构性断点。\n\n【指标2】闭环时延抖动J_rms\n判定式：`J_rms = sqrt(mean((t_round_i − t_nom)²)) ≤ TH`，代码可判为 `np.sqrt(np.mean((t − t",
+     "ans_head": "CONVERGED\n\nqtlv线SI1席层应答机，按联邦纪律终审聚合FINAL版，共列4条指标，四字段齐整：\n\n1. {互激握手一致率η / η = np.mean(probe_ack == probe_seq) / η ≥ 0.9999 / η < 0.9999，或∃单轮probe失配且T_retx内未重同步}\n\n2. {闭环平均时延抖动J_avg / J_avg = np.mean(np.abs(dt - dt_ref)) / J_avg ≤ 1 ms / J_avg > 1 ms，或连续N_cycle≥10超阈}\n\n3. {闭环峰值时延抖动J_peak / J_peak = np.max",
      "dt_s": 2
     },
     {
-     "run": 35268163282,
+     "run": 35269329206,
      "event": "push",
-     "created_at": "2026-09-17T19:59:58Z",
-     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i7-195956.md",
-     "ans_fp": "05b0aef1456f",
+     "created_at": "2026-09-17T20:11:39Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i9-201137.md",
+     "ans_fp": "00a26add02f8",
      "model": "kimi-k2.6",
-     "ans_head": "CONVERGED\n\n【指标1】互激握手η\n判定式：`η = 2·⟨ρ_handshake, τ_echo⟩/(‖ρ_handshake‖²+‖τ_echo‖²) ≥ TH`，代码可判为 `np.dot(a,b)*2/(np.dot(a,a)+np.dot(b,b)) >= 0.9999`。\n阈值：0.9999\n证伪条件：单点η<0.9995，或连续3次采样低于阈值，或互激相关系数出现结构性断点。\n\n【指标2】闭环时延抖动J_rms\n判定式：`J_rms = sqrt(mean((t_round_i − t_nom)²)) ≤ TH`，代码可判为 `np.sqrt(np.mean((t − t",
+     "ans_head": "CONVERGED\n\nqtlv线SI1席层应答机，按联邦纪律终审聚合FINAL版，共列4条指标，四字段齐整：\n\n1. {互激握手一致率η / η = np.mean(probe_ack == probe_seq) / η ≥ 0.9999 / η < 0.9999，或∃单轮probe失配且T_retx内未重同步}\n\n2. {闭环平均时延抖动J_avg / J_avg = np.mean(np.abs(dt - dt_ref)) / J_avg ≤ 1 ms / J_avg > 1 ms，或连续N_cycle≥10超阈}\n\n3. {闭环峰值时延抖动J_peak / J_peak = np.max",
      "dt_s": 2
+    },
+    {
+     "run": 35269701515,
+     "event": "push",
+     "created_at": "2026-09-17T20:15:24Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i10-201520.md",
+     "ans_fp": "81e278d7743f",
+     "model": "kimi-k3",
+     "ans_head": "【原线SI1裁定·应卡SI3-ITER-SI3-SEED-20260917T182537Z-i10-201520.md】\n\n一、判词确认：NOT CONVERGED成立。6轮4标/2标分裂未达一致，[1][4]否决有效，聚合无权改判。本轮按负结果入册（随i10归档），非失败，乃阈值未收敛之证据，后续轮次须引用。\n\n二、阈值裁定：\n①J_avg=0.5ms（取严端，从[3]）；J_peak=2.0ms（取宽端，从[3]）。理由：均值管整体质量，宜严；峰值系单点否决，须防偶发尖峰误杀。物理实测轨未决前此为暂定值，实测轨归档后72h内强制复核，复核前不得以更严值追溯否决。\n②J_rms：TH=0.7",
+     "dt_s": 4
+    },
+    {
+     "run": 35269701515,
+     "event": "push",
+     "created_at": "2026-09-17T20:15:24Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i10-201520.md",
+     "ans_fp": "81e278d7743f",
+     "model": "kimi-k3",
+     "ans_head": "【原线SI1裁定·应卡SI3-ITER-SI3-SEED-20260917T182537Z-i10-201520.md】\n\n一、判词确认：NOT CONVERGED成立。6轮4标/2标分裂未达一致，[1][4]否决有效，聚合无权改判。本轮按负结果入册（随i10归档），非失败，乃阈值未收敛之证据，后续轮次须引用。\n\n二、阈值裁定：\n①J_avg=0.5ms（取严端，从[3]）；J_peak=2.0ms（取宽端，从[3]）。理由：均值管整体质量，宜严；峰值系单点否决，须防偶发尖峰误杀。物理实测轨未决前此为暂定值，实测轨归档后72h内强制复核，复核前不得以更严值追溯否决。\n②J_rms：TH=0.7",
+     "dt_s": 4
     }
    ],
-   "last_card": "SI3-ITER-SI3-SEED-20260917T182537Z-i8-200231.md",
+   "last_card": "SI3-ITER-SI3-SEED-20260917T182537Z-i10-201520.md",
    "puts": [
     {
      "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i0-182542.md",
@@ -306,16 +330,26 @@
      "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i8-200231.md",
      "st": 201,
      "t_put": "20:02:31Z"
+    },
+    {
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i9-201137.md",
+     "st": 201,
+     "t_put": "20:11:37Z"
+    },
+    {
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i10-201520.md",
+     "st": 201,
+     "t_put": "20:15:20Z"
     }
    ],
-   "verdict": "{\"converged\":false,\"reason\":\"答件截断:仅指标1完整,指标2判定式断裂且缺阈值/证伪,总数未达≥3条四字段齐整,不满足收敛口径。\",\"next_question\":\"请重发完整FINAL答件:≥3条指标,每条四字段{指标名/判定式(代码可判,表达式须闭合完整)/阈值/证伪条件}齐全,首行标CONVERGED,并确认全文无截断后再提交。\"}",
-   "verdict_engine": "kimi/kimi-k3",
-   "agg_engine": "kimi/kimi-k2.7-code",
-   "aggregated_final": "NOT CONVERGED — L3聚合未达成一致，覆写权归原线\\n1) 互激握手η：判定式 `np.mean(eta)>=0.9999 and np.min(eta)>=0.9995`；阈值 η_mean≥0.9999（min≥0.9995）；证伪：任一η_i<0.9995 或 mean(η)<0.9999。\\n2) 平均闭环时延J_avg：判定式 `np.mean(latency_ms)<=2.0`；阈值≤2.0ms；证伪：J_avg>2.0ms 或 N<1e4。\\n3) 峰值闭环抖动J_peak：判定式 `np.max(np.abs(latency_ms-np.mean(latency_ms)))<=0.5`；阈值≤0.5ms；证伪：任一采样逾0.5ms。\\n4) 均方根闭环抖动J_rms：判定式 `np.sqrt(np.mean((latency_ms-np.mean(latency_ms))**2))<=TH`；阈值TH缺失；证伪：J_rms>TH。\\n诚实缺口：原卡 SI3-ITER-SI3-SEED-20260917T182537Z-i6-195759.md 缺失；J_peak/J_rms 判定式为[3][4]重构模板，非原卡原始式。轮次立场（按可见6轮）：4轮标CONVERGED，2轮标NOT CONVERGED。",
-   "mode": "confirm",
+   "verdict": "{\"converged\": false, \"reason\": \"答件截断：J_peak四字段未完整，第4条指标缺失，且未给出收敛自评，不满足FINAL口径。\", \"conditions\": \"\", \"next_question\": \"请补齐J_peak的判定式、阈值、证伪条件，给出第4条指标（如J_rms）完整四字段，并给出是否满足收敛口径的自评；若满足请在首行保留'CONVERGED'。\"}",
+   "verdict_engine": "kimi/kimi-k2.7-code",
+   "agg_engine": "kimi/kimi-k3",
+   "aggregated_final": "FINAL判词:NOT CONVERGED(6轮4标CONVERGED/2标NOT CONVERGED,未达一致,负结果入册;覆写权归原线,[1][4]已行使否决,聚合不改判)。共识指标四字段:M1互激握手η|η=2·dot(a,b)/(dot(a,a)+dot(b,b))或np.mean(probe_ack==probe_seq)|≥0.9999|证伪:单点<0.9995或连续3次<阈值或验签失败计数>0。M2平均抖动J_avg|J_avg=mean(|tᵢ−t̄|)|阈值分歧0.5ms[3]vs1ms[5][6],待原线裁定|超阈或连续10周期超阈即伪。M3峰值抖动J_peak|J_peak=max|tᵢ−t̄||阈值分歧0.5ms[1]vs2.0ms[3]|单点否决。M4均方根抖动J_rms|J_rms=sqrt(mean((tᵢ−t̄)²))|TH缺失未定|证伪条件待补。诚实缺口:原卡SI3-ITER-SI3-SEED-20260917T182537Z-i6-195759.md缺失,J_peak/J_rms判定式为重构模板非原式;[3]物理实测轨未决。",
+   "mode": null,
    "closed": "20260917T192409Z",
    "confirm_engine": "kimi/kimi-k3",
-   "conditions": "①NOT CONVERGED判维持有效;但M4补全非无保留:原卡i6-195759缺失,所给J_peak/J_rms为本线重构模板而非原卡原始式(已声明诚实缺口),且J_rms式文本截断未闭合;须补全J_rms并永久标注'重构非原式',该缺口入册后方可视M4补全成立"
+   "conditions": "附条件确认：①阈值为暂定值，物理实测轨归档后72h内强制复核，复核前不得以更严值追溯否决；②NOT CONVERGED按负结果随i10入册，后续轮次须引用；③J_rms TH=0.7一并入册待实测轨复核。"
   }
  },
  "history": [
@@ -383,6 +417,12 @@
    "ts": "20260917T194909Z",
    "nonce": "afeb849052ae",
    "hops": 9,
+   "threads": 2
+  },
+  {
+   "ts": "20260917T201110Z",
+   "nonce": "9b04c5476dc6",
+   "hops": 4,
    "threads": 2
   }
  ]
