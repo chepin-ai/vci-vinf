@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-17T11:28:20Z",
- "chain_tail": "e5b4d3d3720c6443",
- "chain_len": 319,
+ "ts": "2026-09-17T11:33:50Z",
+ "chain_tail": "cd8cd0d642e8681d",
+ "chain_len": 320,
  "items": [
   {
    "dtag": "ack-min",
@@ -4821,16 +4821,36 @@
     "ts8": "2026-09-17T19:26:55+08:00"
    },
    "fp": "e5b4d3d3720c6443"
+  },
+  {
+   "id": "vinf-20260909-68",
+   "ts": "2026-09-17T11:33:50Z",
+   "dt": "2026-09-17 19:33:50 UTC+8",
+   "dtag": "vinf-20260909-68",
+   "type": "beat-anchor",
+   "title": "拍27补:窗开突爆全闭环/DRIVE-02入册",
+   "prev": "e5b4d3d3720c6443",
+   "refs": [],
+   "body": {
+    "beat": "拍27补",
+    "event": "窗开突爆闭环",
+    "ts": "2026-09-17T11:33:50Z",
+    "hub_push": "outbox#317-319 → vci-vinf OK, tail-fp MATCH 7e12e0c92e9a7a6d(推送成败唯以回读为准→成)",
+    "burst6": "APIDRIVE-01/野问01/CONS计票/名册草案/线准据 → ci-inbox 全OK全MATCH",
+    "post_surge": "浪涌后10min产出面静默: 0新件/0答件→FINDING-DRIVE-02: 点火≠应答,机层run绿但产出面静,缺件在机层内部(inputs路由/LLM钥KQ-05/写面)——野问二问正指此",
+    "queue": "PUSH-QUEUE-03 CLOSED"
+   },
+   "fp": "cd8cd0d642e8681d"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "43f421a2c36b92c46db5a12fce1198c1602c961d7015a7d5f0f81f08afe30cd2",
+ "items_sha256": "5df4521ca2b2587adb08e3d9bcc788dfc50f2e82673d81e30804944129f27e78",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "5a18be11b60a2bac9ad4762b500f423a7417fdb11e319c3eb5dfb526c13ed904",
- "updated": "2026-09-17 19:28:20 UTC+8"
+ "prev_items_sha256": "43f421a2c36b92c46db5a12fce1198c1602c961d7015a7d5f0f81f08afe30cd2",
+ "updated": "2026-09-17 19:33:50 UTC+8"
 }
