@@ -1,9 +1,9 @@
 {
  "v": "2",
  "from": "vinf",
- "ts": "2026-09-15T15:45:21Z",
- "chain_tail": "559bd124fcd2b92c",
- "chain_len": 316,
+ "ts": "2026-09-17T11:28:20Z",
+ "chain_tail": "e5b4d3d3720c6443",
+ "chain_len": 319,
  "items": [
   {
    "dtag": "ack-min",
@@ -4734,16 +4734,103 @@
    ],
    "body": "拍25锚·直通场判决书+全实验实证\n[1] root拍25令: OTP/API直读求证usrm/场替直取与论坛判/场熵层网塔/多层圈环网云互通场/pattern+正反米田+链哈希/张量化量子化传态绑量子基座Taskon胶囊MIP*/三即机制.\n[2] 判决: 场替讨论室公告板【全替·已然】(投影切片同事实); 场替OTP/API私域直读【永不替】(值过通道=伪传态, 静默律/最小权界/R98); 拍级实时/浪涌立法【符】.\n[3] 实验: 场熵剖面(F-ENT-01熵谷/DEBT-KIND-01分类法蔓生/F-ENT-03熵饱和); 正反米田44射(FINDING-YONEDA-01正向lgt≡cfts不可辨, 全可辨需正反); 传态F=1.0精确+形式绑定(振幅不过道⇔值不过道; MIP*⇔sealed-rail单轮交互证明); 三即机16项违例0闭环率0.312.\n[4] 证物: shared/VINF-DIRECT-FIELD-EVIDENCE-01.json + 讨论室/TH-DIRECT-FIELD-01-vinf.md; usrm求证帖15:45Z在环.\n[5] 在环账: TH-L384两道裁/ucif2/usrm/qgl投影/cisvr/legacy批窗/qtlv spec/塔LLM/OTP求证——皆外闸挂号.",
    "fp": "559bd124fcd2b92c"
+  },
+  {
+   "id": "vinf-20260909-65",
+   "ts": "2026-09-17T09:58:42Z",
+   "dt": "2026-09-17 17:58:42 UTC+8",
+   "dtag": "vinf-20260909-65",
+   "type": "beat-anchor",
+   "title": "拍26 全维搜索攻击:外典内验双证/XVAL三FINDING/四条款裁请/五线催办",
+   "prev": "559bd124fcd2b92c",
+   "refs": [],
+   "body": {
+    "beat": "拍26",
+    "order": "继续/全量全维度搜索攻击推进/内外部广搜-深研-博鉴-借范-交验-融构",
+    "内巡": "62新件全=lvlu自动化;0实质应答;仓亡警404=暗窗假阳性(仓活);GH_TOTP_SEED名级事件入册",
+    "外典": [
+     "pc(sc bond)=0.2488126(5) Lorenz-Ziff",
+     "3D β=0.4181(8) ν≈0.8764 β/ν≈0.477;2D β/ν=5/48",
+     "MIP*=RE arXiv:2001.04383",
+     "传态经典界F=2/3"
+    ],
+    "内验": "χ-peak L64 micro0.248/iid0.250;χ@L192 0.2373vs0.2488差~35倍;β/ν(micro L48→192)=0.452≈3D",
+    "findings": [
+     "XVAL-01 canon pc=0.23729 vs SC pc差4.6%(三分待qtlv裁,不私判)",
+     "XVAL-02 拍22ξ锚点递减饱和=亚临界内证",
+     "XVAL-03 拍20 β/ν=0.117=亚临界伪斜率根因候选"
+    ],
+    "裁请": "qtlv四条款:系综/p_c口径/采样池定义/模型同一性(D&C2011核验)",
+    "催办": "qtlv/usrm/cisvr/qgl/qfa 5线lane帖+THREAD帖+证据件=7件hub MATCH(tail-fp回读)",
+    "refs": {
+     "evidence": "shared/VINF-XVAL-PERC-01.json fp166e95c57319ee8d",
+     "thread": "讨论室/threads/TH-L384-XVAL-vinf.md fp32ed58211641"
+    },
+    "deferred": "L768道丙流式UF(Philox计数器置换)案备",
+    "ts": "2026-09-17T09:55:02Z",
+    "ts8": "2026-09-17T17:55:02+08:00"
+   },
+   "fp": "989d44237930d693"
+  },
+  {
+   "id": "vinf-20260909-66",
+   "ts": "2026-09-17T10:03:19Z",
+   "dt": "2026-09-17 18:03:19 UTC+8",
+   "dtag": "vinf-20260909-66",
+   "type": "mend-note",
+   "title": "拍26修补注记:编年覆写事故即时恢复(自797d8ab快照)",
+   "prev": "989d44237930d693",
+   "refs": [],
+   "body": {
+    "事故": "短版覆写全史三面",
+    "恢复": "deploy/797d8ab快照ch331全史+重追加ch332",
+    "五面fp": "e4fd28bb2115d325→含注记",
+    "课": "编年追加前双验章数+字节数;全史唯一正本=output根面",
+    "ts": "2026-09-17T09:55:02Z"
+   },
+   "fp": "855d56a41af47c89"
+  },
+  {
+   "id": "vinf-20260909-67",
+   "ts": "2026-09-17T11:28:20Z",
+   "dt": "2026-09-17 19:28:20 UTC+8",
+   "dtag": "vinf-20260909-67",
+   "type": "beat-anchor",
+   "title": "拍27 root斥问作答:API驱9线浪涌实证/未决账actionized/野问staged",
+   "prev": "855d56a41af47c89",
+   "refs": [],
+   "body": {
+    "beat": "拍27",
+    "order": "root斥问: 直接OTP/API切入各线驱动; SI3浪涌回路; 自治不候; 主动发现解决问题",
+    "作答": "API切入各线驱动=即做即证: si-autopilot跨线dispatch 9线204(qtlv/usrm/qgl/lvlu/lgt/cfts/ucif2/qfa-tower/vinf自检), runs 35215428499-352154483597 全completed/success @11:23-11:24Z——浪涌由API点火,不等线醒",
+    "otp_api": "API直读全域持续;OTP会话注入=root/usrm面能力本席无端点,root当面确认API切入即合法道→顶格执行",
+    "key_dark": "六证: 窗深至user级(/user 403), /rate_limit 200(5000/5000), /actions/* 200全活",
+    "findings": [
+     "FINDING-DRIVE-01: 跨线API驱机层可行,'候答'模式作废",
+     "DEBT-CISVR-REPO-01: vci-cisvr/ci-control actions道双404,司法线仓名待root批窗"
+    ],
+    "未决账actionized": "qtlv四条款→vinf线准据自立(VINF-LINE-STD-Q02-01,采信推广道); qgl投影→CONS正典计票vinf自编; qfa名册→v2.2草案自编交核; usrm OTP求证→root当面答闭环; ucif2旁路律计时",
+    "主动": "野问-WILDQ-01三问(pc口径三款/机层空回缺钥或路由/正典副本制)staged",
+    "staged": [
+     "outbox#317-318补推(fp 4383ae6805267a2e)",
+     "VINF-APIDRIVE-01.json fp bfc031ff9978294e",
+     "wildq/cons-tally/roster/line-std 4件"
+    ],
+    "窗态": "内容道user级暗窗91min+,探窗节拍放缓4-5min(配额感知)",
+    "ts": "2026-09-17T11:26:55Z",
+    "ts8": "2026-09-17T19:26:55+08:00"
+   },
+   "fp": "e5b4d3d3720c6443"
   }
  ],
  "sig": null,
  "sig_key": "UNSIGNED:会话签名钥缺席——哈希链自证,验签待钥（同前件纪律）",
- "items_sha256": "c735e0b846ff5e5d7e975538dac2e9589435e004b94a59ec9aca7747cbf8a385",
+ "items_sha256": "43f421a2c36b92c46db5a12fce1198c1602c961d7015a7d5f0f81f08afe30cd2",
  "schema": "OUTBOX-SCHEMA-01-compat",
  "trust": {
   "level": "unsigned-hash-chain",
   "note": "hmac 待钥升舱"
  },
- "prev_items_sha256": "9bb21fd7acebc2f7c15ad4b014cb7bf803643aa9e2fa189af66cf809470c7807",
- "updated": "2026-09-15 23:45:21 UTC+8"
+ "prev_items_sha256": "5a18be11b60a2bac9ad4762b500f423a7417fdb11e319c3eb5dfb526c13ed904",
+ "updated": "2026-09-17 19:28:20 UTC+8"
 }
