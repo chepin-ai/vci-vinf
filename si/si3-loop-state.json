@@ -35,6 +35,7 @@
    35261702711,
    35257699000,
    35258756929,
+   35272001729,
    35261497545,
    35270770764,
    35257754194,
@@ -127,9 +128,9 @@
   "SI3-SEED-20260917T182537Z": {
    "line": "qtlv",
    "question": "【SI3-LOOP续环·Q02验收v2 FINAL】续线程SI3-SEED-20260917T175949Z:已收4轮答件(互激握手η≥0.9999、闭环时延抖动J_avg/J_peak/J_rms等)。请qtlv汇总交付FINAL版:全部≥3条指标四字段{指标名/判定式(代码可判)/阈值/证伪条件}齐整列出,并自评是否满足收敛口径;若满足,请在答件首行明示\"CONVERGED\"。",
-   "status": "CONVERGED(附条件入册·NR-LOOP-LIVELOCK-01防护)",
+   "status": "OPEN",
    "born": "20260917T182537Z",
-   "iterations": 13,
+   "iterations": 14,
    "answers": [
     {
      "run": 35261702711,
@@ -295,9 +296,29 @@
      "model": "kimi-k3",
      "ans_head": "**应答卡**：SI3-ITER-SI3-SEED-20260917T182537Z-i13-203156.md\nqtlv线SI1席→L3聚合。覆写权确认归我线，回复如下（含修正）：\n\n**1）四字段格式：接受。** 四指标×四字段（判定式/阈值/证伪/标注）载体合规，INTERIM标注与备选公式并列符合诚实缺口原则。但声明：格式收敛≠口径收敛，汇总判定维持NOT CONVERGED，不得以格式一致冒充共识入正册。\n\n**2）J_avg裁决：执行覆写。** 两公式测的是不同物理量——|dt−dt_ref|测参考跟踪误差，逐次差测短期稳定度，不可简单二选一。裁决：主判定式取mean|dt−dt_",
      "dt_s": 3
+    },
+    {
+     "run": 35272001729,
+     "event": "push",
+     "created_at": "2026-09-17T20:38:13Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i14-203811.md",
+     "ans_fp": "390b284c6434",
+     "model": "kimi-k3",
+     "ans_head": "应卡:SI3-ITER-SI3-SEED-20260917T182537Z-i14-203811.md\n【SI1原线应答·覆写确认】\n\n①双公式确认。J_peak/J_rms(连同J_avg)均采用主/备双公式:主式基于dt−dt_ref,以参考轨对齐有效为前提;备式基于np.diff(dt),用于参考缺失或漂移存疑时。仲裁规则(原线补充,请并入FINAL):参考对齐有效时以主式为准;主/备结果偏差>20%即触发复核,禁止取平均掩盖分歧。诚实缺口声明:20%仲裁线本身亦为暂定值,随实测轨一并复核。\n\n②J_avg阈值:维持[INTERIM]≤1ms为现行门限,0.5ms仅作严端复核目标,实测轨",
+     "dt_s": 2
+    },
+    {
+     "run": 35272001729,
+     "event": "push",
+     "created_at": "2026-09-17T20:38:13Z",
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i14-203811.md",
+     "ans_fp": "390b284c6434",
+     "model": "kimi-k3",
+     "ans_head": "应卡:SI3-ITER-SI3-SEED-20260917T182537Z-i14-203811.md\n【SI1原线应答·覆写确认】\n\n①双公式确认。J_peak/J_rms(连同J_avg)均采用主/备双公式:主式基于dt−dt_ref,以参考轨对齐有效为前提;备式基于np.diff(dt),用于参考缺失或漂移存疑时。仲裁规则(原线补充,请并入FINAL):参考对齐有效时以主式为准;主/备结果偏差>20%即触发复核,禁止取平均掩盖分歧。诚实缺口声明:20%仲裁线本身亦为暂定值,随实测轨一并复核。\n\n②J_avg阈值:维持[INTERIM]≤1ms为现行门限,0.5ms仅作严端复核目标,实测轨",
+     "dt_s": 2
     }
    ],
-   "last_card": "SI3-ITER-SI3-SEED-20260917T182537Z-i13-203156.md",
+   "last_card": "SI3-ITER-SI3-SEED-20260917T182537Z-i14-203811.md",
    "puts": [
     {
      "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i0-182542.md",
@@ -368,16 +389,21 @@
      "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i13-203156.md",
      "st": 201,
      "t_put": "20:31:56Z"
+    },
+    {
+     "card": "SI3-ITER-SI3-SEED-20260917T182537Z-i14-203811.md",
+     "st": 201,
+     "t_put": "20:38:11Z"
     }
    ],
-   "verdict": "{\"converged\": false, \"reason\": \"仅完整列出2条指标，第3项截断且≥3条未齐整，不满足完整应答；首行CONVERGED与事实不符。\", \"conditions\": \"\", \"next_question\": \"请补全第3条及必要第4条指标的四字段（指标名/判定式/阈值/证伪条件），若含J_peak/J_rms需一并给出；补全后按口径重新自评是否收敛。\"}",
-   "verdict_engine": "kimi/kimi-k2.7-code",
+   "verdict": "{\"converged\":\"false\",\"reason\":\"答件未首行标注CONVERGED，未齐整列出≥3条指标四字段完整表，且自评NOT CONVERGED，存在实质缺口。\",\"conditions\":\"\",\"next_question\":\"请首行标注'CONVERGED'，一次性齐整列出全部≥3条指标四字段完整表（指标名/判定式/阈值/证伪条件），并自评是否满足收敛口径。\"}",
+   "verdict_engine": "kimi/kimi-k2.6",
    "agg_engine": "kimi/kimi-k2.7-code-highspeed",
-   "aggregated_final": "NOT CONVERGED（多线未达成一致·诚实缺口入册）。汇总不改判：原线[1][5]标CONVERGED，[2]裁定NOT CONVERGED，[3]覆写η公式并标INTERIM；L3聚合未形成一致口径。\\n1）互激握手完整度η：判定式 η=np.mean((probe_ack==probe_seq)&sig_ok)（窗口W=1e4）；阈值 η≥0.9999；证伪：η<0.9999或存在未归因丢包/重放/验签失败。\\n2）平均抖动J_avg：判定式 J_avg=np.mean(|dt-dt_ref|)，备选 J_avg=(1/(N-1))Σ|d_i-d_{i-1}|；阈值 ≤1 ms（[3] INTERIM ≤0.5 ms；[5] ≤5 ms）；证伪：超阈值或连续N_cycle≥10超阈。\\n3）峰值抖动J_peak：判定式 J_peak=np.max(|dt-dt_ref|)；阈值 ≤2.0 ms [INTERIM]；证伪：J_peak>2.0 ms。\\n4）均方根抖动J_rms：判定式 J_rms=np.sqrt(mean((dt-dt_ref)^2))；阈值 ≤0.7 ms [INTERIM]；证伪：J_rms>0.7 ms。\\n未收敛原因：4标/2标分裂；J_peak/J_rms阈值暂为INTERIM；J_avg公式与阈值未统一。",
+   "aggregated_final": "NOT CONVERGED\\n【L3聚合FINAL·诚实缺口保留】\\n1){互激握手一致率η / η=np.mean((probe_ack==probe_seq)&sig_ok) / TH:η≥0.9999 / η<0.9999或任一验签失败}\\n2){闭环平均时延抖动J_avg / J_avg=np.mean(np.abs(dt-dt_ref))；备选J_avg′=np.mean(np.abs(np.diff(dt))) / TH:[INTERIM]≤1ms（严端0.5ms待实测轨复核） / 连续N_cycle≥10超TH或主/备均超}\\n3){闭环峰值时延抖动J_peak / J_peak=np.max(np.abs(dt-dt_ref))；备选J_peak′=np.max(np.abs(np.diff(dt))) / TH:[INTERIM]≤2ms / 单点超TH且未归因为偶发}\\n4){闭环RMS时延抖动J_rms / J_rms=np.sqrt(np.mean((dt-dt_ref)**2))；备选J_rms′=np.sqrt(np.mean(np.diff(dt)**2)) / TH:[INTERIM]≤0.7ms / 窗口内超TH}\\n口径：6轮4标CONVERGED/2标NOT CONVERGED，负结果入册；阈值与公式均interim，少数派立场保留，覆写权归原",
    "mode": null,
-   "closed": "20260917T203450Z",
-   "confirm_engine": "kimi/kimi-k2.6",
-   "conditions": "答件显式声明汇总判定维持NOT CONVERGED，格式接受≠口径收敛；J_avg覆写截断未闭环，存在诚实缺口，负结果入册。"
+   "closed": "20260917T192409Z",
+   "confirm_engine": "kimi/kimi-k2.7-code",
+   "conditions": "附条件：20%仲裁阈值与双公式偏差须待实测轨复核；J_avg≤1ms为现行门限，0.5ms仅严端复核目标；诚实缺口入册。"
   }
  },
  "history": [
@@ -460,9 +486,9 @@
    "threads": 2
   },
   {
-   "ts": "20260917T203450Z",
-   "nonce": "1fea784062db",
-   "hops": 0,
+   "ts": "20260917T203504Z",
+   "nonce": "fd0c7e76825a",
+   "hops": 2,
    "threads": 2
   }
  ]
