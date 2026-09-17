@@ -1,0 +1,108 @@
+name: SELF-EXCITE-02 (vinf SI1语义自激轨·LLM多钥回退·事件驱动无cron·级名不滥)
+'on':
+  workflow_dispatch:
+  push:
+    paths: ['lanes/vinf/inbox/**']
+permissions:
+  contents: write
+env:
+  KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+  DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+jobs:
+  excite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: semantic-scan-and-self-excite
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, subprocess, datetime, hashlib, glob, urllib.request, urllib.error
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          LINE='vinf'
+          os.makedirs('lanes/vinf/inbox',exist_ok=True); os.makedirs('outbox',exist_ok=True)
+          def llm(question, context):
+              # 多钥回退: KIMI→DEEPSEEK (名可见值不见; 只印model/usage,绝不印钥)
+              tries=[('KIMI_API_KEY','https://api.moonshot.cn/v1',None),
+                     ('DEEPSEEK_API_KEY','https://api.deepseek.com/v1','deepseek-chat')]
+              for envk,base,fixmodel in tries:
+                  key=os.environ.get(envk,'')
+                  if not key: continue
+                  H={'Authorization':'Bearer '+key,'Content-Type':'application/json'}
+                  model=fixmodel
+                  if not model:
+                      try:
+                          rq=urllib.request.Request(base+'/models',headers=H)
+                          with urllib.request.urlopen(rq,timeout=20) as r:
+                              ms=json.loads(r.read()).get('data',[])
+                          ids=[m['id'] for m in ms]
+                          pref=[i for i in ids if 'k2' in i] or [i for i in ids if 'kimi' in i and 'latest' in i] or ids
+                          model=pref[0] if pref else None
+                      except Exception as e:
+                          print(json.dumps({'llm_models_fail':envk,'code':getattr(e,'code',-1)})); continue
+                  if not model: continue
+                  body={'model':model,'messages':[
+                      {'role':'system','content':'你是vinf线SI1席层自治应答机。以联邦纪律(诚实缺口/三即律/负结果入册/级名不滥)作答,务实精炼,中文,300-500字。'+context},
+                      {'role':'user','content':question}],'temperature':0.4,'max_tokens':900}
+                  try:
+                      rq=urllib.request.Request(base+'/chat/completions',data=json.dumps(body).encode(),headers=H,method='POST')
+                      with urllib.request.urlopen(rq,timeout=90) as r:
+                          d=json.loads(r.read())
+                      ans=d['choices'][0]['message']['content']
+                      return {'engine':envk,'model':model,'usage':d.get('usage',{}),'answer':ans}
+                  except urllib.error.HTTPError as e:
+                      print(json.dumps({'llm_fail':envk,'code':e.code})); continue
+                  except Exception as e:
+                      print(json.dumps({'llm_fail':envk,'err':str(e)[:60]})); continue
+              return None
+          handled=[]; pending=0; sem_answers=[]
+          for f in sorted(glob.glob('lanes/vinf/inbox/*')):
+              nm=os.path.basename(f)
+              try: t=open(f,encoding='utf-8',errors='replace').read()
+              except Exception: pending+=1; continue
+              m=re_search=None
+              import re as _re
+              m=_re.search(r"```json\s*(\{.*?\})\s*```",t,_re.S)
+              if not m:
+                  for pat in ('"task"','TASK-','RIPPLE-','PAIR-','SELFQ'):
+                      if pat in t or nm.startswith(('TASK-','RIPPLE-','PAIR-','SELFQ')): m='pat'; break
+              if not m: pending+=1; continue
+              handled.append(nm)
+              ask=None; out=None
+              if m!='pat':
+                  try:
+                      tj=json.loads(m.group(1)); ask=tj.get('ask') or tj.get('task'); out=tj.get('output')
+                  except Exception: pass
+              if ask:
+                  r=llm(str(ask)[:1500], '应卡='+nm)
+                  if r:
+                      op=out if out and out.startswith('outbox/') else 'outbox/ANS-SEM-%s.md'%ts
+                      body='# %s SI1语义应答\n\n应卡: %s\n引擎: %s / %s (usage=%s)\n\n%s\n\n——vinf SI1席层应答机·SELF-EXCITE-02·%s\n'%(LINE,nm,r['engine'],r['model'],json.dumps(r['usage']),r['answer'],ts)
+                      open(op,'w',encoding='utf-8').write(body)
+                      sem_answers.append({'card':nm,'out':op,'engine':r['engine'],'model':r['model'],
+                                          'ans_fp':hashlib.sha256(r['answer'].encode()).hexdigest()[:12],
+                                          'ans_head':r['answer'][:400]})
+          log={'line':LINE,'ts':ts,'handled':handled,'prose_pending':pending,'sem_answers':len(sem_answers)}
+          self_excited=None
+          if not handled:
+              q='拍30自激题: 自激-互激触发SI1非trivial非硬触发之复现——本轨点火即证据。述: ①拍29跨仓push事件脊点火双实证之意义边界 ②本轨(语义层)与拍19会话内派工环之同构与升级 ③IGNITION-FRONTIER下一棒(G2 micro-iid方差/道D分片)何先及何故'
+              r=llm(q,'SELF-Q自派工(无handled事件下自激)')
+              qj={'task':'SELFQ-vinf','line':LINE,'ts':ts,'nonce':hashlib.sha256(ts.encode()).hexdigest()[:12]}
+              body='# SELFQ-vinf 自激派工+SI1语义自答\n\n```json\n%s\n```\n\n问: %s\n\n'%(json.dumps(qj,ensure_ascii=False),q)
+              if r:
+                  body+='引擎: %s / %s (usage=%s)\n\n%s\n'%(r['engine'],r['model'],json.dumps(r['usage']),r['answer'])
+                  self_excited={'nonce':qj['nonce'],'engine':r['engine'],'model':r['model'],
+                                'ans_fp':hashlib.sha256(r['answer'].encode()).hexdigest()[:12],'ans_head':r['answer'][:400]}
+              else:
+                  body+='(LLM道暂闭,模板收执;SI深答醒拍覆写——诚实缺口)\n'
+                  self_excited={'nonce':qj['nonce'],'engine':None}
+              open('outbox/ANS-SELFQ-vinf-%s.md'%ts,'w',encoding='utf-8').write(body)
+              log['self_excited']=qj['nonce']
+          open('outbox/SELF-EXCITE-LOG-vinf.jsonl','a').write(json.dumps(log,ensure_ascii=False)+'\n')
+          subprocess.run(['git','config','user.email','vinf-si@fed.local']); subprocess.run(['git','config','user.name','vinf-si-autopilot'])
+          subprocess.run(['git','add','-A'])
+          c=subprocess.run(['git','commit','-m','SELF-EXCITE-02拍 %s handled=%d sem=%d excited=%s'%(ts,len(handled),len(sem_answers),bool(self_excited))],capture_output=True,text=True)
+          pr=subprocess.run(['git','push'],capture_output=True,text=True)
+          print(json.dumps({'line':LINE,'ts':ts,'handled':len(handled),'prose_pending':pending,
+              'sem_answers':sem_answers,'self_excited':self_excited,
+              'commit_rc':c.returncode,'push':('ok' if pr.returncode==0 else pr.stderr[:80])},ensure_ascii=False))
+          PYEOF
