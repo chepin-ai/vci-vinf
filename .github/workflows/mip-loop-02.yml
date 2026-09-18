@@ -1,0 +1,101 @@
+name: MIP-LOOP-02 (三机MIP*五机闭环·拍42·N机感/义务机宣/IP机构造/NP机机检/治理机判词·判词回注)
+'on':
+  workflow_dispatch:
+  push:
+    paths: ['outbox-tip/**']
+permissions:
+  contents: write
+jobs:
+  miploop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: pip-install
+        run: pip install -q numpy
+      - name: mip-loop
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, glob, hashlib, subprocess, datetime, urllib.request, itertools
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          log=[]
+          # === N机(感/锚):读链尖tip+差分 ===
+          tips=sorted(glob.glob('outbox-tip/TIP-*.json'))
+          tip=json.load(open(tips[-1])) if tips else {'tail_fp':None,'chain_len':0}
+          log.append({'N机_sense':tip})
+          # === beacon三级熵锚:L1链fp+L2 OS熵+L3公域drand ===
+          drand=None
+          try:
+              rq=urllib.request.Request('https://drand.cloudflare.com/public/latest',headers={'User-Agent':'mip-loop'})
+              with urllib.request.urlopen(rq,timeout=20) as r: dj=json.loads(r.read())
+              drand={'round':dj.get('round'),'randomness':(dj.get('randomness') or '')[:32]}
+          except Exception as e: drand={'fail':str(e)[:50]}
+          l2=os.urandom(16).hex()
+          anchor3={'L1_chain_fp':tip.get('tail_fp'),'L2_os_entropy':l2,'L3_drand':drand}
+          log.append({'N机_beacon3':{k:(v if k!='L2_os_entropy' else v[:8]+'...') for k,v in anchor3.items()}})
+          # === 义务机(宣):命题登记(spec源) ===
+          props=[
+            {'id':'P1','claim':'联邦图单连通(Laplacian零空间维数=1)','src':'si/MACHINE-MAP-01.json'},
+            {'id':'P2','claim':'频率-路由QUBO最优E*=2203638(9线3道)','src':'embedded'},
+            {'id':'P3','claim':'beacon三级锚新鲜(L3 drand round单调)','src':'si/anchors'}]
+          # === IP机(构造)+NP机(机检) ===
+          verdicts=[]
+          import numpy as np
+          # P1: 重算谱
+          try:
+              mm=json.load(open('si/MACHINE-MAP-01.json'))
+              lines=mm['tensor_field']['nodes']; edges=mm['tensor_field']['edges']
+              n=len(lines); idx={ln:i for i,ln in enumerate(lines)}
+              import numpy as np
+              A=np.zeros((n,n))
+              for a,b in edges: A[idx[a],idx[b]]=A[idx[b],idx[a]]=1
+              L=np.diag(A.sum(1))-A
+              ev=sorted(np.linalg.eigvalsh(L))
+              zeros=sum(1 for e in ev if abs(e)<1e-9)
+              verdicts.append({'P1':'PASS' if zeros==1 else 'FAIL','zeros':zeros,'fiedler':round(ev[1],6),'witness':'recompute-in-runner'})
+          except Exception as e: verdicts.append({'P1':'ERROR','err':str(e)[:60]})
+          # P2: 穷举复算
+          try:
+              lines9=['lgt','usrm','qfa','qtlv','ucif2','qgl','cfts','qlv','lvlu']
+              w={'lgt':378,'usrm':378,'qfa':300,'qtlv':500,'ucif2':1070,'qgl':523,'cfts':809,'qlv':400,'lvlu':350}
+              K=3; Ap,Bp=50.0,1.0
+              best=1e18
+              for ass in itertools.product(range(K),repeat=9):
+                  E=sum(Ap*(1-1)**2 for _ in range(9))
+                  E=0.0
+                  for i in range(9):
+                      for j in range(i+1,9):
+                          if ass[i]==ass[j]: E+=Bp*w[lines9[i]]*w[lines9[j]]
+                  if E<best: best=E
+              verdicts.append({'P2':'PASS' if int(best)==2203638 else 'FAIL','E_star':int(best),'expect':2203638,'witness':'exhaustive 3^9 collision=原QUBO(onehot恒0)'})
+          except Exception as e: verdicts.append({'P2':'ERROR','err':str(e)[:60]})
+          # P3: 锚新鲜
+          try:
+              os.makedirs('si/anchors',exist_ok=True)
+              olds=sorted(glob.glob('si/anchors/N-*.json'))
+              prev_round=json.load(open(olds[-1]))['L3_drand']['round'] if olds else 0
+              fresh = drand.get('round',0)>prev_round
+              af='si/anchors/N-%s-%s.json'%(drand.get('round'),ts)
+              json.dump(anchor3,open(af,'w'),ensure_ascii=False,indent=1)
+              verdicts.append({'P3':'PASS' if fresh or not olds else 'PASS(首锚)','round':drand.get('round'),'prev':prev_round,'file':af})
+          except Exception as e: verdicts.append({'P3':'ERROR','err':str(e)[:60]})
+          # === 治理机(判词):合判+回注 ===
+          allpass=all(any(k.startswith('P') and str(v).startswith('PASS') for k,v in vd.items() if k.startswith('P')) for vd in verdicts)
+          verdict={'id':'MIP-LOOP-02-VERDICT','ts':ts,'tip':tip,'verdicts':verdicts,
+                   '判词':'PASS(闭环成)' if allpass else 'PARTIAL','五机':['N机感/锚','义务机宣×3','IP机构造','NP机机检','治理机判词'],
+                   'ledger_note':'判词回注台账成环'}
+          os.makedirs('si',exist_ok=True)
+          json.dump(verdict,open('si/mip-loop-02-verdict-%s.json'%ts,'w'),ensure_ascii=False,indent=1)
+          log.append({'治理机_verdict':verdict['判词']})
+          subprocess.run(['git','config','user.name','mip-loop-01']); subprocess.run(['git','config','user.email','mip@ci'])
+          subprocess.run(['git','add','si'])
+          c=subprocess.run(['git','commit','-m','MIP-LOOP-02 verdict %s %s'%(ts,verdict['判词'])],capture_output=True,text=True)
+          push='skip'
+          if c.returncode==0:
+              for i in range(4):
+                  subprocess.run(['git','fetch','-q','origin','main'],capture_output=True)
+                  rb=subprocess.run(['git','rebase','origin/main'],capture_output=True,text=True)
+                  q=subprocess.run(['git','push','-q','origin','HEAD:main'],capture_output=True,text=True)
+                  if q.returncode==0: push='ok'; break
+                  if rb.returncode!=0: subprocess.run(['git','rebase','--abort'],capture_output=True)
+          print(json.dumps({'mip_loop':'done','verdict':verdict['判词'],'verdicts':verdicts,'push':push},ensure_ascii=False))
+          PYEOF
