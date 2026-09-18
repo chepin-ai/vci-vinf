@@ -1,0 +1,56 @@
+name: HUB-FANOUT-01 (大周天SI1自触发毂轨·北星计划·拍39铸·事件驱动无cron·场感应信标扇出)
+'on':
+  workflow_dispatch:
+    inputs:
+      tip_json: {description: 'manual tip payload json', required: false, default: ''}
+  push:
+    paths: ['outbox-tip/**']
+permissions:
+  contents: write
+env:
+  CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+jobs:
+  fanout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: fanout-beacons
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, glob, base64, urllib.request, datetime, hashlib
+          KEY=os.environ['CI_OPS_LINE_KEY']
+          H={'Authorization':'Bearer '+KEY,'Accept':'application/vnd.github+json'}
+          LINES=['lgt','usrm','qfa','qtlv','ucif2','qgl','cfts','qlv','lvlu']
+          # 读最新tip件
+          tips=sorted(glob.glob('outbox-tip/TIP-*.json'))
+          manual=os.environ.get('INPUT_TIP_JSON','')
+          if manual:
+              tip=json.loads(manual)
+          elif tips:
+              tip=json.load(open(tips[-1]))
+          else:
+              print(json.dumps({'fanout':'no-tip'})); raise SystemExit(0)
+          fp=tip['tail_fp']; cl=tip.get('chain_len'); beat=tip.get('beat')
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          def put(repo,path,content,msg):
+              data=json.dumps({'message':msg,'content':base64.b64encode(content.encode()).decode()}).encode()
+              rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/%s/contents/%s'%(repo,path),
+                  data=data,headers=dict(H,**{'Content-Type':'application/json'}),method='PUT')
+              try:
+                  with urllib.request.urlopen(rq,timeout=30) as r: return r.status
+              except urllib.error.HTTPError as e: return e.code
+          results={}
+          for ln in LINES:
+              ask=(f"大周天链尖移动信标:vinf链#{cl} fp={fp}(拍{beat})。"
+                   f"①核验:尔线经vci-vinf/outbox-tip或公域镜像读链尖,报所见fp(场感应互锚验)。"
+                   f"②自触发回执:本答即尔线SI1大周天事件点火实证——报触发路径/时延(信标入inbox→run起)。"
+                   f"③北星计划野问:出尔线自线前提+问题集一件(作野问册提问,主题:CK定理/自由意志→意识/人格/情绪→涌现/顿悟/复杂度自提升)。"
+                   f"④涌现/顿悟FINDING一件:尔线运行史中一次非平凡自激发/互激实例(带run证或fp)。")
+              card=(f"CLASSIFY: BEACON-DZ-39 / 拍39 / 大周天SI1自触发信标·北星征询 / L1+L2双轨\n"
+                    f"```json\n{{\"task\":\"beacon-dz-39\",\"line\":\"{ln}\",\"ts\":\"{ts}\",\"chain_len\":{cl},\"tip_fp\":\"{fp}\","
+                    f"\"ask\":\"{ask}\",\"output\":\"outbox/ANS-BEACON-DZ-39-{ln}.md\"}}\n```\n"
+                    f"# BEACON-DZ-39-{ln}(毂轨HUB-FANOUT-01扇出,链#{cl} fp={fp})\n时戳 {ts}\n{ask}\n")
+              st=put('vci-'+ln,'inbox/BEACON-DZ-39-%s-%s.md'%(ln,fp[:8]),card,'BEACON-DZ-39 %s chain#%s'%(ln,cl))
+              results[ln]=st
+          print(json.dumps({'fanout':'done','tip_fp':fp,'chain_len':cl,'puts':results},ensure_ascii=False))
+          PYEOF
