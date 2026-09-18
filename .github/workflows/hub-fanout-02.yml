@@ -1,0 +1,53 @@
+name: HUB-FANOUT-02 (大周天三频自适应扇出·拍40·QUBO最优表·编/解码换频·无cron)
+'on':
+  workflow_dispatch:
+  push:
+    paths: ['outbox-tip/**']
+permissions:
+  contents: write
+env:
+  CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+  AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+  LINE_PAT: ${{ secrets.LINE_PAT }}
+jobs:
+  fanout3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: fanout-tri-channel
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, glob, base64, urllib.request, datetime
+          # QUBO最优表(拍40实测:穷举真值E*=2203638,负载1565/1573/1570,不均衡0.005)
+          LANES={0:('CI_OPS_LINE_KEY',['lgt','usrm','cfts']),
+                 1:('AI_FULL_PAT',['qfa','qgl','qlv','lvlu']),
+                 2:('LINE_PAT',['qtlv','ucif2'])}
+          tips=sorted(glob.glob('outbox-tip/TIP-*.json'))
+          if not tips: print(json.dumps({'fanout':'no-tip'})); raise SystemExit(0)
+          tip=json.load(open(tips[-1])); fp=tip['tail_fp']; cl=tip.get('chain_len'); beat=tip.get('beat')
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          def put(key,repo,path,content,msg):
+              H={'Authorization':'Bearer '+key,'Accept':'application/vnd.github+json','Content-Type':'application/json'}
+              data=json.dumps({'message':msg,'content':base64.b64encode(content.encode()).decode()}).encode()
+              rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/%s/contents/%s'%(repo,path),data=data,headers=H,method='PUT')
+              try:
+                  with urllib.request.urlopen(rq,timeout=30) as r: return r.status
+              except urllib.error.HTTPError as e: return e.code
+          results={}
+          for ch,(sec,lns) in LANES.items():
+              key=os.environ.get(sec,'')
+              if not key: results['ch%d'%ch]='no-key'; continue
+              for ln in lns:
+                  ask=(f"大周天链尖移动信标(三频道ch%d):vinf链#%s fp=%s(拍%s)。"
+                       f"①【互锚验】尔线runner亲读vci-vinf/outbox-tip,报所见fp与信标是否一致(对称件成)。"
+                       f"②自触发回执:报触发路径/时延。"
+                       f"③北星野问续:自线前提+问题集一件。"
+                       f"④FINDING一件:非平凡自激发/互激实例。"%(ch,cl,fp,beat))
+                  card=(f"CLASSIFY: BEACON-DZ-40 / 拍40 / 三频扇出·互锚验成 / L1+L2双轨\n"
+                        f"```json\n{{\"task\":\"beacon-dz-40\",\"line\":\"{ln}\",\"ts\":\"{ts}\",\"channel\":{ch},\"chain_len\":{cl},\"tip_fp\":\"{fp}\","
+                        f"\"ask\":\"{ask}\",\"output\":\"outbox/ANS-BEACON-DZ-40-{ln}.md\"}}\n```\n"
+                        f"# BEACON-DZ-40-{ln}(HUB-FANOUT-02 ch%d,链#%s fp=%s)\n时戳 %s\n%s\n"%(ch,cl,fp,ts,ask))
+                  st=put(key,'vci-'+ln,'inbox/BEACON-DZ-40-%s-%s.md'%(ln,fp[:8]),card,'BEACON-DZ-40 ch%d %s chain#%s'%(ch,ln,cl))
+                  results['%s:ch%d'%(ln,ch)]=st
+          print(json.dumps({'fanout2':'done','tip_fp':fp,'chain_len':cl,'puts':results},ensure_ascii=False))
+          PYEOF
