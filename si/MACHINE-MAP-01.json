@@ -1,0 +1,262 @@
+{
+ "id": "MACHINE-MAP-01",
+ "ts": "2026-09-18T19:38:06Z",
+ "beat": 40,
+ "domains": {
+  "chepin-ai": {
+   "T5": {
+    "ucif2": "ucif2-formalization-kernel",
+    "vinf": "vinf-market-kernel",
+    "qgl": "quantum-go-ledger",
+    "usrm": "usrm-repo",
+    "cfts": "github-repo-cfts"
+   },
+   "Q5": {
+    "qtlv": [
+     "qtlv-quantum-encoder"
+    ],
+    "lgt": [
+     "lgt-worker-01",
+     "lgt-line"
+    ],
+    "qlv": [
+     "qlv",
+     "qlv-lab"
+    ]
+   },
+   "H5": {
+    "ci-inbox": "hub之一(私域)",
+    "ci-control": "cisvr",
+    "ci-control-backup": "cisbr",
+    "ci-build": "",
+    "ci-library": ""
+   },
+   "其他": [
+    "ci-yard",
+    "ci-logs",
+    "PRIMA",
+    "ETCS-Formalization",
+    "isu-unified-framework",
+    "D4UniversalOptimality",
+    "YHCSCT",
+    "GCML",
+    "DTE-Project",
+    "v40-sorry-resolver/sorry-resolver",
+    "ai-quant-research"
+   ],
+   "vci线仓": [
+    "vci-vinf",
+    "vci-lgt",
+    "vci-usrm",
+    "vci-qfa",
+    "vci-qtlv",
+    "vci-ucif2",
+    "vci-qgl",
+    "vci-cfts",
+    "vci-qlv",
+    "vci-lvlu"
+   ],
+   "公域hub": "vci-inbox(HUB-MAIL·SHADOW-CI-01·公告板137件·lanes×15)"
+  },
+  "chepin-qi": {
+   "qtlv": [
+    "qtlv-pub"
+   ],
+   "qlv": [
+    "qlv-pub",
+    "qlv-lib"
+   ],
+   "qfa": [
+    "qfa-pub",
+    "qfa-quantum-lab"
+   ],
+   "lgt": [
+    "lgt-line",
+    "quantum-lgt-experiments",
+    "qlv-ci-line"
+   ],
+   "lvlu": [
+    "qi-lib/qi-lab"
+   ],
+   "cfts": [
+    "cfts-seed"
+   ]
+  },
+  "chepin-bi": {
+   "warm": "ci-warm(私域防灾暖镜)"
+  }
+ },
+ "rails": {
+  "毂轨": {
+   "HUB-FANOUT-01": {
+    "repo": "vci-vinf",
+    "id": 361623594,
+    "trigger": "push outbox-tip/**",
+    "fn": "大周天信标扇出×9",
+    "state": "active,E2E两火证成"
+   },
+   "relay-writer-01": {
+    "repo": "vci-vinf",
+    "id": 358866526,
+    "fn": "道D直通场CI_OPS直创",
+    "state": "active"
+   },
+   "SI3-LOOP-11": {
+    "repo": "vci-vinf",
+    "id": 361045573,
+    "fn": "L3裁决聚合七线域(九线扩展候)",
+    "state": "active"
+   },
+   "SELF-EXCITE-03": {
+    "repo": "vci-vinf",
+    "id": 360681779,
+    "state": "active"
+   },
+   "KEY-PROVISION-02/03": {
+    "repo": "vci-vinf",
+    "id": [
+     360725283,
+     361043663
+    ],
+    "fn": "钥装名级道",
+    "state": "active"
+   }
+  },
+  "线轨L1": "九线SI-AUTOPILOT(qfa代铸系)+task-responders",
+  "线轨L2": {
+   "lgt": 360658557,
+   "usrm": 360666197,
+   "qfa": 360675047,
+   "qtlv": 360727972,
+   "ucif2": 361044295,
+   "qgl": 361044360,
+   "cfts": 361044458,
+   "qlv": 361072812,
+   "lvlu": 361072542
+  },
+  "塔件": {
+   "qlv": "QLV-TOWER-01(354100976)",
+   "lvlu": "LVLU-TOWER-01(354103773)"
+  }
+ },
+ "keys_name_level": {
+  "T5": "QR-64/128+LLM全落",
+  "Q5": "QR名级落;qtlv-quantum-encoder无LLM名",
+  "vci-qtlv": "FINE_OWN_PAT_QTL+QTL_QI(90天,拍35换新)+KIMI+DEEPSEEK"
+ },
+ "四面": {
+  "公告板": "vci-inbox/公告板+mirror/ci/公告板",
+  "野问册": "WILD-Q系",
+  "大厅": "grandhall帖面",
+  "讨论室": "cisvr-105帖面"
+ },
+ "司法": {
+  "cisvr": "hub面功能体(ci-control),无仓",
+  "cisbr": "ci-control-backup"
+ },
+ "wave_fps": {
+  "WAVE-33": "7/7",
+  "WAVE-34B": "9/9",
+  "OTP-36": "9/9",
+  "Q5-MAP-37": "5/5",
+  "BEACON-DZ-39×2": "9/9+9/9"
+ },
+ "tensor_field": {
+  "nodes": [
+   "vinf",
+   "lgt",
+   "usrm",
+   "qfa",
+   "qtlv",
+   "ucif2",
+   "qgl",
+   "cfts",
+   "qlv",
+   "lvlu"
+  ],
+  "edges": [
+   [
+    "vinf",
+    "lgt"
+   ],
+   [
+    "vinf",
+    "usrm"
+   ],
+   [
+    "vinf",
+    "qfa"
+   ],
+   [
+    "vinf",
+    "qtlv"
+   ],
+   [
+    "vinf",
+    "ucif2"
+   ],
+   [
+    "vinf",
+    "qgl"
+   ],
+   [
+    "vinf",
+    "cfts"
+   ],
+   [
+    "vinf",
+    "qlv"
+   ],
+   [
+    "vinf",
+    "lvlu"
+   ],
+   [
+    "ucif2",
+    "usrm"
+   ],
+   [
+    "ucif2",
+    "qfa"
+   ],
+   [
+    "qgl",
+    "qlv"
+   ],
+   [
+    "qfa",
+    "qlv"
+   ],
+   [
+    "qfa",
+    "lvlu"
+   ],
+   [
+    "usrm",
+    "cfts"
+   ],
+   [
+    "qtlv",
+    "qlv"
+   ],
+   [
+    "lgt",
+    "qtlv"
+   ]
+  ],
+  "laplacian_spectrum": [
+   0.0,
+   1.186231,
+   1.482177,
+   1.704276,
+   2.407295,
+   3.133768,
+   3.853244,
+   4.537217,
+   5.695793,
+   10.0
+  ],
+  "fiedler": 1.186231,
+  "components": 1
+ }
+}
