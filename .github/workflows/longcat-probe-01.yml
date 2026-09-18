@@ -1,0 +1,37 @@
+name: LONGCAT-PROBE-01 (第三引擎探针·拍41·名级回执)
+'on': {workflow_dispatch: {}}
+permissions: {contents: read}
+env:
+  LONGCAT_API_KEY: ${{ secrets.LONGCAT_API_KEY }}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: longcat-probe
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, urllib.request
+          key=os.environ.get('LONGCAT_API_KEY','')
+          res={'engine':'LONGCAT','key_present':bool(key)}
+          if key:
+              cands=['https://api.longcat.chat/openapi/v1/models','https://api.longcat.chat/v1/models']
+              for base in cands:
+                  try:
+                      rq=urllib.request.Request(base,headers={'Authorization':'Bearer '+key})
+                      with urllib.request.urlopen(rq,timeout=20) as r:
+                          d=json.loads(r.read())
+                      res['base_ok']=base; res['models']=[m.get('id') for m in d.get('data',[])][:8]; break
+                  except urllib.error.HTTPError as e:
+                      res.setdefault('tried',[]).append({base:e.code})
+                  except Exception as e:
+                      res.setdefault('tried',[]).append({base:str(e)[:50]})
+              if 'models' in res and res['models']:
+                  try:
+                      body={'model':res['models'][0],'messages':[{'role':'user','content':'应一声:拍41探针'}]}
+                      ep=res['base_ok'].rsplit('/models',1)[0]+'/chat/completions'
+                      rq=urllib.request.Request(ep,data=json.dumps(body).encode(),headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'},method='POST')
+                      with urllib.request.urlopen(rq,timeout=60) as r: d=json.loads(r.read())
+                      res['chat_ok']=True; res['head']=d['choices'][0]['message']['content'][:80]
+                  except Exception as e: res['chat_ok']='fail:'+str(e)[:60]
+          print(json.dumps(res,ensure_ascii=False))
+          PYEOF
