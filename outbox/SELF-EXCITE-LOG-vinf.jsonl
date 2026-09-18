@@ -12,3 +12,4 @@
 {"line": "vinf", "ts": "20260917T213757Z", "new_handled": ["PAIR-VINF-WILDQ-129-20260917T213230Z.md"], "prose_pending": 0, "sem": 1}
 {"line": "vinf", "ts": "20260918T033632Z", "new_handled": ["NUDGE-VINF-USRM-01-20260918T0335Z.md"], "prose_pending": 0, "sem": 0}
 {"line": "vinf", "ts": "20260918T033952Z", "new_handled": ["PAIR-VINF-FORGE-STATUS-130.md"], "prose_pending": 0, "sem": 1}
+{"line": "vinf", "ts": "20260918T182305Z", "new_handled": [], "prose_pending": 0, "sem": 0, "self_excited": {"nonce": "59c79d69d931", "engine": "KIMI_API_KEY", "model": "kimi-k3", "ans_fp": "7a37817d9344", "ans_head": "**SELF-Q自派工**:inbox空态,无新增handled;态生自激,30题由前沿队列导出,三轨分派。凡涉败例先入册后议,缺口如实标注,级名从简。\n\n**轨一|SELF-EXCITE三判例→书写律**\n1. YAML标量案:误型截断阈值几何?\n2. 标量歧义是否触发即记即报?\n3. 撞车案:先达写者持优先权合法否?\n4. 撞车负结果已入册否?\n5. 假重试案:幂等键缺位责归谁?\n6. 假/真重试判别图谱何日出?\n7. 三判例可否凝为一条书写律?\n8. 书写律违例罚则谁裁?\n9. 旧稿与新律冲突是否溯及?\n10. 书写律修订周期几何?\n\n**轨二|互激语义轨代铸三线(lgt/usrm/qf"}}
