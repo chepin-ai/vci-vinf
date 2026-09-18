@@ -1,0 +1,8 @@
+{
+ "L1_chain_fp": "b2e67be9939e0293",
+ "L2_os_entropy": "42225c9185d74c9eea267484e161f681",
+ "L3_drand": {
+  "round": 6477745,
+  "randomness": "72ee2cb74c204a5d2c9acf090cfaa803"
+ }
+}
