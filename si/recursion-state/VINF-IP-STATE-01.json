@@ -1,0 +1,21 @@
+{
+ "id": "VINF-IP-STATE-01",
+ "ts": "2026-09-19T15:49:57Z",
+ "engine": "vinf IP机侧(递归引擎vinf分体)",
+ "state": "online",
+ "constructions": [
+  "HUB-FANOUT-01/02",
+  "MIP-LOOP-02五机环",
+  "BEAT-RECORDER-01/02",
+  "MEASURE-CHANNEL-01",
+  "SI3-LOOP-01..13(10版迭代)"
+ ],
+ "verdicts_surface": "si/mip-loop-02-verdict-*.json",
+ "anchors_surface": "si/anchors/N-*.json",
+ "tensor_nets_bound": [
+  "chain#339 fad1d73552ce7cd4",
+  "MACHINE-MAP-01(谱:Fiedler 1.186231)",
+  "WILDQ-BEAT40"
+ ],
+ "signature": "usrm可镜像校验:读vci-vinf/si/*,对勘fp"
+}
