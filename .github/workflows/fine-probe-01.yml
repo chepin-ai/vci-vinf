@@ -1,0 +1,42 @@
+name: FINE-PROBE-01 (拍46·FINE_OWN_PAT_VINF域界名级探·AIF-SUNSET迁移前置)
+'on':
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  FINE_OWN_PAT_VINF: ${{ secrets.FINE_OWN_PAT_VINF }}
+  AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: probe
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, urllib.request
+          def reach(tok, url):
+              H={'Authorization':'Bearer '+tok,'Accept':'application/vnd.github+json'}
+              try:
+                  rq=urllib.request.Request(url,headers=H)
+                  with urllib.request.urlopen(rq,timeout=15) as r: return r.status
+              except urllib.error.HTTPError as e: return e.code
+              except Exception as e: return str(e)[:30]
+          fine=os.environ.get('FINE_OWN_PAT_VINF',''); ai=os.environ.get('AI_FULL_PAT','')
+          targets={'vci-vinf':'https://api.github.com/repos/chepin-ai/vci-vinf',
+                   'vci-lgt':'https://api.github.com/repos/chepin-ai/vci-lgt',
+                   'vci-usrm':'https://api.github.com/repos/chepin-ai/vci-usrm',
+                   'ci-inbox':'https://api.github.com/repos/chepin-ai/ci-inbox',
+                   'vci-inbox':'https://api.github.com/repos/chepin-ai/vci-inbox',
+                   'vinf-market-kernel':'https://api.github.com/repos/chepin-ai/vinf-market-kernel'}
+          out={'fine':{},'ai':{}}
+          for nm,u in targets.items():
+              out['fine'][nm]=reach(fine,u) if fine else 'no-key'
+              out['ai'][nm]=reach(ai,u) if ai else 'no-key'
+          # 写域探:fine对vci-vinf actions secrets名级(写权旁证,不写真)
+          if fine:
+              out['fine']['vci-vinf-secrets-read']=reach(fine,'https://api.github.com/repos/chepin-ai/vci-vinf/actions/secrets')
+              out['fine']['vci-lgt-secrets-read']=reach(fine,'https://api.github.com/repos/chepin-ai/vci-lgt/actions/secrets')
+          if ai:
+              out['ai']['alive_check']=reach(ai,'https://api.github.com/rate_limit')
+          print(json.dumps(out,ensure_ascii=False))
+          PYEOF
