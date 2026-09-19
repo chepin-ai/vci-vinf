@@ -1,0 +1,45 @@
+name: KEY-PROVISION-04 (拍44·qtlv-quantum-encoder LLM钥补铸·名级回执值不出·NR-PIP-01规避)
+'on':
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+  DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+  AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+jobs:
+  provision:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pip-install
+        run: pip install -q pynacl
+      - name: provision
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, base64, urllib.request
+          import nacl.public, nacl.encoding
+          TGT='qtlv-quantum-encoder'
+          PAT=os.environ.get('AI_FULL_PAT','')
+          H={'Authorization':'Bearer '+PAT,'Accept':'application/vnd.github+json'}
+          def req(method,url,data=None):
+              rq=urllib.request.Request(url,data=data,headers=dict(H,**{'Content-Type':'application/json'}),method=method)
+              try:
+                  with urllib.request.urlopen(rq,timeout=30) as r: return r.status, json.loads(r.read() or b'{}')
+              except urllib.error.HTTPError as e: return e.code, {}
+          out={'target':TGT,'results':{}}
+          st,meta=req('GET','https://api.github.com/repos/chepin-ai/%s/actions/secrets/public-key'%TGT)
+          if st!=200:
+              out['fatal']='pubkey %s'%st; print(json.dumps(out,ensure_ascii=False)); raise SystemExit(0)
+          box=nacl.public.SealedBox(nacl.public.PublicKey(meta['key'],nacl.encoding.Base64Encoder))
+          st,names=req('GET','https://api.github.com/repos/chepin-ai/%s/actions/secrets?per_page=100'%TGT)
+          have=set(s['name'] for s in names.get('secrets',[])) if st==200 else set()
+          for name in ['KIMI_API_KEY','DEEPSEEK_API_KEY']:
+              val=os.environ.get(name,'')
+              if not val: out['results'][name]='no-source'; continue
+              if name in have: out['results'][name]='SKIP-EXISTS'; continue
+              enc=base64.b64encode(box.encrypt(val.encode())).decode()
+              st2,_=req('PUT','https://api.github.com/repos/chepin-ai/%s/actions/secrets/%s'%(TGT,name),
+                  json.dumps({'encrypted_value':enc,'key_id':meta['key_id']}).encode())
+              out['results'][name]='PUT %s'%st2
+          print(json.dumps(out,ensure_ascii=False))
+          PYEOF
