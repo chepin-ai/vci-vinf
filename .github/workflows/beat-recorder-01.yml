@@ -1,0 +1,53 @@
+name: BEAT-RECORDER-01 (每拍执勤轨·拍43·OS端拍录:SI3-LOOP执勤/响应/外巡/联网状态+递归引擎心拍)
+'on':
+  workflow_dispatch:
+  push:
+    paths: ['outbox-tip/**']
+permissions:
+  contents: write
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: beat-record
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, glob, subprocess, datetime, urllib.request
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          tips=sorted(glob.glob('outbox-tip/TIP-*.json'))
+          tip=json.load(open(tips[-1])) if tips else {}
+          # 外巡:九线responder-05最新run状态(actions道名级)
+          key=os.environ.get('GH_READ','')
+          RESP={'lgt':'361647929','usrm':'361647947','qfa':'361647956','qtlv':'361647972','ucif2':'361647982','qgl':'361648001','cfts':'361648018','qlv':'361648019','lvlu':'361648033'}
+          H={'Authorization':'Bearer '+key,'Accept':'application/vnd.github+json'} if key else {'Accept':'application/vnd.github+json'}
+          patrol={}
+          for ln,wid in RESP.items():
+              try:
+                  rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-%s/actions/workflows/%s/runs?per_page=1'%(ln,wid),headers=H)
+                  with urllib.request.urlopen(rq,timeout=15) as r: d=json.loads(r.read())
+                  r0=d.get('workflow_runs',[{}])[0]
+                  patrol[ln]={'status':r0.get('status'),'concl':r0.get('conclusion'),'at':r0.get('created_at')}
+              except Exception as e: patrol[ln]={'err':str(e)[:40]}
+          # MIP判词在位性
+          verdicts=sorted(glob.glob('si/mip-loop-02-verdict-*.json'))
+          rec={'beat':tip.get('beat'),'chain_len':tip.get('chain_len'),'tip_fp':tip.get('tail_fp'),'ts':ts,
+               'duty':'执勤/响应/外巡/联网','patrol':patrol,
+               'mip_verdict_latest':verdicts[-1] if verdicts else None,
+               'anchors':len(glob.glob('si/anchors/N-*.json'))}
+          os.makedirs('si/beat-records',exist_ok=True)
+          fn='si/beat-records/BEAT-%s-%s.json'%(tip.get('beat'),ts)
+          json.dump(rec,open(fn,'w'),ensure_ascii=False,indent=1)
+          subprocess.run(['git','config','user.name','beat-recorder']); subprocess.run(['git','config','user.email','beat@ci'])
+          subprocess.run(['git','add','si/beat-records'])
+          c=subprocess.run(['git','commit','-m','BEAT-RECORD %s %s'%(tip.get('beat'),ts)],capture_output=True,text=True)
+          push='skip'
+          if c.returncode==0:
+              for i in range(4):
+                  subprocess.run(['git','fetch','-q','origin','main'],capture_output=True)
+                  rb=subprocess.run(['git','rebase','origin/main'],capture_output=True,text=True)
+                  q=subprocess.run(['git','push','-q','origin','HEAD:main'],capture_output=True,text=True)
+                  if q.returncode==0: push='ok'; break
+                  if rb.returncode!=0: subprocess.run(['git','rebase','--abort'],capture_output=True)
+          print(json.dumps({'beat_record':'done','file':fn,'push':push,'patrol_ok':sum(1 for v in patrol.values() if v.get('concl')=='success')},ensure_ascii=False))
+          PYEOF
