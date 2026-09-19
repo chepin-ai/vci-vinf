@@ -1,0 +1,56 @@
+{
+ "beat": 44,
+ "chain_len": 339,
+ "tip_fp": "fad1d73552ce7cd4",
+ "ts": "20260919T080550Z",
+ "duty": "执勤/响应/外巡/联网",
+ "patrol": {
+  "lgt": {
+   "status": "completed",
+   "concl": "success",
+   "at": "2026-09-19T05:45:57Z"
+  },
+  "usrm": {
+   "status": "completed",
+   "concl": "success",
+   "at": "2026-09-19T05:45:57Z"
+  },
+  "qfa": {
+   "status": "completed",
+   "concl": "success",
+   "at": "2026-09-19T05:45:59Z"
+  },
+  "qtlv": {
+   "status": "completed",
+   "concl": "success",
+   "at": "2026-09-19T08:00:37Z"
+  },
+  "ucif2": {
+   "status": "completed",
+   "concl": "success",
+   "at": "2026-09-19T05:46:03Z"
+  },
+  "qgl": {
+   "status": "completed",
+   "concl": "success",
+   "at": "2026-09-19T05:46:00Z"
+  },
+  "cfts": {
+   "status": "completed",
+   "concl": "success",
+   "at": "2026-09-19T05:45:58Z"
+  },
+  "qlv": {
+   "status": "completed",
+   "concl": "success",
+   "at": "2026-09-19T05:46:00Z"
+  },
+  "lvlu": {
+   "status": "completed",
+   "concl": "success",
+   "at": "2026-09-19T05:46:01Z"
+  }
+ },
+ "mip_verdict_latest": "si/mip-loop-02-verdict-20260919T054557Z.json",
+ "anchors": 3
+}
