@@ -1,0 +1,26 @@
+name: HUB-READER-02 (hub读轨修复·拍43·读公域vci-inbox替私域ci-inbox暗窗·名级)
+'on':
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    steps:
+      - name: read-hub
+        run: |
+          python3 - <<'PYEOF'
+          import json, urllib.request, datetime
+          res={'hub':'vci-inbox(public)','ts':datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}
+          try:
+              rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-inbox/git/trees/main?recursive=1',
+                  headers={'Accept':'application/vnd.github+json','User-Agent':'hub-reader'})
+              with urllib.request.urlopen(rq,timeout=30) as r: d=json.loads(r.read())
+              paths=[t['path'] for t in d['tree']]
+              res['paths']=len(paths)
+              res['board_count']=len([p for p in paths if p.startswith('公告板/')])
+              res['lanes']=sorted(set(p.split('/')[1] for p in paths if p.startswith('lanes/') and len(p.split('/'))>2))
+              res['latest_tip']=sorted([p for p in paths if p.startswith('公告板/')])[-1] if any(p.startswith('公告板/') for p in paths) else None
+          except Exception as e: res['fail']=str(e)[:80]
+          print(json.dumps(res,ensure_ascii=False))
+          PYEOF
