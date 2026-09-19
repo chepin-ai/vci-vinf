@@ -1,0 +1,40 @@
+{
+ "id": "MIP-LOOP-02-VERDICT",
+ "ts": "20260919T180400Z",
+ "tip": {
+  "tail_fp": "52a3b3c29f5b6592",
+  "chain_len": 341,
+  "beat": 46,
+  "ts": "2026-09-19T18:03:11Z",
+  "note": "拍46穷尽验证锚"
+ },
+ "verdicts": [
+  {
+   "P1": "PASS",
+   "zeros": 1,
+   "fiedler": 1.186231,
+   "witness": "recompute-in-runner"
+  },
+  {
+   "P2": "PASS",
+   "E_star": 2203638,
+   "expect": 2203638,
+   "witness": "exhaustive 3^9 collision=原QUBO(onehot恒0)"
+  },
+  {
+   "P3": "PASS",
+   "round": 6480333,
+   "prev": 6480093,
+   "file": "si/anchors/N-6480333-20260919T180400Z.json"
+  }
+ ],
+ "判词": "PASS(闭环成)",
+ "五机": [
+  "N机感/锚",
+  "义务机宣×3",
+  "IP机构造",
+  "NP机机检",
+  "治理机判词"
+ ],
+ "ledger_note": "判词回注台账成环"
+}
