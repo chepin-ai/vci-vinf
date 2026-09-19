@@ -1,0 +1,31 @@
+name: LONGCAT-PROBE-02 (第三引擎探针v2·拍43·正端点/openai/v1·名级回执)
+'on':
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  LONGCAT_API_KEY: ${{ secrets.LONGCAT_API_KEY }}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: probe
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, urllib.request
+          key=os.environ.get('LONGCAT_API_KEY','')
+          res={'engine':'LONGCAT','key_present':bool(key),'base':'https://api.longcat.chat/openai/v1'}
+          if key:
+              for model in ['LongCat-Flash-Chat','LongCat-2.0']:
+                  try:
+                      body={'model':model,'messages':[{'role':'user','content':'应一声:拍43探针,答"在"即可'}],'max_tokens':20}
+                      rq=urllib.request.Request(res['base']+'/chat/completions',data=json.dumps(body).encode(),
+                          headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'},method='POST')
+                      with urllib.request.urlopen(rq,timeout=60) as r: d=json.loads(r.read())
+                      res['chat_ok']=model; res['head']=d['choices'][0]['message']['content'][:60]; break
+                  except urllib.error.HTTPError as e:
+                      res.setdefault('tried',[]).append({model:e.code})
+                  except Exception as e:
+                      res.setdefault('tried',[]).append({model:str(e)[:50]})
+          print(json.dumps(res,ensure_ascii=False))
+          PYEOF
