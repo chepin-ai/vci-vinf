@@ -1,0 +1,51 @@
+{
+ "beat": 47,
+ "chain_len": 342,
+ "tip_fp": "545cb831b7ea251a",
+ "ts": "20260920T065153Z",
+ "duty": "执勤/响应/外巡/联网/钥龄",
+ "patrol": {
+  "lgt": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "usrm": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "qfa": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "qtlv": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "ucif2": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "qgl": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "cfts": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "qlv": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "lvlu": {
+   "status": "completed",
+   "concl": "success"
+  }
+ },
+ "keyage_over14d": {
+  "LONGCAT_API_KEY": 18
+ },
+ "mip_verdict_latest": "si/mip-loop-02-verdict-20260919T180400Z.json",
+ "anchors": 6,
+ "measurements": 0
+}
