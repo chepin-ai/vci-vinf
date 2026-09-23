@@ -1,0 +1,63 @@
+{
+ "beat": 50,
+ "chain_len": 345,
+ "tip_fp": "8b95464edb0507a6",
+ "ts": "20260923T011641Z",
+ "duty": "执勤/响应/外巡/联网/钥龄",
+ "patrol": {
+  "lgt": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "usrm": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "qfa": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "qtlv": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "ucif2": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "qgl": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "cfts": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "qlv": {
+   "status": "completed",
+   "concl": "success"
+  },
+  "lvlu": {
+   "status": "completed",
+   "concl": "success"
+  }
+ },
+ "keyage_over14d": {
+  "DEEPSEEK_API_KEY": 15,
+  "KIMI_API_KEY": 15,
+  "LONGCAT_AK_N1": 15,
+  "LONGCAT_AK_N2": 15,
+  "LONGCAT_AK_N3": 15,
+  "LONGCAT_AK_N4": 15,
+  "LONGCAT_AK_N5": 15,
+  "LONGCAT_API_KEY": 21,
+  "LONGCAT_SK_N4": 15,
+  "LONGCAT_SK_N5": 15,
+  "NODE_SK_N4": 15,
+  "NODE_SK_N5": 15,
+  "OTP_PHONE": 15
+ },
+ "mip_verdict_latest": "si/mip-loop-02-verdict-20260920T170308Z.json",
+ "anchors": 8,
+ "measurements": 0
+}
