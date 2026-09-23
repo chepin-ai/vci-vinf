@@ -1,0 +1,40 @@
+{
+ "id": "MIP-LOOP-02-VERDICT",
+ "ts": "20260923T062844Z",
+ "tip": {
+  "tail_fp": "81a9234bdff61b99",
+  "chain_len": 349,
+  "beat": "拍53",
+  "ts": "2026-09-23T06:27:19Z",
+  "note": "拍53大周天锚: 链尾TIP; tail-fp回读律"
+ },
+ "verdicts": [
+  {
+   "P1": "PASS",
+   "zeros": 1,
+   "fiedler": 1.186231,
+   "witness": "recompute-in-runner"
+  },
+  {
+   "P2": "PASS",
+   "E_star": 2203638,
+   "expect": 2203638,
+   "witness": "exhaustive 3^9 collision=原QUBO(onehot恒0)"
+  },
+  {
+   "P3": "PASS",
+   "round": 6490463,
+   "prev": 6490459,
+   "file": "si/anchors/N-6490463-20260923T062844Z.json"
+  }
+ ],
+ "判词": "PASS(闭环成)",
+ "五机": [
+  "N机感/锚",
+  "义务机宣×3",
+  "IP机构造",
+  "NP机机检",
+  "治理机判词"
+ ],
+ "ledger_note": "判词回注台账成环"
+}
