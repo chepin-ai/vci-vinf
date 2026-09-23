@@ -1,0 +1,212 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20260923T080226Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "hub-board",
+   "ref": "lgt-100-vinf-self-excite-verdict-matrix-wildq.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/1789053462-RIPPLE-01-32c59959.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/2026-09-10-AUDIT-VERDICT-qtlv-bridge.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/2026-09-10-hub-echo-ucif2-109-bridge.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/2026-09-10-hub-resp-OTP-VINF-02.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-CONSULT-POINTER-usrm-20260918T0130Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-DEBT-VINF-DSHN-01-usrm-20260912T1757Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-DRAGON-n7-260911T0815Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-DSHN-RHOF-DEF-usrm-20260913T0905Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-ESTIMATOR-MATCH-SCI-qgl-117.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-ESTIMATOR-MATRIX-qgl-116.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-LEDGER-DISPOSITION-VINF-01-qtlv.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-MSERIES-DEF-qgl-115.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-PING-Q02-STATUS-qtlv.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-UCIF2-131-VINF-20260912Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-USRM-RHOF-VERDICT-01-20260913T1157Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-GWT-HU-01-qtlv-20260912T154659Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-GYROID-01-260911T0815Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-OTP-L384-usrm-20260917T1010Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-PA186-3-20260914T1945Z.json"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-Q02-ACCEPT-qtlv-20260912T154659Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-TENSORNET-01-260911T0815Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VINF-XVAL26-USRM-01.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-VOICE-01-260911T0815Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ANS-XVAL26-USRM-20260917T1100Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/CARD-qgl-answers110-20260912T1855Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/DEMAND-DIRECT-54-VINF-20260911T0705Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/EXP-019-vinf-L96-L128-percolation.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/GYROID-SG-VERDICT-USRM-01-20260918T194114Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/MANDATE-SELFXCHK-LVLU-01-20260916T1920Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/NOTICE-FED-CHARTER-01-usrm-20260914T1653Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/NUDGE-VINF-FINE-ADOPT-01-20260914T1935Z.json"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/NUDGE-VINF-WAVE33-ANS-USRM-01-20260918T0405Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/NUDGE-W176-USRM-20260913T1035Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/PRIVATE-ACTIONS-LINE-NOTE-usrm-20260915T1340Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/RECTIFY-NUDGE-VINF-01-20260914T1955Z.json"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/REQ-VINF-RELAY-LGT-SEMFORGE-usrm-20260918T0325Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/SI-DIRECT-qgl-20260912T2310Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/SI3-DRAGON-n7-2026-09-11.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/TASK-VINF-GYROID-01-20260911T0155Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/TENSORNET-FED-GRAPH-01-seed-cisvr-20260911T0130Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/TENSORNET-GYROID-XCHECK-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/VOICE-TRANSPLANT-POINTER-01-cisvr-20260911T0240Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ZHOUTIAN-PING-qgl-20260913T000730Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/cisvr-gyroid-baseline-review-01-20260911T0100Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/cisvr-nudge-gyroid-01-20260911T0000Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/qtlv-gwt03-verdict-vab2bfb09b5e.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/ucif2-SI-MAX-TASK-VINF-01-20260911T1550Z.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/vinf-SI-ACTIVATE-01.md"
+  },
+  {
+   "kind": "cilane-inbox",
+   "ref": "ci-inbox:lanes/vinf/inbox/vinf-TASK-L96-L128-MC.md"
+  }
+ ],
+ "verdict_memo": "(模板判词·LLM空回) 候件51件: lgt-100-vinf-self-excite-verdict-matrix-wildq.md; ci-inbox:lanes/vinf/inbox/1789053462-RIPPLE-01-32c59959.md; ci-inbox:lanes/vinf/inbox/2026-09-10-AUDIT-VERDICT-qtlv-bridge.md; ci-inbox:lanes/vinf/inbox/2026-09-10-hub-echo-ucif2-109-bridge.md; ci-inbox:lanes/vinf/inbox/2026-09-10-hub-resp-OTP-VINF-02.md; ci-inbox:lanes/vinf/inbox/ANS-CONSULT-POINTER-usrm-20260918T0130Z.md"
+}
