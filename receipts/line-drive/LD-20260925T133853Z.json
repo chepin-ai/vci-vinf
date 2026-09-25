@@ -1,0 +1,16 @@
+{
+ "v": "LINE-DRIVE-01",
+ "ts": "2026-09-25T13:38:53Z",
+ "line": "vinf",
+ "repos": [
+  "vinf-market-kernel"
+ ],
+ "events": [
+  {
+   "kind": "repo-unreadable",
+   "repo": "vinf-market-kernel",
+   "http": 403
+  }
+ ],
+ "acked": []
+}
