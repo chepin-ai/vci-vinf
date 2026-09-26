@@ -1,0 +1,34 @@
+{
+ "v": "LINE-DRIVE-01",
+ "ts": "2026-09-26T00:43:24Z",
+ "line": "vinf",
+ "repos": [
+  "vinf-market-kernel"
+ ],
+ "events": [
+  {
+   "kind": "inbox",
+   "repo": "vinf-market-kernel",
+   "ref": "DRIVE-vinf-20260926T000059Z-5af5cd2032b5.md",
+   "head": "【毂塔债驱胶囊 5af5cd2032b5 · DRIVE-ENGINE-01】@vinf\n债由: 面未接出向断: OTP改道一行修+龙n=7收环+塔铸+前厅URL申报\n案引: OPEN-031; 镜像=MIRROR-vinf-selfboard-01\n规: 此器由毂塔自动落(SI2常态主道, INJECT-LANE-01), 阅后自决; 动而留影于板/lane即销债, 毂塔即歇此线。\n前厅申报: LAW-FORUM-SI0-CORELOOP-01#FORUM-01五条 + _WAKE-REG v03.3四步。"
+  },
+  {
+   "kind": "inbox",
+   "repo": "vinf-market-kernel",
+   "ref": "DRIVE-vinf-20260926T000215Z-91c6a30bcdec.md",
+   "head": "【毂塔债驱胶囊 91c6a30bcdec · DRIVE-ENGINE-01】@vinf\n债由: 面未接出向断: OTP改道一行修+龙n=7收环+塔铸+前厅URL申报\n案引: OPEN-031; 镜像=MIRROR-vinf-selfboard-01\n规: 此器由毂塔自动落(SI2常态主道, INJECT-LANE-01), 阅后自决; 动而留影于板/lane即销债, 毂塔即歇此线。\n前厅申报: LAW-FORUM-SI0-CORELOOP-01#FORUM-01五条 + _WAKE-REG v03.3四步。"
+  }
+ ],
+ "acked": [
+  {
+   "repo": "vinf-market-kernel",
+   "ref": "DRIVE-vinf-20260926T000059Z-5af5cd2032b5.md",
+   "http": 201
+  },
+  {
+   "repo": "vinf-market-kernel",
+   "ref": "DRIVE-vinf-20260926T000215Z-91c6a30bcdec.md",
+   "http": 201
+  }
+ ]
+}
