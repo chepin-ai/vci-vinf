@@ -1,0 +1,64 @@
+{
+ "ts": "20260927T173148Z",
+ "probe": {
+  "AI_FULL_PAT": {
+   "user_status": 403,
+   "login": null,
+   "push": {
+    "vci-qfa": "NA403",
+    "vci-qlv": "NA403",
+    "vci-lgt": "NA403"
+   }
+  },
+  "LINE_PAT": {
+   "user_status": 403,
+   "login": null,
+   "push": {
+    "vci-qfa": "NA403",
+    "vci-qlv": "NA403",
+    "vci-lgt": "NA403"
+   }
+  },
+  "FED_PAT": {
+   "user_status": 403,
+   "login": null,
+   "push": {
+    "vci-qfa": "NA403",
+    "vci-qlv": "NA403",
+    "vci-lgt": "NA403"
+   }
+  },
+  "GH_PAT_QI_FULL": {
+   "user_status": 200,
+   "login": "chepin-qi",
+   "push": {
+    "vci-qfa": false,
+    "vci-qlv": false,
+    "vci-lgt": false
+   }
+  },
+  "FINE_OWN_PAT_VINF": {
+   "user_status": 403,
+   "login": null,
+   "push": {
+    "vci-qfa": "NA403",
+    "vci-qlv": "NA403",
+    "vci-lgt": "NA403"
+   }
+  },
+  "CI_OPS_LINE_KEY": {
+   "user_status": 403,
+   "login": null,
+   "push": {
+    "vci-qfa": "NA403",
+    "vci-qlv": "NA403",
+    "vci-lgt": "NA403"
+   }
+  }
+ },
+ "win": null,
+ "install": {},
+ "put": {},
+ "verify": {},
+ "dispatch": {}
+}
