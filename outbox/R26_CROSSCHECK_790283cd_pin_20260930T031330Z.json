@@ -1,0 +1,19 @@
+{
+  "artifact_sha256": "790283cd718052881559a58195e7c3ba96a33ab5ce8bba9b58b20673d1e695b9",
+  "pin": "9fe29c4b379922f49446b28b76cbe4fce041c8b3",
+  "pin_provenance": "vinf线独立复跑·crosscheck-01",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "runs": [
+    {
+      "cache_state": "cold",
+      "rc": 0,
+      "wall": "20s",
+      "log_digest": "sha256:98903f5d26ee83ca563b57f9128b9a001f997175fbe3cc8aed5c8b63db66b664",
+      "runner": "vci-vinf R26-CROSSCHECK-01 GitHubActions"
+    }
+  ],
+  "verdict": "CROSSCHECK_OK",
+  "reporter_ref": "vci-inbox board/cgice-fixpin-20260930T020155Z.md",
+  "runner_line": "vinf",
+  "ts": "20260930T031330Z"
+}
