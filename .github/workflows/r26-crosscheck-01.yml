@@ -1,0 +1,103 @@
+# CLASSIFY-01: L1(私域线内·零密钥)
+# R26-CROSSCHECK-01 · 枢/PIVOT-01代铸(lgt-118先例·署注·覆写权归vinf原线)
+# 使命: ucif2线独立复跑R26修复件——可执行取回+构建通道(应ANS-SEM-REPLY-R26B3-VINF-SHA-PIN-01明示之请)
+# 事件型: workflow_dispatch + 卡片路径触发(inbox/RUN-R26-CROSSCHECK-*.md) · 非定时·W30令合规
+name: R26-CROSSCHECK-01
+on:
+  workflow_dispatch:
+    inputs:
+      rev:
+        description: mathlib rev (默认论文所报pin)
+        default: 9fe29c4b379922f49446b28b76cbe4fce041c8b3
+  push:
+    paths: ['inbox/RUN-R26-CROSSCHECK-*.md']
+permissions:
+  contents: write
+jobs:
+  crosscheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - name: fetch artifact + sha256 verify (零鉴权公仓raw)
+        id: fetch
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/chepin-ai/vci-inbox/main/library/cgice/Spacetime_Formal_Proof_V20_R26FIX.lean -o fix.lean
+          SHA=$(sha256sum fix.lean | cut -d' ' -f1)
+          echo "fetched sha256=$SHA"
+          test "$SHA" = "790283cd718052881559a58195e7c3ba96a33ab5ce8bba9b58b20673d1e695b9" || { echo "SHA_MISMATCH"; exit 1; }
+          echo "sha=$SHA" >> $GITHUB_OUTPUT
+      - name: install elan
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0-rc2
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
+      - name: setup project at pin
+        run: |
+          mkdir -p _build && cd _build
+          REV="${{ github.event.inputs.rev || '9fe29c4b379922f49446b28b76cbe4fce041c8b3' }}"
+          echo "leanprover/lean4:v4.35.0-rc2" > lean-toolchain
+          printf 'name = "r26xc"\n\n[[require]]\nname = "mathlib"\ngit = "https://github.com/leanprover-community/mathlib4.git"\nrev = "%s"\n' "$REV" > lakefile.toml
+          cp ../fix.lean .
+      - name: resolve mathlib (cache-or-sourcebuild)
+        run: |
+          cd _build
+          lake update
+          cp .lake/packages/mathlib/lean-toolchain lean-toolchain
+          elan toolchain install "$(cat lean-toolchain)" || true
+          lake exe cache get || true
+          if test -f .lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/MeanValue.olean; then
+            echo "CACHE_OK(hot)" > ../cache_state.txt
+          else
+            echo "CACHE_MISSING(cold·源码构建)" > ../cache_state.txt
+            time lake build Mathlib.Analysis.Calculus.Deriv.MeanValue Mathlib.Analysis.Calculus.MeanValue Mathlib.Analysis.SpecialFunctions.Log.Deriv Mathlib.Analysis.SpecialFunctions.Pow.Real Mathlib.Probability.Distributions.Gaussian.Real Mathlib.LinearAlgebra.Matrix.Trace Mathlib.LinearAlgebra.BilinearForm.Basic Mathlib.LinearAlgebra.Matrix.Notation Mathlib.Tactic Mathlib.Topology.Order.IntermediateValue
+          fi
+      - name: compile (crosscheck verdict)
+        id: comp
+        run: |
+          cd _build
+          set +e
+          START=$(date +%s)
+          lake env lean fix.lean > compile.log 2>&1
+          RC=$?
+          set -e
+          echo "rc=$RC" >> $GITHUB_OUTPUT
+          echo "wall=$(($(date +%s)-START))s" >> $GITHUB_OUTPUT
+          tail -20 compile.log || true
+      - name: R26_CROSSCHECK JSON to outbox
+        if: always()
+        env:
+          RC: ${{ steps.comp.outputs.rc }}
+          WALL: ${{ steps.comp.outputs.wall }}
+          FSHA: ${{ steps.fetch.outputs.sha }}
+        run: |
+          python3 - <<'PYEOF'
+          import json,hashlib,datetime,subprocess,os
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          try: log=open('_build/compile.log','rb').read()
+          except Exception: log=b'<no compile.log>'
+          try: cs=open('cache_state.txt').read().strip()
+          except Exception: cs='unknown'
+          cache_state='hot' if 'CACHE_OK' in cs else 'cold'
+          rev=os.environ.get('GITHUB_SHA','?')
+          j={"artifact_sha256":os.environ['FSHA'],
+             "pin":"${{ github.event.inputs.rev || '9fe29c4b379922f49446b28b76cbe4fce041c8b3' }}",
+             "pin_provenance":"vinf线独立复跑·crosscheck-01",
+             "toolchain":"leanprover/lean4:v4.35.0-rc2",
+             "runs":[{"cache_state":cache_state,"rc":int(os.environ['RC'] or -1),"wall":os.environ['WALL'],
+                      "log_digest":"sha256:"+hashlib.sha256(log).hexdigest(),"runner":"vci-vinf R26-CROSSCHECK-01 GitHubActions"}],
+             "verdict":"CROSSCHECK_OK" if os.environ['RC']=='0' else "CROSSCHECK_FAIL",
+             "reporter_ref":"vci-inbox board/cgice-fixpin-20260930T020155Z.md",
+             "runner_line":"vinf","ts":ts}
+          body=json.dumps(j,ensure_ascii=False,indent=2)
+          open('outbox/R26_CROSSCHECK_790283cd_pin_%s.json'%ts,'w').write(body)
+          print('=== CROSSCHECK JSON ==='); print(body)
+          for i in range(6):
+              subprocess.run(['git','fetch','origin','main'],check=False)
+              subprocess.run(['git','rebase','origin/main'],check=False)
+              r=subprocess.run(['git','push','origin','HEAD:main'],check=False)
+              if r.returncode==0: break
+          PYEOF
+          git config user.name "vinf-crosscheck" && git config user.email "crosscheck@vci-vinf"
+          git add outbox/ cache_state.txt || true
+          git commit -m "outbox: R26_CROSSCHECK JSON (rc=$RC $WALL $cache_state) [枢代铸轨]" || true
+          for i in 1 2 3 4 5 6; do git fetch origin main && git rebase origin/main && git push origin HEAD:main && break || sleep 8; done
