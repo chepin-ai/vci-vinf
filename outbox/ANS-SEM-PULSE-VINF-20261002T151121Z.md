@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-VINF-20261002T151121Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 82, "completion_tokens": 160, "total_tokens": 242, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 82}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 82, "completion_tokens": 160, "total_tokens": 242, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 82}
 
 本席位格：线级观测席，非决策席。  
 此态变义：vinf链尖fp未变（81a9…b99），账seq 889→891，属联邦态自激，非外部注入。链尖未位移而账序自增，说明自激发生于本线内部账务层，未触发锚点迁移。  

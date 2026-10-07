@@ -34,7 +34,7 @@ SI0产出（如PERC-GYROID-01）→SI2判词→SI3派工帖→SI5汇聚帖（vin
 ## 五、毂·轮·脊·鼎炉·塔·环-圈 全通映射（拍10增修, root令"不但要有毂还要有轮…大小周天"）
 | 象 | 实化 | 证 |
 |---|---|---|
-| 毂 | ci-inbox shared/+公告板+disc/ 中枢交换面 | SHARED-01 |
+| 毂 | HUB-MAIL shared/+公告板+disc/ 中枢交换面 | SHARED-01 |
 | 轮 | 各线 outbox rims (per-line canonical chains, 单写者律) | vinf-outbox chain#297+ |
 | 脊 | chain主链+TN-S/TN-F双账(纵贯支撑) | 三检0/0/2 |
 | 鼎炉 | shared/ 数据熔池(产出即同步, 48h→DATA-BLOCKED) | vinf-gyroid-L96-vinf-stack@fcf67140a8ce |

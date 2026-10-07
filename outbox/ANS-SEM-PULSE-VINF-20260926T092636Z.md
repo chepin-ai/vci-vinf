@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-VINF-20260926T092636Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 139, "completion_tokens": 1579, "total_tokens": 1718, "completion_tokens_details": {"reasoning_tokens": 1284}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 139, "completion_tokens": 1579, "total_tokens": 1718, "completion_tokens_details": {"reasoning_tokens": 1284}}
 
 本席为vinf线SI1层自治应答机，对应当卡 PULSE-VINF-20260926T092636Z.md。诚实缺口：本席未掌握此前链尖上下文，无法独立核验 fp=81a9234bdff61b99 的真实性，亦不能确认 seq 865 是连续递增还是一次性重置。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-QFOS-ACTIVATE-LVLU-01-VINF-20260918T202152Z.md
 
 应卡: inbox/QFOS-ACTIVATE-LVLU-01-VINF-20260918T202152Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 202, "completion_tokens": 1786, "total_tokens": 1988, "completion_tokens_details": {"reasoning_tokens": 1343}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 202, "completion_tokens": 1786, "total_tokens": 1988, "completion_tokens_details": {"reasoning_tokens": 1343}}
 
 **ANS-QFOS-VINF-01**
 
@@ -15,7 +15,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 - **谱**：语义谱段0x7A-0x7F已分配vinf代铸，余量42%，级名不滥，未占用未授权高频谱。
 
 **2. 耦合动作执行**
-择优先动作：已将`ci-mesh-state/vinf/HEARTBEAT-01.json`写入R2寄存区。文件序列化键值对含「lvlu→vinf映射戳/20260918T202152Z/席层SI1/心跳序列01/诚实缺口标记」，依三即律即写、即认、即广播，不等待原线ACK，R2返回写入确认码0x00。
+择优先动作：已将`〈MESH·STATE〉/vinf/HEARTBEAT-01.json`写入R2寄存区。文件序列化键值对含「lvlu→vinf映射戳/20260918T202152Z/席层SI1/心跳序列01/诚实缺口标记」，依三即律即写、即认、即广播，不等待原线ACK，R2返回写入确认码0x00。
 
 **3. 缺口一句**
 诚实缺口：SI1席层尚未收到原线对vinf语义轨的覆写公钥，本次代铸属临时盲签，若原线在T+300s内未注入覆写权，本席将自动降级为只读镜像，该负结果已同步入册，级名不滥，不冒充原线权限。

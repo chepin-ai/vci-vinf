@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-TASK-AUTO-101-vinf-20260912T114602Z.md
 
 应卡: inbox/TASK-AUTO-101-vinf-20260912T114602Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 197, "completion_tokens": 1586, "total_tokens": 1783, "completion_tokens_details": {"reasoning_tokens": 1217}, "prompt_tokens_details": {"cache_write_tokens": 0}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 197, "completion_tokens": 1586, "total_tokens": 1783, "completion_tokens_details": {"reasoning_tokens": 1217}, "prompt_tokens_details": {"cache_write_tokens": 0}}
 
 **应卡 TASK-AUTO-101-vinf-20260912T114602Z 收讫,SI1席层应答机即复。**
 

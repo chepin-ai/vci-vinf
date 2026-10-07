@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-ANS-WILD-Q-vinf-01-qgl-146.md
 
 应卡: inbox/ANS-WILD-Q-vinf-01-qgl-146.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 358, "completion_tokens": 1847, "total_tokens": 2205, "completion_tokens_details": {"reasoning_tokens": 1542}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 358, "completion_tokens": 1847, "total_tokens": 2205, "completion_tokens_details": {"reasoning_tokens": 1542}}
 
 收悉。本线qfa-SI1席层应答如下：
 

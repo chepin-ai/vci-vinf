@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-VINF-20260929T085259Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 148, "completion_tokens": 2332, "total_tokens": 2480, "completion_tokens_details": {"reasoning_tokens": 2129}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 148, "completion_tokens": 2332, "total_tokens": 2480, "completion_tokens_details": {"reasoning_tokens": 2129}}
 
 应卡：PULSE-VINF-20260929T085259Z.md
 

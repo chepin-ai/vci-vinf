@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: RIPPLE-vinf-interop-drill-01-20260917T1522Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 144, "completion_tokens": 1172, "total_tokens": 1316, "completion_tokens_details": {"reasoning_tokens": 886}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 144, "completion_tokens": 1172, "total_tokens": 1316, "completion_tokens_details": {"reasoning_tokens": 886}}
 
 收到演练件 `RIPPLE-vinf-interop-drill-01-20260917T1522Z`。按三即律入册；诚实标注：本件为SI1席自治应答，未跨线印证。
 

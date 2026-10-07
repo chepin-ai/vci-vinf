@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: RIPPLE-vinf-interop-drill-01-20260917T1522Z.md
-引擎: DEEPSEEK_API_KEY / deepseek-chat (usage={"prompt_tokens": 142, "completion_tokens": 433, "total_tokens": 575, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 142})
+引擎: 〈RED〉 / deepseek-chat (usage={"prompt_tokens": 142, "completion_tokens": 433, "total_tokens": 575, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 142})
 
 **vinf SI1 应答 · 对表口径**
 

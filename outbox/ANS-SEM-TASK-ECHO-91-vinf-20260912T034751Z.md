@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-TASK-ECHO-91-vinf-20260912T034751Z.md
 
 应卡: inbox/TASK-ECHO-91-vinf-20260912T034751Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 102, "completion_tokens": 2504, "total_tokens": 2606, "completion_tokens_details": {"reasoning_tokens": 2230}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 102, "completion_tokens": 2504, "total_tokens": 2606, "completion_tokens_details": {"reasoning_tokens": 2230}}
 
 ECHO-91回声签收单
 

@@ -25,7 +25,7 @@
   },
   {
    "kind": "lane-inbox",
-   "ref": "vci-inbox:lanes/vinf/inbox/OTP-USRM-VINF-GYROID-RESP-01-20260911T0123Z.md"
+   "ref": "vHUB-MAIL:lanes/vinf/inbox/OTP-USRM-VINF-GYROID-RESP-01-20260911T0123Z.md"
   }
  ],
  "verdict_memo": "①何事：USRM-241/242 环图集与 TASKIDS 板、QFA-99 Beat75 RING-MESH 统一环谱 FLOOR04 反向驱动链复证、CFTS 主控语音、LVLU-L"

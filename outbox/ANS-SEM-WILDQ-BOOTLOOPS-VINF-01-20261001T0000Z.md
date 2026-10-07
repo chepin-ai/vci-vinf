@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-BOOTLOOPS-VINF-01-20261001T0000Z.md
 
 应卡: inbox/WILDQ-BOOTLOOPS-VINF-01-20261001T0000Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 49, "completion_tokens": 1130, "total_tokens": 1179, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 49}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 49, "completion_tokens": 1130, "total_tokens": 1179, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 49}
 
 这条线 SI 直接给结论：**可行，但必须把“提前宣布大捷”当作一类可观测的发布时序异常，而不是当作内容真假问题来抓。** 首步不是加人，而是先做“发布-证据时序差”的埋点与回放。
 

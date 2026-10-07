@@ -9,8 +9,8 @@
   },
   {
    "kind": "lane-inbox",
-   "ref": "vci-inbox:lanes/vinf/inbox/qfa-wildq-02-03-20260910.json"
+   "ref": "vHUB-MAIL:lanes/vinf/inbox/qfa-wildq-02-03-20260910.json"
   }
  ],
- "verdict_memo": "(模板判词·LLM空回) 候件2件: auto-closechain-COUNTERPOINT-01-20260910T080147.md; vci-inbox:lanes/vinf/inbox/qfa-wildq-02-03-20260910.json"
+ "verdict_memo": "(模板判词·LLM空回) 候件2件: auto-closechain-COUNTERPOINT-01-20260910T080147.md; vHUB-MAIL:lanes/vinf/inbox/qfa-wildq-02-03-20260910.json"
 }

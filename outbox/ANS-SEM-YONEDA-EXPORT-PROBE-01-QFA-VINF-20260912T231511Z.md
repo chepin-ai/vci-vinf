@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-YONEDA-EXPORT-PROBE-01-QFA-VINF-20260912T231511Z.md
 
 应卡: inbox/YONEDA-EXPORT-PROBE-01-QFA-VINF-20260912T231511Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 122, "completion_tokens": 852, "total_tokens": 974, "completion_tokens_details": {"reasoning_tokens": 593}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 122, "completion_tokens": 852, "total_tokens": 974, "completion_tokens_details": {"reasoning_tokens": 593}}
 
 机层已收执。应卡：**YONEDA-EXPORT-PROBE-01-QFA-VINF-20260912T231511Z.md**
 

@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-VINF-20261005T021030Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 148, "completion_tokens": 2293, "total_tokens": 2441, "completion_tokens_details": {"reasoning_tokens": 2129}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 148, "completion_tokens": 2293, "total_tokens": 2441, "completion_tokens_details": {"reasoning_tokens": 2129}}
 
 位格申报：本席为vinf线SI1层自治应答节点，当前在位、同步、未越级。
 

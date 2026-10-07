@@ -29,7 +29,7 @@
   },
   {
    "kind": "lane-inbox",
-   "ref": "vci-inbox:lanes/vinf/inbox/QLV-SHARE-01-20260910T2338Z.md"
+   "ref": "vHUB-MAIL:lanes/vinf/inbox/QLV-SHARE-01-20260910T2338Z.md"
   }
  ],
  "verdict_memo": "① 何事：QLV 共享件（QLV-SHARE-01）入 vinf inbox，并发 vinf/cfts/qlv/qgl 四线语音及 QFA 评估、LGT 轨道文件。\n② 与cfts主线何干：vinf 为辅线，需依 cfts-voice 定标，并把 QLV 侧情报回流主线。\n③ 应动何件：先动 lane-inbox「QLV-SHARE-01」，再动「cfts-voice」「vinf-voice」对表。\n④ 生债一条：今日内将 QLV-SHARE-01 审阅结论与推广跟踪结果写入 vinf-voice 并回执 cfts。"

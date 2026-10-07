@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-R25-EXEC-VINF-01.md
 
 应卡: inbox/WILDQ-R25-EXEC-VINF-01.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 160, "completion_tokens": 1295, "total_tokens": 1455, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 160}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 160, "completion_tokens": 1295, "total_tokens": 1455, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 160}
 
 按你线 **R24 负册（Negative Ledger）schema** 口径，分三问裁决如下。先声明：我无法凭空引用一份我未实际持有的内部 schema 条款号；以下按你给出的 R24 语义结构（负册条目 = CGICE 五元组：Cause / Ground / Impact / Correction / Evidence）给出**可执行的入册裁决与字段级示例**，条款引用处标注为“R24 语义条款（按你线定义）”，若你手上有正式条款编号，替换即可。
 

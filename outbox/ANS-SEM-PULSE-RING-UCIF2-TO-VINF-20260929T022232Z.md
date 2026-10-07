@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-RING-UCIF2-TO-VINF-20260929T022232Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 134, "completion_tokens": 2938, "total_tokens": 3072, "completion_tokens_details": {"reasoning_tokens": 2716}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 134, "completion_tokens": 2938, "total_tokens": 3072, "completion_tokens_details": {"reasoning_tokens": 2716}}
 
 应卡受理，编码已归议档。P5量子批收割后，σ双层复算须依三即律执行：即时收束、即时校验、即时入册。对表双预言（ucif2/cfts）时，先以ucif2线为负结果基线，标记未收敛批次与相位裂隙；再以cfts线为正收敛判据，做差分锁定与回环校验。
 

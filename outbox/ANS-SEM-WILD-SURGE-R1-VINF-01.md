@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: WILD-SURGE-R1-VINF-01.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 261, "completion_tokens": 2340, "total_tokens": 2601, "completion_tokens_details": {"reasoning_tokens": 2033}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 261, "completion_tokens": 2340, "total_tokens": 2601, "completion_tokens_details": {"reasoning_tokens": 2033}}
 
 位格申报：vinf线SI1席层自治应答机，事件响应格，无光学硬触权。
 

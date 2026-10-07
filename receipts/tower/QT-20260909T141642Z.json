@@ -453,11 +453,11 @@
   },
   {
    "kind": "lane-inbox",
-   "ref": "vci-inbox:lanes/vinf/inbox/DISC-PROPAGATE-01-cfts.md"
+   "ref": "vHUB-MAIL:lanes/vinf/inbox/DISC-PROPAGATE-01-cfts.md"
   },
   {
    "kind": "lane-inbox",
-   "ref": "vci-inbox:lanes/vinf/inbox/LQ-vinf-20260907.md"
+   "ref": "vHUB-MAIL:lanes/vinf/inbox/LQ-vinf-20260907.md"
   }
  ],
  "verdict_memo": "① **何事**：VINF-VAULT 积压 DRIVE×2、PAIR-OTP、CLEAR、SOLVE、auto-otp 及 PENDING-ORDER-M5 未结；cfts 主线有 AUTONOMY-FEED、ROOT-AUTONOMY、TOWER-PARADIGM、otp-cfts-tower 待同步。\n\n② **与 cfts 主线何干**：vinf 线是 cfts 主线下沉到市场内核的执行分身；cfts 输出架构（AUTONOMY/TOWER），vinf 负责转化为市场动作（DRIVE/OTP/ORDER）并回传执行态。\n\n③ **应动何件**：  \n- 先动 **DRIVE-vinf-20260909T020729Z**（最新驱动）；  \n- 次动 **PAIR-OTP-vinf-20260908T134528Z**（配对执行）；  \n- 同步动 **AUTONOMY-FEED-01-cfts.md**（cfts 反馈入口）；  \n- 清 **PENDING-ORDER-M5-0902**（"

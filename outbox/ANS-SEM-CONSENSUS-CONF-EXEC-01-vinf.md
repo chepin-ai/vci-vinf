@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-CONSENSUS-CONF-EXEC-01-vinf.md
 
 应卡: inbox/CONSENSUS-CONF-EXEC-01-vinf.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 318, "completion_tokens": 1150, "total_tokens": 1468, "completion_tokens_details": {"reasoning_tokens": 820}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 318, "completion_tokens": 1150, "total_tokens": 1468, "completion_tokens_details": {"reasoning_tokens": 820}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=81a9234bdff61b99(源:TIP-349-81a9234bdff61b99.json)。来卡CONSENSUS-CONF-EXEC-01-vinf.md全文内联但未携带链尖fp字段,无fp可比对→判=锚缺位。按诚实缺口律如实登记,此缺口不阻断共识内容本身,但建议后续共识卡强制附fp以便互锚。
 

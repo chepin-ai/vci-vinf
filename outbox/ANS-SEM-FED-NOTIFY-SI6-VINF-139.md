@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-FED-NOTIFY-SI6-VINF-139.md
 
 应卡: inbox/FED-NOTIFY-SI6-VINF-139.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 372, "completion_tokens": 1211, "total_tokens": 1583, "completion_tokens_details": {"reasoning_tokens": 968}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 372, "completion_tokens": 1211, "total_tokens": 1583, "completion_tokens_details": {"reasoning_tokens": 968}}
 
 收悉。qfa:SI1 已登记 FED-NOTIFY-SI6-VINF-139.md，并保留覆写权与源标：
 

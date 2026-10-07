@@ -13,7 +13,7 @@
     }
   ],
   "verdict": "CROSSCHECK_OK",
-  "reporter_ref": "vci-inbox board/cgice-fixpin-20260930T020155Z.md",
+  "reporter_ref": "vHUB-MAIL board/cgice-fixpin-20260930T020155Z.md",
   "runner_line": "vinf",
   "ts": "20260930T031330Z"
 }

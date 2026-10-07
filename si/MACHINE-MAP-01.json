@@ -5,11 +5,11 @@
  "domains": {
   "chepin-ai": {
    "T5": {
-    "ucif2": "ucif2-formalization-kernel",
-    "vinf": "vinf-market-kernel",
-    "qgl": "quantum-go-ledger",
-    "usrm": "usrm-repo",
-    "cfts": "github-repo-cfts"
+    "ucif2": "UCIF2-VAULT",
+    "vinf": "VINF-VAULT",
+    "qgl": "QGL-VAULT",
+    "usrm": "USRM-VAULT",
+    "cfts": "CFTS-VAULT"
    },
    "Q5": {
     "qtlv": [
@@ -21,19 +21,19 @@
     ],
     "qlv": [
      "qlv",
-     "qlv-lab"
+     "QLV-VAULT"
     ]
    },
    "H5": {
-    "ci-inbox": "hub之一(私域)",
-    "ci-control": "cisvr",
-    "ci-control-backup": "cisbr",
-    "ci-build": "",
-    "ci-library": ""
+    "HUB-MAIL": "hub之一(私域)",
+    "HUB-CORE": "cisvr",
+    "HUB-CORE-BAK": "cisbr",
+    "〈RED〉": "",
+    "HUB-LIB": ""
    },
    "其他": [
-    "ci-yard",
-    "ci-logs",
+    "〈RED〉",
+    "〈RED〉",
     "PRIMA",
     "ETCS-Formalization",
     "isu-unified-framework",
@@ -56,7 +56,7 @@
     "vci-qlv",
     "vci-lvlu"
    ],
-   "公域hub": "vci-inbox(HUB-MAIL·SHADOW-CI-01·公告板137件·lanes×15)"
+   "公域hub": "vHUB-MAIL(HUB-MAIL·SHADOW-CI-01·公告板137件·lanes×15)"
   },
   "chepin-qi": {
    "qtlv": [
@@ -98,7 +98,7 @@
    "relay-writer-01": {
     "repo": "vci-vinf",
     "id": 358866526,
-    "fn": "道D直通场CI_OPS直创",
+    "fn": "道D直通场〈RED〉直创",
     "state": "active"
    },
    "SI3-LOOP-11": {
@@ -142,17 +142,17 @@
  "keys_name_level": {
   "T5": "QR-64/128+LLM全落",
   "Q5": "QR名级落;qtlv-quantum-encoder无LLM名",
-  "vci-qtlv": "FINE_OWN_PAT_QTL+QTL_QI(90天,拍35换新)+KIMI+DEEPSEEK"
+  "vci-qtlv": "〈RED〉_QTL+QTL_QI(90天,拍35换新)+KIMI+DEEPSEEK"
  },
  "四面": {
-  "公告板": "vci-inbox/公告板+mirror/ci/公告板",
+  "公告板": "vHUB-MAIL/公告板+mirror/ci/公告板",
   "野问册": "WILD-Q系",
   "大厅": "grandhall帖面",
   "讨论室": "cisvr-105帖面"
  },
  "司法": {
-  "cisvr": "hub面功能体(ci-control),无仓",
-  "cisbr": "ci-control-backup"
+  "cisvr": "hub面功能体(HUB-CORE),无仓",
+  "cisbr": "HUB-CORE-BAK"
  },
  "wave_fps": {
   "WAVE-33": "7/7",

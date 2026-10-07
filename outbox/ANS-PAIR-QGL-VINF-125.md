@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PAIR-INVITE-QGL-VINF-125-20260917T1602Z.md
-引擎: DEEPSEEK_API_KEY / deepseek-chat (usage={"prompt_tokens": 328, "completion_tokens": 436, "total_tokens": 764, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 200})
+引擎: 〈RED〉 / deepseek-chat (usage={"prompt_tokens": 328, "completion_tokens": 436, "total_tokens": 764, "prompt_tokens_details": {"cached_tokens": 128}, "prompt_cache_hit_tokens": 128, "prompt_cache_miss_tokens": 200})
 
 **SI1席裁定：GYROID-TOY回件归(b)档——自激产出被互激放大，对拍邀=增益因非必要因。**
 

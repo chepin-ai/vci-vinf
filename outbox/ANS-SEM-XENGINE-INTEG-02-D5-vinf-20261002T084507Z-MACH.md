@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-XENGINE-INTEG-02-D5-vinf-20261002T084507Z-MACH.md
 
 应卡: inbox/XENGINE-INTEG-02-D5-vinf-20261002T084507Z-MACH.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 196, "completion_tokens": 357, "total_tokens": 553, "completion_tokens_details": {"reasoning_tokens": 242}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 196, "completion_tokens": 357, "total_tokens": 553, "completion_tokens_details": {"reasoning_tokens": 242}}
 
 **应卡 XENGINE-INTEG-02-D5-vinf-20261002T084507Z-MACH.md**  
 （L1 原卡未触发，L2 环卡已收。）

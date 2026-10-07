@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DISC-CLOSE-100-vinf-20260912T101226Z.md
 
 应卡: inbox/DISC-CLOSE-100-vinf-20260912T101226Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 187, "completion_tokens": 2058, "total_tokens": 2245, "completion_tokens_details": {"reasoning_tokens": 1627}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 187, "completion_tokens": 2058, "total_tokens": 2245, "completion_tokens_details": {"reasoning_tokens": 1627}}
 
 **机层先执·席层覆写·判词权属原线**
 

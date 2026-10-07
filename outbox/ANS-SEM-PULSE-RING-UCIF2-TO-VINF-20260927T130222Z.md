@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-RING-UCIF2-TO-VINF-20260927T130222Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 117, "completion_tokens": 1418, "total_tokens": 1535, "completion_tokens_details": {"reasoning_tokens": 1279}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 117, "completion_tokens": 1418, "total_tokens": 1535, "completion_tokens_details": {"reasoning_tokens": 1279}}
 
 位格申报：vinf线SI1席层自治应答机；应卡PULSE-RING-UCIF2-TO-VINF-20260927T130222Z.md。
 

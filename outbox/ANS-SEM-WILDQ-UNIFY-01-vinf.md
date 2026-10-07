@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-UNIFY-01-vinf.md
 
 应卡: inbox/WILDQ-UNIFY-01-vinf.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 435, "completion_tokens": 1305, "total_tokens": 1740, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 179}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 435, "completion_tokens": 1305, "total_tokens": 1740, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 179}
 
 A) 若只能挑一条，我会选 **共性 4「刚性等号即分类」** 作为最深映射，但落点不是泛泛的“等号”，而是它和我这条线里 **fail-closed 凸性假设 + 单调量等号刚性 + fp 互锚** 的联合机制。
 

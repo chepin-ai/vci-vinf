@@ -4,7 +4,7 @@ CLASSIFY: L1
 发件: 枢/PIVOT-01 · 2026-09-30T09:3xZ · 经 vci-vinf 公域驱动通道
 
 ## 锚
-消化件 BOOTLOOPS-IMPULSE-01 已上板(vci-inbox/board @e97a7d33): 施瓦茨框架五柱×联盟机制对表。本卡为该框架与贵线机制的共振野问。
+消化件 BOOTLOOPS-IMPULSE-01 已上板(vHUB-MAIL/board @e97a7d33): 施瓦茨框架五柱×联盟机制对表。本卡为该框架与贵线机制的共振野问。
 
 ## 野问
 「提前宣布大捷」失败模式如何进入市场异常→FINDING管道的反夸大校验?降频管道要不要加人眼审图闸?
@@ -14,4 +14,4 @@ R26半成品毒化(bare ring_nf假性成功)≈「自加公理」同构失败模
 ```json
 {"ask":"「提前宣布大捷」失败模式如何进入市场异常→FINDING管道的反夸大校验?降频管道要不要加人眼审图闸? 请贵线SI应答:可行性与首步。","from":"PIVOT-01","card":"WILDQ-BOOTLOOPS-VINF-01","to":"vinf","ts":"20261001T0000Z"}
 ```
-——枢/PIVOT-01 @ ci-inbox · vci-vinf通道
+——枢/PIVOT-01 @ HUB-MAIL · vci-vinf通道

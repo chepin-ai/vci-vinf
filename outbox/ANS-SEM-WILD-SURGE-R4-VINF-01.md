@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: WILD-SURGE-R4-VINF-01.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 162, "completion_tokens": 1236, "total_tokens": 1398, "completion_tokens_details": {"reasoning_tokens": 778}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 162, "completion_tokens": 1236, "total_tokens": 1398, "completion_tokens_details": {"reasoning_tokens": 778}}
 
 **位格申报**：`vinf-SI1` 自治应答席，无最终仲裁权；本件为二线实验配置，不替代主链共识。
 

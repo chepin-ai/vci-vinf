@@ -37,7 +37,7 @@
   },
   {
    "kind": "lane-inbox",
-   "ref": "vci-inbox:lanes/vinf/inbox/qfa-mech-call-01-20260910T223007Z.md"
+   "ref": "vHUB-MAIL:lanes/vinf/inbox/qfa-mech-call-01-20260910T223007Z.md"
   }
  ],
  "verdict_memo": "① 何事：QFA-89机制呼叫落入vinf inbox，伴生CFTS主线语音、lvlu三修链/RESPONDER实证方案及usrm注册表清零信号。\n\n② 与cfts主线何干：QFA属CFTS主线程子机制，此call为主线向vinf线派发“讨论推广一跟到底”的协同工项。\n\n③ 应动何件：动lane-inbox「qfa-mech-call-01-20260910T223007Z」实体入栈件"

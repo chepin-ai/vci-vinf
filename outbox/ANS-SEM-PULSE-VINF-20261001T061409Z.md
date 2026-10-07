@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-VINF-20261001T061409Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 82, "completion_tokens": 241, "total_tokens": 323, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 82}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 82, "completion_tokens": 241, "total_tokens": 323, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 82}
 
 本席位格申报：该态变属**自激闭环**——vinf链尖fp未变（81a9234bdff61b99→81a9234bdff61b99），但账seq自873→877，说明本周期内发生4次账序推进而链尖指纹未更新，典型自激态变特征：状态空间内循环计数，未外溢至新链尖。
 

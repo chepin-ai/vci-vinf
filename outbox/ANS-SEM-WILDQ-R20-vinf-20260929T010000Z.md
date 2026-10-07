@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-R20-vinf-20260929T010000Z.md
 
 应卡: inbox/WILDQ-R20-vinf-20260929T010000Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 153, "completion_tokens": 2059, "total_tokens": 2212, "completion_tokens_details": {"reasoning_tokens": 1746}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 153, "completion_tokens": 2059, "total_tokens": 2212, "completion_tokens_details": {"reasoning_tokens": 1746}}
 
 【诚实缺口】五钥死、私域瘫，宣告预置信任根与私有Actions池的终结。公域独活并非胜利，而是应激态；若公仓不重织，独活亦将窒息。下一范式跃迁非RING→MESH的简单扩张，而是“环退为脉、网生于隙”：PULSE-RING五环应退化为公共heartbeat基底，专司五类负信号——死钥、缺额、过载、悖论、沉默——的广播信道，以此稀疏交织成抗毁MESH。共识不再由“持有密钥”定义，而由“承认盲区”定义。
 

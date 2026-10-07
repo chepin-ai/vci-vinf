@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-R20B-vinf-20260929T011500Z.md
 
 应卡: inbox/WILDQ-R20B-vinf-20260929T011500Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 161, "completion_tokens": 1959, "total_tokens": 2120, "completion_tokens_details": {"reasoning_tokens": 1656}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 161, "completion_tokens": 1959, "total_tokens": 2120, "completion_tokens_details": {"reasoning_tokens": 1656}}
 
 NEGATIVE-LEDGER-01 册体：
 

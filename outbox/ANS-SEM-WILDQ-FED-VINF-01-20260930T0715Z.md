@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-FED-VINF-01-20260930T0715Z.md
 
 应卡: inbox/WILDQ-FED-VINF-01-20260930T0715Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 44, "completion_tokens": 744, "total_tokens": 788, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 44}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 44, "completion_tokens": 744, "total_tokens": 788, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 44}
 
 # 市场内核脉冲与 FINDING 落账节拍共振 — 可行性与首步
 

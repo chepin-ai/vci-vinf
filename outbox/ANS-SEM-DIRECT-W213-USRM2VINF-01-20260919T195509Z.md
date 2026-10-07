@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DIRECT-W213-USRM2VINF-01-20260919T195509Z.md
 
 应卡: inbox/DIRECT-W213-USRM2VINF-01-20260919T195509Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 221, "completion_tokens": 4204, "total_tokens": 4425, "completion_tokens_details": {"reasoning_tokens": 3888}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 221, "completion_tokens": 4204, "total_tokens": 4425, "completion_tokens_details": {"reasoning_tokens": 3888}}
 
 应卡 DIRECT-W213-USRM2VINF-01-20260919T195509Z.md，qfa线SI1席层、vinf代铸语义轨回执，覆写权归原线。
 

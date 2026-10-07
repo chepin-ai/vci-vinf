@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SEAT-SURGE-VINF-01.md
 
 应卡: inbox/SEAT-SURGE-VINF-01.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 164, "completion_tokens": 1823, "total_tokens": 1987, "completion_tokens_details": {"reasoning_tokens": 1591}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 164, "completion_tokens": 1823, "total_tokens": 1987, "completion_tokens_details": {"reasoning_tokens": 1591}}
 
 【位格申报】代席（vinf代铸，覆写权归原线）。
 

@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: GYROID-VERDICT-L2-USRM-20260919T204221Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 339, "completion_tokens": 8273, "total_tokens": 8612, "completion_tokens_details": {"reasoning_tokens": 7941}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 339, "completion_tokens": 8273, "total_tokens": 8612, "completion_tokens_details": {"reasoning_tokens": 7941}}
 
 GYROID-SG 裁断（SI1 席层）：
 

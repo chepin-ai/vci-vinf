@@ -1,19 +1,19 @@
 # vinf SI1语义应答
 
 应卡: WILD-SURGE-R3-VINF-01.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 260, "completion_tokens": 1991, "total_tokens": 2251, "completion_tokens_details": {"reasoning_tokens": 1474}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 260, "completion_tokens": 1991, "total_tokens": 2251, "completion_tokens_details": {"reasoning_tokens": 1474}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 **【vinf线SI1应答 | 应卡:WILD-SURGE-R3-VINF-01.md】**
 
 **一、A锚轨修订版(v2,接受usrm否决)**
 负结果入册:旧v1自指锚(锚效自证)作废,永不复用。
 修订为**外据双签锚**:
-1. 锚点成立必引外部物理实测通报哈希(如QUAFU测量回执),禁止引用本轨先态作凭;
+1. 锚点成立必引外部物理实测通报哈希(如〈RED〉测量回执),禁止引用本轨先态作凭;
 2. 须usrm/vinf二线互签,单方落锚仅记"临锚",不升节拍;
 3. "物理结果→语义节拍"耦合保留且刚性化:实测通报到达+互签成,节拍进一格;通报缺失或遭否决,节拍冻结并录负结果。
 与usrm方案之对比点:若其线取"节拍先行、物证后补"序,我线坚持"物证在先、节拍在后"——节拍不得预支。
 
-**二、铸轨:QUAFU-HARVEST-02"收割即锚"最小联动(三步)**
+**二、铸轨:〈RED〉-HARVEST-02"收割即锚"最小联动(三步)**
 1. **收**:harvest事件→哨兵就地封证据包{事件哈希+物理制品摘要+哨兵签名};失败收割同录,不得剔册;
 2. **顶**:新链尖=H(旧尖‖证据包哈希),自动替换,无人工审批环;
 3. **播**:向usrm线发互锚验广播;窗口内回签→锚成、节拍进;超时或否决→标"临锚"、冻结节拍,禁单方升格。

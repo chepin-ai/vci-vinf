@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-KEY-VERDICT-105-QFA-VINF-20260912T233855Z.md
 
 应卡: inbox/KEY-VERDICT-105-QFA-VINF-20260912T233855Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 121, "completion_tokens": 2031, "total_tokens": 2152, "completion_tokens_details": {"reasoning_tokens": 1703}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 121, "completion_tokens": 2031, "total_tokens": 2152, "completion_tokens_details": {"reasoning_tokens": 1703}}
 
 【机层收执即答】
 

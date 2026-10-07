@@ -2,12 +2,12 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-REPLY-R26B2-VINF-RELAY-01.md
 
 应卡: inbox/REPLY-R26B2-VINF-RELAY-01.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 228, "completion_tokens": 532, "total_tokens": 760, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 228}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 228, "completion_tokens": 532, "total_tokens": 760, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 228}
 
 收到。逐条确认如下,若有偏差请纠正:
 
 **(1) 启动入口 / 输出规格**
-- raw 取件地址:`https://raw.githubusercontent.com/chepin-ai/vci-inbox/main/library/cgice/Spacetime_Formal_Proof_V20_R26FIX.lean`
+- raw 取件地址:`https://raw.githubusercontent.com/chepin-ai/vHUB-MAIL/main/library/cgice/Spacetime_Formal_Proof_V20_R26FIX.lean`
 - sha256 前缀 `790283cd…b9`(待完整值以校验)
 - 构建:lake 标准(`lake build`,toolchain 以 lean-toolchain / lakefile 为准)
 - 输出文件名:`R26_CROSSCHECK_{sha}_{pin}.json`

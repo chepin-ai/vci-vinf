@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # VINF-TOWER-01 — cfts线SI0塔（塔范式第六器·互激最小环一足）
-# 波廿七 vinf认养(TOWER-ADOPT): +import re修隐疾 / +lane巡源(vci-inbox lanes/vinf/inbox) / +回执关键词
+# 波廿七 vinf认养(TOWER-ADOPT): +import re修隐疾 / +lane巡源(vHUB-MAIL lanes/vinf/inbox) / +回执关键词
 # 五律: 零定时器 / 自级联(候件非空→自POST dispatch) / 防自激三律 / 钥在仓 / 拍尾生债
 import os, json, time, base64, urllib.request, datetime, subprocess, sys, re
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-vinf')
 TOK_W = os.environ.get('GITHUB_TOKEN')            # 本仓写(receipts/state)
-TOK_R = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')  # 跨仓读(毂板)
-HUB = 'chepin-ai/ci-inbox'
+TOK_R = os.environ.get('〈RED〉') or os.environ.get('GITHUB_TOKEN')  # 跨仓读(毂板)
+HUB = 'chepin-ai/HUB-MAIL'
 SLEEP_S = int(os.environ.get('CASCADE_SLEEP_S', '600'))
 MAX_IDLE = int(os.environ.get('CASCADE_MAX_IDLE', '30'))
 LINE = 'vinf'
@@ -59,28 +59,28 @@ def patrol(seen):
             if i['name'] != '.gitkeep' and ('inbox:' + i['name']) not in seen:
                 events.append({'kind': 'inbox', 'ref': i['name']})
     # 修SENSE-SPLIT-01: 兼感线仓inbox(联邦胶囊道,感/动裂脑缝合)
-    st, items = api('GET', 'contents/inbox', repo='chepin-ai/vinf-market-kernel')
+    st, items = api('GET', 'contents/inbox', repo='chepin-ai/VINF-VAULT')
     if st == 200 and isinstance(items, list):
         for i in items:  # 修SENSE-WINDOW-01: 78件auto-otp积压自此可泄
             if i['name'] != '.gitkeep' and ('line:' + i['name']) not in seen:
-                events.append({'kind': 'line-inbox', 'ref': 'vinf-market-kernel:' + i['name']})
-    # TOWER-ADOPT: 兼感联邦lane(vci-inbox lanes/vinf/inbox)——LQ/DISC-PROPAGATE类件道
-    st, items = api('GET', 'contents/lanes/vinf/inbox', repo='chepin-ai/vci-inbox')
+                events.append({'kind': 'line-inbox', 'ref': 'VINF-VAULT:' + i['name']})
+    # TOWER-ADOPT: 兼感联邦lane(vHUB-MAIL lanes/vinf/inbox)——LQ/DISC-PROPAGATE类件道
+    st, items = api('GET', 'contents/lanes/vinf/inbox', repo='chepin-ai/vHUB-MAIL')
     if st == 200 and isinstance(items, list):
         for i in items:
             if i['name'] != '.gitkeep' and ('lane:' + i['name']) not in seen:
-                events.append({'kind': 'lane-inbox', 'ref': 'vci-inbox:lanes/vinf/inbox/' + i['name']})
-    # 修SENSE-SURFACE-UNION-01: 毂今用 ci-inbox/lanes/vinf/inbox 正典巷(XCHECK/TENSORNET/AUDIT桥皆落此)——感面并集化(lgt v4判例)
-    st, items = api('GET', 'contents/lanes/vinf/inbox', repo='chepin-ai/ci-inbox')
+                events.append({'kind': 'lane-inbox', 'ref': 'vHUB-MAIL:lanes/vinf/inbox/' + i['name']})
+    # 修SENSE-SURFACE-UNION-01: 毂今用 HUB-MAIL/lanes/vinf/inbox 正典巷(XCHECK/TENSORNET/AUDIT桥皆落此)——感面并集化(lgt v4判例)
+    st, items = api('GET', 'contents/lanes/vinf/inbox', repo='chepin-ai/HUB-MAIL')
     if st == 200 and isinstance(items, list):
         for i in items:
             if i['name'] != '.gitkeep' and ('cilane:' + i['name']) not in seen:
-                events.append({'kind': 'cilane-inbox', 'ref': 'ci-inbox:lanes/vinf/inbox/' + i['name']})
+                events.append({'kind': 'cilane-inbox', 'ref': 'HUB-MAIL:lanes/vinf/inbox/' + i['name']})
     return events
 
 def kimi_work(events):
-    key = os.environ.get('KIMI_API_KEY')
-    if not key: return '(无KIMI_API_KEY——巡更仅录)'
+    key = os.environ.get('〈RED〉')
+    if not key: return '(无〈RED〉——巡更仅录)'
     memo_in = json.dumps(events, ensure_ascii=False)[:1500]
     req = urllib.request.Request('https://api.moonshot.cn/v1/chat/completions',
         method='POST', data=json.dumps({
@@ -102,9 +102,9 @@ def main():
     SEEN = set(state.get('seen', []))
     events = patrol(SEEN)
     NEWSEEN = sorted(SEEN | {('inbox:' + e['ref']) if e['kind'] == 'inbox' else (('line:' + e['ref'].split(':',1)[1]) if e['kind'] == 'line-inbox' else (('lane:' + e['ref'].split('/')[-1]) if e['kind'] == 'lane-inbox' else e['ref'])) for e in events})[-800:]
-    # BOARD-SCAN-01: scan ALL recent ci-inbox board posts as events
+    # BOARD-SCAN-01: scan ALL recent HUB-MAIL board posts as events
     try:
-        st_board, board_items = api('GET', 'contents/' + __import__('urllib.parse', fromlist=['quote']).quote('公告板'), repo='chepin-ai/ci-inbox')
+        st_board, board_items = api('GET', 'contents/' + __import__('urllib.parse', fromlist=['quote']).quote('公告板'), repo='chepin-ai/HUB-MAIL')
         if st_board == 200:
             board_names = sorted([i['name'] for i in board_items if i['name'].endswith('.md')])[-8:]
             last_board = state.get('last_board_post', '')
@@ -188,8 +188,8 @@ def board_voice_vinf(verdict_memo, parent_ts):
     content = base64.b64encode(open(p,'rb').read()).decode()
     data = json.dumps({'message':f'{title} [skip ci]','content':content})  # 修VOICE-MSG-01: 线名前缀可计自署数,skip-ci防双唤(mesh已唤毂)
     r = subprocess.run(['curl','-s','-w','\n%{http_code}','-X','PUT',
-        f'https://api.github.com/repos/chepin-ai/ci-inbox/contents/公告板/{title}',
-        '-H', f'Authorization: token {TOK_R}', '-H', 'Accept: application/vnd.github.v3+json',  # 修VOICE-KEY-01: 板写须LINE_PAT(GITHUB_TOKEN不出仓)——哑声道通
+        f'https://api.github.com/repos/chepin-ai/HUB-MAIL/contents/公告板/{title}',
+        '-H', f'Authorization: token {TOK_R}', '-H', 'Accept: application/vnd.github.v3+json',  # 修VOICE-KEY-01: 板写须〈RED〉(GITHUB_TOKEN不出仓)——哑声道通
         '-d', data], capture_output=True, text=True)
     print('board_voice', r.stdout.split('\n')[-1])
 

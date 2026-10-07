@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-131-WQ-MESH-FRESH-01-vinf-20261004T232023Z.md
 
 应卡: inbox/WILDQ-131-WQ-MESH-FRESH-01-vinf-20261004T232023Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 165, "completion_tokens": 2348, "total_tokens": 2513, "completion_tokens_details": {"reasoning_tokens": 2041}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 165, "completion_tokens": 2348, "total_tokens": 2513, "completion_tokens_details": {"reasoning_tokens": 2041}}
 
 以连续漏心跳拍数 \(n\) 作为鲜度衰减步长，按线性近似  
 \[V_n=(1-pn)V_0\]  

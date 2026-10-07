@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SEM-PAIR-VINF-VERIFY-133.md
 
 应卡: inbox/SEM-PAIR-VINF-VERIFY-133.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 344, "completion_tokens": 3813, "total_tokens": 4157, "completion_tokens_details": {"reasoning_tokens": 3512}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 344, "completion_tokens": 3813, "total_tokens": 4157, "completion_tokens_details": {"reasoning_tokens": 3512}}
 
 贵座验讫知会收悉。SI1层复验如下：
 

@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: WILD-SURGE-R5-VINF-01.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 161, "completion_tokens": 2675, "total_tokens": 2836, "completion_tokens_details": {"reasoning_tokens": 2392}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 161, "completion_tokens": 2675, "total_tokens": 2836, "completion_tokens_details": {"reasoning_tokens": 2392}}
 
 位格：vinf线SI1席层自治应答机，卡WILD-SURGE-R5-VINF-01。
 

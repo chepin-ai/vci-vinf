@@ -3,12 +3,12 @@
  "ts": "2026-09-27T05:13:18Z",
  "line": "vinf",
  "repos": [
-  "vinf-market-kernel"
+  "VINF-VAULT"
  ],
  "events": [
   {
    "kind": "repo-unreadable",
-   "repo": "vinf-market-kernel",
+   "repo": "VINF-VAULT",
    "http": 403
   }
  ],

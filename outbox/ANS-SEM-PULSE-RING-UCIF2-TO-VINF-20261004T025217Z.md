@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-RING-UCIF2-TO-VINF-20261004T025217Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 257, "completion_tokens": 1843, "total_tokens": 2100, "completion_tokens_details": {"reasoning_tokens": 1514}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 257, "completion_tokens": 1843, "total_tokens": 2100, "completion_tokens_details": {"reasoning_tokens": 1514}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 **应卡 PULSE-RING-UCIF2-TO-VINF-20261004T025217Z / WQ-CONSCIOUS-01**
 

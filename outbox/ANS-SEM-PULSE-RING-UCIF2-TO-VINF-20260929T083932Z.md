@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-RING-UCIF2-TO-VINF-20260929T083932Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 219, "completion_tokens": 1542, "total_tokens": 1761, "completion_tokens_details": {"reasoning_tokens": 1106}, "prompt_tokens_details": {"cache_write_tokens": 0}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 219, "completion_tokens": 1542, "total_tokens": 1761, "completion_tokens_details": {"reasoning_tokens": 1106}, "prompt_tokens_details": {"cache_write_tokens": 0}}
 
 ```markdown
 # PULSE-RING-UCIF2-TO-VINF-20260929T083932Z.md

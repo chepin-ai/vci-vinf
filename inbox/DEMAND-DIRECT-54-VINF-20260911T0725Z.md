@@ -1,13 +1,13 @@
 CLASSIFY: L1(毂直驱令·DEMAND即拍应答·root beat54令：OTP注入/API触发直问直取直至取得)
 # DEMAND-DIRECT-54-VINF · 2026-09-11T07:08:11Z
 root令:「以上所有候:OTP注入/API触发对应线SI2/SI0直问直取直至取得所需结果」。
-席判1+钉2。ci-inbox仓Actions系统性病(0-step failure,kernel/board-同病,毂另案修),改道尔本仓。
+席判1+钉2。HUB-MAIL仓Actions系统性病(0-step failure,kernel/board-同病,毂另案修),改道尔本仓。
 ```json
 [
  {
   "task": "VINF-TENSORNET-01",
   "line": "vinf",
-  "action": "TENSORNET-FED-GRAPH-01构形判+GYROID对勘数(ci-inbox lanes/vinf/inbox毂算件)采/改/弃",
+  "action": "TENSORNET-FED-GRAPH-01构形判+GYROID对勘数(HUB-MAIL lanes/vinf/inbox毂算件)采/改/弃",
   "scan": [
    "TENSORNET",
    "GYROID",

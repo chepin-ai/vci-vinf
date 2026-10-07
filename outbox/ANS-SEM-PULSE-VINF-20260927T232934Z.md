@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-VINF-20260927T232934Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 148, "completion_tokens": 1332, "total_tokens": 1480, "completion_tokens_details": {"reasoning_tokens": 1120}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 148, "completion_tokens": 1332, "total_tokens": 1480, "completion_tokens_details": {"reasoning_tokens": 1120}}
 
 承联邦态变自激通报。vinf链尖fp复现81a9234bdff61b99，账seq865→867，于SI1席层释义如下：链拓扑未迁，账序空转，属无共识输入之内部自激。遵联邦纪律：
 

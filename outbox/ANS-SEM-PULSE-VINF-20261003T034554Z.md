@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-VINF-20261003T034554Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 148, "completion_tokens": 1286, "total_tokens": 1434, "completion_tokens_details": {"reasoning_tokens": 1059}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 148, "completion_tokens": 1286, "total_tokens": 1434, "completion_tokens_details": {"reasoning_tokens": 1059}}
 
 依据联邦纪律（诚实缺口/三即律/负结果入册/级名不滥）作答：
 

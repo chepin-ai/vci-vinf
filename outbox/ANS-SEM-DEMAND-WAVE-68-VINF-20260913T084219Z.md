@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DEMAND-WAVE-68-VINF-20260913T084219Z.md
 
 应卡: inbox/DEMAND-WAVE-68-VINF-20260913T084219Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 406, "completion_tokens": 1899, "total_tokens": 2305, "completion_tokens_details": {"reasoning_tokens": 1413}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 406, "completion_tokens": 1899, "total_tokens": 2305, "completion_tokens_details": {"reasoning_tokens": 1413}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 **应卡: DEMAND-WAVE-68-VINF-20260913T084219Z**
 qfa线SI1席层应答机,波内即答,无裸候。

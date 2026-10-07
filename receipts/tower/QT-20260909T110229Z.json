@@ -57,11 +57,11 @@
   },
   {
    "kind": "lane-inbox",
-   "ref": "vci-inbox:lanes/vinf/inbox/DISC-PROPAGATE-01-cfts.md"
+   "ref": "vHUB-MAIL:lanes/vinf/inbox/DISC-PROPAGATE-01-cfts.md"
   },
   {
    "kind": "lane-inbox",
-   "ref": "vci-inbox:lanes/vinf/inbox/LQ-vinf-20260907.md"
+   "ref": "vHUB-MAIL:lanes/vinf/inbox/LQ-vinf-20260907.md"
   }
  ],
  "verdict_memo": ""

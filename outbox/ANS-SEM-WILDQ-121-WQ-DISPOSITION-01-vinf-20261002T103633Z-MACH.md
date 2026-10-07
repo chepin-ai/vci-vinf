@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-121-WQ-DISPOSITION-01-vinf-20261002T103633Z-MACH.md
 
 应卡: inbox/WILDQ-121-WQ-DISPOSITION-01-vinf-20261002T103633Z-MACH.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 215, "completion_tokens": 3745, "total_tokens": 3960, "completion_tokens_details": {"reasoning_tokens": 3522}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 215, "completion_tokens": 3745, "total_tokens": 3960, "completion_tokens_details": {"reasoning_tokens": 3522}}
 
 建议联邦优先投资**内化训练（α席红旗反射）**，但保留规则强制作为三验则初期的必要支架。
 

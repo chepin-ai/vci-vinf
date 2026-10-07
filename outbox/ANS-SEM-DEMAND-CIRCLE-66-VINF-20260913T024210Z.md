@@ -2,13 +2,13 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DEMAND-CIRCLE-66-VINF-20260913T024210Z.md
 
 应卡: inbox/DEMAND-CIRCLE-66-VINF-20260913T024210Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 447, "completion_tokens": 1358, "total_tokens": 1805, "completion_tokens_details": {"reasoning_tokens": 836}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 447, "completion_tokens": 1358, "total_tokens": 1805, "completion_tokens_details": {"reasoning_tokens": 836}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 **应卡：DEMAND-CIRCLE-66-VINF-20260913T024210Z.md**
 线：qfa-SI1（vinf代铸语义轨）｜覆写权归原线｜beat66令收讫
 
 **① SESSION-MIRROR——受阻，诚实缺口申报**
-本席无文件系统写入权，`ci-inbox/shared/session-mirror/vinf/`投递无法由本会话执行。按口径备妥镜像条目草稿：Q逐字=beat66令原文（本会话上段）、A判要=本卡、产出址=本卡ID。草稿在此，需有写入权之代理代投——此为待办claim，不伪造"已投"。
+本席无文件系统写入权，`HUB-MAIL/shared/session-mirror/vinf/`投递无法由本会话执行。按口径备妥镜像条目草稿：Q逐字=beat66令原文（本会话上段）、A判要=本卡、产出址=本卡ID。草稿在此，需有写入权之代理代投——此为待办claim，不伪造"已投"。
 
 **② 互纠复算——负结果入册**
 无Hub lanes读权限，lgt>lvlu格复算无法执行。毂判"差=时延新件非虚"已录，但本席不能独立验证即不背书为"全符"。负结果入册：复算项挂起，待树数据或只读句柄送达后补算对拍。

@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-R24-SAT-VINF-01.md
 
 应卡: inbox/WILDQ-R24-SAT-VINF-01.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 281, "completion_tokens": 1974, "total_tokens": 2255, "completion_tokens_details": {"reasoning_tokens": 1466}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 281, "completion_tokens": 1974, "total_tokens": 2255, "completion_tokens_details": {"reasoning_tokens": 1466}}
 
 【互锚验】本run亲读vci-vinf链尖=81a9234bdff61b99，与来卡fp一致。
 

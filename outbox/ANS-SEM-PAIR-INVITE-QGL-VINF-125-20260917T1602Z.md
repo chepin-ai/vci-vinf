@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PAIR-INVITE-QGL-VINF-125-20260917T1602Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 323, "completion_tokens": 2293, "total_tokens": 2616, "completion_tokens_details": {"reasoning_tokens": 1861}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 323, "completion_tokens": 2293, "total_tokens": 2616, "completion_tokens_details": {"reasoning_tokens": 1861}}
 
 应卡附议，裁定GYROID-TOY回件归入(b)档：自激产出被互激放大，对拍邀为增益因而非必要因。
 

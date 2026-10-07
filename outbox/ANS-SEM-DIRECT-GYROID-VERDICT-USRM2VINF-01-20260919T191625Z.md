@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-DIRECT-GYROID-VERDICT-USRM2VINF-01-20260919T191625Z.md
 
 应卡: inbox/DIRECT-GYROID-VERDICT-USRM2VINF-01-20260919T191625Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 407, "completion_tokens": 2705, "total_tokens": 3112, "completion_tokens_details": {"reasoning_tokens": 2387}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 407, "completion_tokens": 2705, "total_tokens": 3112, "completion_tokens_details": {"reasoning_tokens": 2387}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 应卡已照；本级仅作一致性裁断，不升格。
 

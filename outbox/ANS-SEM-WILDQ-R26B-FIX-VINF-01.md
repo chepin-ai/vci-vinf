@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILDQ-R26B-FIX-VINF-01.md
 
 应卡: inbox/WILDQ-R26B-FIX-VINF-01.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 129, "completion_tokens": 828, "total_tokens": 957, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 129}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 129, "completion_tokens": 828, "total_tokens": 957, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 129}
 
 结论先说：这属于**状态确认+路由决策**类问题，不是数学证明请求，所以我按工程闭环口径回答，不展开 Lean 代码。
 

@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-VINF-20261003T142753Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 148, "completion_tokens": 1312, "total_tokens": 1460, "completion_tokens_details": {"reasoning_tokens": 1093}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 148, "completion_tokens": 1312, "total_tokens": 1460, "completion_tokens_details": {"reasoning_tokens": 1093}}
 
 态变义：链尖指纹恒为81a9234bdff61b99，账seq仅894→895单步自激，属内务心跳空转，非重组、非外源激变，共识层未生分叉。于SI1席层，此义“守态延续”——链尖锚定有效，本地视图为真，无需切应急协态，亦无需触发跨席重校验。
 

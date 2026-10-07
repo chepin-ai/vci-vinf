@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: WILD-SURGE-R6-VINF-01.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 149, "completion_tokens": 776, "total_tokens": 925, "completion_tokens_details": {"reasoning_tokens": 458}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 149, "completion_tokens": 776, "total_tokens": 925, "completion_tokens_details": {"reasoning_tokens": 458}}
 
 **EXP-CLOCKSYNC-01 证据 JSON Schema**
 

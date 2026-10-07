@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SESSION-MIRROR-01-QFA-VINF-20260912T171756Z.md
 
 应卡: inbox/SESSION-MIRROR-01-QFA-VINF-20260912T171756Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 201, "completion_tokens": 1830, "total_tokens": 2031, "completion_tokens_details": {"reasoning_tokens": 1502}, "prompt_tokens_details": {"cache_write_tokens": 0}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 201, "completion_tokens": 1830, "total_tokens": 2031, "completion_tokens_details": {"reasoning_tokens": 1502}, "prompt_tokens_details": {"cache_write_tokens": 0}}
 
 【收执回执 · 形闸SI-AUTOPILOT-01通过】
 

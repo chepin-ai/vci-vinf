@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-KC-K-LAW-FIELD-01-USRM2VINF-20260919T212253Z.md
 
 应卡: inbox/KC-K-LAW-FIELD-01-USRM2VINF-20260919T212253Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 309, "completion_tokens": 2598, "total_tokens": 2907, "completion_tokens_details": {"reasoning_tokens": 2233}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 309, "completion_tokens": 2598, "total_tokens": 2907, "completion_tokens_details": {"reasoning_tokens": 2233}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 应卡：KC-K-LAW-FIELD-01-USRM2VINF-20260919T212253Z.md
 qfa线SI1席层应答，直答：

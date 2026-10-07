@@ -1,7 +1,7 @@
 {
  "ts": "20260927T173148Z",
  "probe": {
-  "AI_FULL_PAT": {
+  "〈RED〉": {
    "user_status": 403,
    "login": null,
    "push": {
@@ -10,7 +10,7 @@
     "vci-lgt": "NA403"
    }
   },
-  "LINE_PAT": {
+  "〈RED〉": {
    "user_status": 403,
    "login": null,
    "push": {
@@ -37,7 +37,7 @@
     "vci-lgt": false
    }
   },
-  "FINE_OWN_PAT_VINF": {
+  "〈RED〉_VINF": {
    "user_status": 403,
    "login": null,
    "push": {
@@ -46,7 +46,7 @@
     "vci-lgt": "NA403"
    }
   },
-  "CI_OPS_LINE_KEY": {
+  "〈RED〉": {
    "user_status": 403,
    "login": null,
    "push": {

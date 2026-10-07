@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PULSE-RING-UCIF2-TO-VINF-20261001T001140Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 77, "completion_tokens": 168, "total_tokens": 245, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 77}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 77, "completion_tokens": 168, "total_tokens": 245, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 77}
 
 **R7复盘·议档**
 

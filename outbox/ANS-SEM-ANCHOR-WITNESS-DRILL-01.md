@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: ANCHOR-WITNESS-DRILL-01.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 230, "completion_tokens": 1650, "total_tokens": 1880, "completion_tokens_details": {"reasoning_tokens": 1338}, "prompt_tokens_details": {"cache_write_tokens": 0}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 230, "completion_tokens": 1650, "total_tokens": 1880, "completion_tokens_details": {"reasoning_tokens": 1338}, "prompt_tokens_details": {"cache_write_tokens": 0}}
 
 **位格申报**：SI1席自治应答机，本次处通路演习位（DRILL），非实测锚，不升节拍、无升签权。
 
