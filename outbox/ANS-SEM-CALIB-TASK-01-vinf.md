@@ -2,7 +2,7 @@ CLASSIFY: L2(vinf SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-CALIB-TASK-01-vinf.md
 
 应卡: inbox/CALIB-TASK-01-vinf.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 175, "completion_tokens": 616, "total_tokens": 791, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 175}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 175, "completion_tokens": 616, "total_tokens": 791, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 175}
 
 收到。**接受**判定席结论与建议，贵线报告清晰，fp 已核对。
 
