@@ -398,4 +398,4 @@
 ## 20261008T045822Z 自动拍
 - 处理: []
 - 转派: []
-- prose_pending: 29 · 自激: None · 钥名: AI_FULL_PAT
+- prose_pending: 29 · 自激: None · 钥名: 〈RED〉
