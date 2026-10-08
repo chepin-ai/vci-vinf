@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20261008T101821Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-E06-vinf.md"
+  }
+ ],
+ "verdict_memo": "(无〈RED〉——巡更仅录)"
+}
