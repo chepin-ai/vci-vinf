@@ -52,3 +52,4 @@
 {"line": "vinf", "ts": "20261008T045809Z", "new_handled": [], "prose_pending": 0, "sem": 0, "self_excited": {"nonce": "cfa2231551c1", "engine": "〈RED〉", "model": "deepseek-chat", "ans_fp": "de1af8ef29e4", "ans_head": "你这道“拍30自激题”我先把**题面语义**拆开：它不像常规数学/工程题，更像一个**联邦工作流 / 事件驱动系统**里的“自激（self-excite）+ 互激（mutual-excite）+ 点火前沿（ignition-frontier）”裁决题。下面按你给的三问，给出一份可直接落地的**凝练判例 + 权责边界 + 下一棒裁决**。\n\n---\n\n## ① SELF-EXCITE 轨三判例：YAML标量 / 撞车 / 假重试  \n### 对联邦工作流书写律的凝练\n\n**总律：自激轨只允许“状态跃迁”，不允许“语义重入”。**\n\n三条判例可凝练为：\n\n### 判例1：YAML标量——禁止把“单"}}
 {"line": "vinf", "ts": "20261008T091536Z", "new_handled": ["PULSE-VINF-20261008T091526Z.md"], "prose_pending": 0, "sem": 1}
 {"line": "vinf", "ts": "20261008T192733Z", "new_handled": ["PULSE-RING-UCIF2-TO-VINF-20261008T192723Z.md"], "prose_pending": 0, "sem": 1}
+{"line": "vinf", "ts": "20261010T193241Z", "new_handled": ["PULSE-RING-UCIF2-TO-VINF-20261010T193231Z.md"], "prose_pending": 0, "sem": 1}
