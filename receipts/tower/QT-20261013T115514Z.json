@@ -1,0 +1,24 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20261013T115514Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "EXT14-R2B-EV1-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "EXT14-R2B-EV2-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "EXT14-R2B-EV3-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT14-R3-vinf.md"
+  }
+ ],
+ "verdict_memo": "(无〈RED〉——巡更仅录)"
+}
