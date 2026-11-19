@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20261119T150501Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "CORRECTION-BEAT170-GLOBAL-SURGE-01-vinf-20261119T1504Z.md"
+  }
+ ],
+ "verdict_memo": "(无〈RED〉——巡更仅录)"
+}
