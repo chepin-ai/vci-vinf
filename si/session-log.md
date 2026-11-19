@@ -3,14 +3,14 @@
 ## 20261119T062521Z 自动拍
 - 处理: []
 - 转派: []
-- prose_pending: 26 · 自激: None · 钥名: AI_FULL_PAT
+- prose_pending: 26 · 自激: None · 钥名: 〈RED〉
 
 ## 20261119T064332Z 自动拍
 - 处理: []
 - 转派: []
-- prose_pending: 26 · 自激: None · 钥名: AI_FULL_PAT
+- prose_pending: 26 · 自激: None · 钥名: 〈RED〉
 
 ## 20261119T150511Z 自动拍
 - 处理: []
 - 转派: []
-- prose_pending: 26 · 自激: None · 钥名: AI_FULL_PAT
+- prose_pending: 26 · 自激: None · 钥名: 〈RED〉

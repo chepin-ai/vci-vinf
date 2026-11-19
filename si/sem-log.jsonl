@@ -85,6 +85,6 @@
 {"line": "vinf", "ts": "20261016T084146Z", "sem_handled": ["LABJUDGE-EXT17-R2-vinf.md"], "sem_answers": 1}
 {"line": "vinf", "ts": "20261016T084756Z", "sem_handled": ["LABJUDGE-EXT17-R3-vinf.md"], "sem_answers": 1}
 {"line": "vinf", "ts": "20261016T085443Z", "sem_handled": ["LABJUDGE-EXT17-R4-vinf.md"], "sem_answers": 1}
-{"line": "vinf", "ts": "20261119T062437Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "90795fb8773b", "engine": "DEEPSEEK_API_KEY", "model": "deepseek-chat"}}
+{"line": "vinf", "ts": "20261119T062437Z", "sem_handled": [], "sem_answers": 0, "self_excited": {"nonce": "90795fb8773b", "engine": "〈RED〉", "model": "deepseek-chat"}}
 {"line": "vinf", "ts": "20261119T064305Z", "sem_handled": ["CARD-ROOT-AUTONOMY-COLLAB-20261119-01-vinf.md"], "sem_answers": 1}
 {"line": "vinf", "ts": "20261119T150530Z", "sem_handled": ["CORRECTION-BEAT170-GLOBAL-SURGE-01-vinf-20261119T1504Z.md"], "sem_answers": 1}
