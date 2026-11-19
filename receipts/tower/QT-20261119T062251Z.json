@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20261119T062251Z",
+ "idle_in": 129,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-COLLAB-20261119-01.md"
+  }
+ ],
+ "verdict_memo": "(无〈RED〉——巡更仅录)"
+}
