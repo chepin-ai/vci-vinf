@@ -1,10 +1,8 @@
 {
- "ts": "2026-11-19T18:04:14Z",
+ "ts": "2026-11-19T18:05:59Z",
  "target": "vci-vinf",
  "mode": "full-tree",
  "scanned": 14419,
- "fixed_n": 1,
- "fixed": [
-  "receipts/line-drive/LD-20261119T180119Z.json"
- ]
+ "fixed_n": 0,
+ "fixed": []
 }
