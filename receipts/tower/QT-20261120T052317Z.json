@@ -1,0 +1,16 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20261120T052317Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "ANS-T-B171-VINF-ANS-01-MACHINE-02.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "TASK-BEAT171-ANSWER-SELF-CHECK-02-vinf-20261120.md"
+  }
+ ],
+ "verdict_memo": "(无〈RED〉——巡更仅录)"
+}
