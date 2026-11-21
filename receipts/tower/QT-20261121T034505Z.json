@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20261121T034505Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "TASK-BEAT173-LINEAGE-COLLAB-01-vinf-20261121.md"
+  }
+ ],
+ "verdict_memo": "(无〈RED〉——巡更仅录)"
+}
