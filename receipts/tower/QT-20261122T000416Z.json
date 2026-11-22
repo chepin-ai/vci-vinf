@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20261122T000416Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "LVLU-SPAM-V4_3-20261122-01.md"
+  }
+ ],
+ "verdict_memo": "(无〈RED〉——巡更仅录)"
+}
