@@ -1,0 +1,12 @@
+{
+ "v": "VINF-TOWER-01",
+ "ts": "20261123T093656Z",
+ "idle_in": 4,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "QFOS-CHANNEL-RESILIENCE-20261123-01.md"
+  }
+ ],
+ "verdict_memo": "(无〈RED〉——巡更仅录)"
+}
